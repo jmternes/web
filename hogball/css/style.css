@@ -33,6 +33,11 @@ body {
     font-weight: bold;
 }
 
+.navbar a:hover {
+    color: var(--red);
+    transition: .5s;
+}
+
 /*each container is full-screen */
 
 #homecontainer, #rostercontainer, #historycontainer {
@@ -66,16 +71,48 @@ body {
 /*ROSTER CONTAINER STYLING*/
 
 #rostercontainer {
-    background-color: var(--red);
+    background-color: var(--black);
     padding-top: 0;
 }
 
 .roster-header {
     color: var(--white);
-    font-size: 600%;
+    font-size: 550%;
     position: relative;
-    top: 5%;
+    top: 2.5%;
     left: 5%;
+}
+
+.playercards-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 75%;
+}
+
+.playercard {
+    position: relative;
+    display: inline-block;
+    width: 15rem;
+    height: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    border: 1px solid white;
+}
+
+.playercard img {
+    object-fit: cover;
+    width: 15rem;
+    height: 20rem;
+}
+
+.playertext {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
 }
 
 /*HISTORY CONTAINER STYLING */
