@@ -16,7 +16,7 @@ body {
     left: 0;
     height: 24px;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--red);
     display: flex;
     align-items: center;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--red);
+    color: var(--white);
     transition: .5s;
 }
 
@@ -50,11 +50,11 @@ body {
 /*HOME CONTAINER STYLING*/
 
 #homecontainer {
-    background-color: var(--black);
+    background-color: var(--red);
 }
 
 .home-header {
-    color: var(--red);
+    color: var(--black);
     font-size: 600%;
     position: absolute;
     top: 5%;
@@ -127,4 +127,10 @@ body {
     position: relative;
     top: 5%;
     left: 5%;
+}
+
+.history-subheader {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
