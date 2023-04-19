@@ -5,7 +5,9 @@
 }
 
 body {
-    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
 }
@@ -35,7 +37,7 @@ body {
 
 .navbar a:hover {
     color: var(--white);
-    transition: .5s;
+    transition: .3s;
 }
 
 /*each container is full-screen */
@@ -45,6 +47,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /*HOME CONTAINER STYLING*/
@@ -134,3 +137,22 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    overflow: hidden;
+}
+
+/*fix the script to make image track functional*/
