@@ -2,6 +2,7 @@
     --white: #FFFDFA;
     --red: #9c2f2f;
     --black: #121212;
+    --silver: #DAD9D9;
 }
 
 body {
@@ -47,7 +48,6 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 /*HOME CONTAINER STYLING*/
@@ -121,7 +121,7 @@ body {
 /*HISTORY CONTAINER STYLING */
 
 #historycontainer {
-    background-color: var(--white);
+    background-color: var(--silver);
 }
 
 .history-header {
@@ -143,6 +143,7 @@ body {
     height: 56vmin;
     object-fit: cover;
     object-position: 100% center;
+    border: 1px solid black;
 }
 
 #image-track {
