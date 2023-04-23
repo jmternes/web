@@ -149,8 +149,10 @@ body {
     border: 1px solid black;
 }
 
-a.img:hover {
     /*what if i did a hover effect that just showed the text for that player? "Khalif Battle - scoring guard - 17.4 ppg / 3.5 rpg / 2.7 apg*/
+
+img:hover {
+    background-color: var(--red);
 }
 
 #image-track {
@@ -164,3 +166,24 @@ a.img:hover {
 }
 
 /*fix the script to make image track functional*/
+
+
+/* INDIVIDUAL PLAYER PAGES STYLING */
+
+.player-body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.player-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 400%;
+}
+
+.player-info {
+    position: absolute;
+    left: 5%;
+    text-align: center;
+}
