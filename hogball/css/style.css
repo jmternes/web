@@ -198,6 +198,36 @@ img:hover {
     margin-bottom: 16px;
 }
 
+/* If Video --- Video Styling 
+
+.video-container {
+    position: relative;
+    top: 60%; 
+    right: 0; 
+    transform: translateY(-50%);
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 56.25%;
+    border: 1px solid white;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+*/
+
+/* If image --- Player Image Styling
+
+.player-img {
+
+}
+
+*/
+
+/* Player Stats */
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -206,7 +236,7 @@ table {
   th, td {
     border: 1px solid #fff;
     padding: 8px;
-    text-align: left;
+    text-align: center;
   }
   th {
     background-color: var(--black);
