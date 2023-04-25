@@ -23,23 +23,24 @@ body {
     background-color: var(--red);
     display: flex;
     align-items: center;
+    color: var(--white);
 }
 
 .navbar li {
     display: inline;
-    margin: 0 5px;
+    margin: 0 .5rem;
 
 }
 
 .navbar a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: var(--white);
-    transition: .3s;
+    color: var(--black);
+    transition: .2s;
 }
 
 /*each container is full-screen */
@@ -128,6 +129,10 @@ body {
 #historycontainer {
     background-color: var(--silver);
     min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .history-header {
@@ -136,13 +141,13 @@ body {
     position: relative;
     top: 5%;
     left: 5%;
-    padding-top: 16px;
+    padding-top: 1.5rem;
 }
 
 .history-subheader {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 #image-track > .image {
@@ -153,20 +158,18 @@ body {
     border: 1px solid black;
 }
 
-    /*what if i did a hover effect that just showed the text for that player? "Khalif Battle - scoring guard - 17.4 ppg / 3.5 rpg / 2.7 apg*/
-
 img:hover {
     background-color: var(--red);
 }
 
 #image-track {
     display: flex;
-    gap: 4vmin;
-    position: relative;
-    left: 5%;
-    top: 50%;
+    justify-content: center;
+    gap: 3vmin;
     transform: translate(0%, -50%);
-    padding-bottom: 600px;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /*fix the script to make image track functional*/
@@ -199,7 +202,7 @@ img:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 /* If Video --- Video Styling
@@ -247,11 +250,11 @@ img:hover {
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
   th, td {
     border: 1px solid #fff;
-    padding: 8px;
+    padding: 1rem;
     text-align: center;
   }
   th {
