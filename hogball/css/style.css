@@ -227,7 +227,7 @@ img:hover {
 .player-img {
     position: absolute;
     right: 10%;
-    height: 30em;
+    height: 20em;
     border: 1px solid var(--white
     );
 }
