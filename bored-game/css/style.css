@@ -16,6 +16,7 @@ body {
     width: 100%;
     min-width: 700px;
     border: 1px solid var(--black);
+    margin-left: auto;
 }
 
 .nav-list {
@@ -72,3 +73,13 @@ body {
 /* END RESULTS STYLING */
 
 /* -------- END HOME PAGE STYLING -------- */
+
+/* ABOUT PAGE STYLING */
+
+.about-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
