@@ -35,13 +35,26 @@ body {
     z-index: 10;
 }
 
+.item a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.item a:hover {
+    border-bottom: 1px solid black;
+}
+
 /* END NAV STYLING */
+
+/* ----------------HOME PAGE STYLING ------------- */
 
 /* FILTER STYLING */
 
 .filter-container {
     border: 1px solid black;
 }
+
+/* END FILTER STYLING */
 
 
 /* RESULTS STYLING */
@@ -52,7 +65,10 @@ body {
 }
 
 .game-title {
-    display: flex;
     font-weight: 400;
 
 }
+
+/* END RESULTS STYLING */
+
+/* -------- END HOME PAGE STYLING -------- */
