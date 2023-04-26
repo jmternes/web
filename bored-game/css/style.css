@@ -24,7 +24,7 @@ body {
     height: 100px;
     margin: 0 auto;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -33,4 +33,26 @@ body {
     padding: 10px;
     margin: 10px;
     z-index: 10;
+}
+
+/* END NAV STYLING */
+
+/* FILTER STYLING */
+
+.filter-container {
+    border: 1px solid black;
+}
+
+
+/* RESULTS STYLING */
+
+.results-container {
+    border: 1px solid black;
+
+}
+
+.game-title {
+    display: flex;
+    font-weight: 400;
+
 }
