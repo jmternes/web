@@ -65,7 +65,7 @@ body {
 
 }
 
-.game-title {
+.result-title {
     font-weight: 400;
 
 }
@@ -98,4 +98,16 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+}
+
+/* INDIVIDUAL GAME PAGE STYLING */
+
+.game-title {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-desc {
+    position: relative;
 }
