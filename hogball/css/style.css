@@ -67,8 +67,8 @@ section {
 }
 
 .home-header {
-    color: var(--black);
-    font-size: 600%;
+    color: var(--white);
+    font-size: 500%;
     position: absolute;
     top: 5%;
     left: 5%;
