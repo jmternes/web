@@ -182,6 +182,44 @@ img:hover {
 
 /*fix the script to make image track functional*/
 
+/* TEAM STATS STYLING */
+
+.team-stats-container {
+    background-color: var(--red);
+    padding-top: 0;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.team-stats-header {
+    color: var(--white);
+    font-size: 600%;
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
+
+.era-header {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 200%;
+    color: var(--white);
+}
+
+.team-stats-table {
+    background-color: var(--red);
+    border-collapse: collapse;
+}
+
+.team-stats-table th {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.team-stats-table td {
+    color: var(--white);
+}
 
 /* INDIVIDUAL PLAYER PAGES STYLING */
 
@@ -279,4 +317,8 @@ table {
   }
   tr:last-child td {
     border-bottom: none;
+  }
+
+  tr:nth-of-type(2n) {
+    background: hsl(0 0% 0% / .125);
   }
