@@ -86,6 +86,7 @@ section {
 #rostercontainer {
     background-color: var(--black);
     padding-top: 0;
+    padding-bottom: 2rem;
     min-height: 100vh;
     height: fit-content;
 }
@@ -100,12 +101,20 @@ section {
 }
 
 .playercards-container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 75%;
-    overflow-wrap: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    padding-bottom: 2rem;
+}
+
+.playercard-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    padding: 1rem;
 }
 
 .playercard {
@@ -115,7 +124,7 @@ section {
     height: 20rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: .5rem;
+    margin-top: 3rem;
     border: 1px solid white;
     box-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -139,10 +148,11 @@ section {
 #historycontainer {
     background-color: var(--silver);
     min-height: 100vh;
-    height: 100vh;
+    height: 75rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 5rem;
 }
 
 .history-header {
@@ -186,7 +196,8 @@ img:hover {
 
 .team-stats-container {
     background-color: var(--red);
-    padding-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     min-height: 100vh;
     height: fit-content;
 }
