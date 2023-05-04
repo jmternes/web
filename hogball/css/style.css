@@ -52,8 +52,10 @@ section {
 
 /*each container is full-screen */
 
+
 #homecontainer, #rostercontainer {
     height: 100vh;
+    width: 100%;
     /* width: 100vw; */
     margin: 0;
     padding: 0;
@@ -62,9 +64,10 @@ section {
 
 /*HOME CONTAINER STYLING*/
 
-#homecontainer {
-    background-color: var(--red);
+.homecontainer {
+    background: var(--black)
 }
+
 
 .home-header {
     color: var(--white);
