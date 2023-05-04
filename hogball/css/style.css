@@ -319,6 +319,11 @@ table {
     padding: .5rem;
     text-align: center;
   }
+
+.small-data {
+    font-size: 75%;
+}
+
   th {
     background-color: var(--black);
   }
