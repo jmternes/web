@@ -245,6 +245,10 @@ img:hover {
 
 /* INDIVIDUAL PLAYER PAGES STYLING */
 
+.red-to-black {
+    background: linear-gradient(180deg, #9d2235 60%, #121212);
+}
+
 .player-body {
     background-color: var(--black);
     color: var(--white);
