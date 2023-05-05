@@ -140,6 +140,10 @@ section {
     height: 20rem;
 }
 
+.playercard img:hover {
+    scale: 102%;
+}
+
 .playertext {
     position: relative;
     display: flex;
@@ -186,9 +190,6 @@ section {
     border: 1px solid black;
 }
 
-.image:hover {
-    scale: 102%;
-}
 
 img:hover {
     background-color: var(--red);
