@@ -1,8 +1,8 @@
 :root {
     --white: #FFFDFA;
-    --red: #9c2f2f;
+    --red: #9D2235;
     --black: #121212;
-    --silver: #DAD9D9;
+    --silver: #f2f2f4;
 }
 
 html, body {
@@ -27,7 +27,7 @@ section {
     top: 0;
     left: 0;
     height: 40px;
-    background-color: var(--red);
+    background: var(--red);
     display: flex;
     align-items: center;
     color: var(--white);
@@ -65,7 +65,9 @@ section {
 /*HOME CONTAINER STYLING*/
 
 .homecontainer {
-    background: var(--red)
+    background: linear-gradient(180deg, #9D2235 30%, #121212);
+   /* background: -webkit-linear-gradient(to right, #9c2f2f, #DAD9D9);
+    background: linear-gradient(to right, #9c2f2f, #DAD9D9); */
 }
 
 
@@ -87,7 +89,7 @@ section {
 /*ROSTER CONTAINER STYLING*/
 
 #rostercontainer {
-    background-color: var(--black);
+    background: linear-gradient(180deg, #121212 30%, #f2f2f4);
     padding-top: 0;
     padding-bottom: 2rem;
     min-height: 100vh;
@@ -146,10 +148,14 @@ section {
     top: -.5rem;
 }
 
+.bottom-row {
+    color: var(--black);
+}
+
 /*HISTORY CONTAINER STYLING */
 
 #historycontainer {
-    background-color: var(--silver);
+    background: linear-gradient(180deg, #f2f2f4 30%, #9d2235);
     min-height: 100vh;
     height: 75rem;
     display: flex;
@@ -198,7 +204,7 @@ img:hover {
 /* TEAM STATS STYLING */
 
 .team-stats-container {
-    background-color: var(--red);
+    background: var(--red);
     padding-top: 1rem;
     padding-bottom: 2rem;
     min-height: 100vh;
@@ -214,7 +220,7 @@ img:hover {
 }
 
 .era-header {
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
     text-align: center;
     font-size: 200%;
@@ -351,4 +357,20 @@ table {
   tr:nth-of-type(2n):hover {
     background: hsl(0 0% 0% / .375);
 
+  }
+
+  footer {
+      background: var(--red);
+      height: 40px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-top: 0;
+      padding: 1rem;
+      color: var(--white);
+      text-align: center;
+  }
+
+  span {
+      font-size: 80%;
   }
