@@ -199,8 +199,7 @@ img:hover {
     display: flex;
     gap: 4vmin;
     padding-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    justify-content: center;
 }
 
 /*fix the script to make image track functional*/
