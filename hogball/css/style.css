@@ -179,11 +179,15 @@ section {
 }
 
 #image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
+    width: 26vmin;
+    height: 42vmin;
     object-fit: cover;
-    object-position: 100% center;
+    object-position: 50% left;
     border: 1px solid black;
+}
+
+.image:hover {
+    scale: 102%;
 }
 
 img:hover {
@@ -193,7 +197,7 @@ img:hover {
 #image-track {
     position: relative;
     display: flex;
-    gap: 3vmin;
+    gap: 4vmin;
     padding-top: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
