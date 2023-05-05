@@ -381,3 +381,13 @@ table {
   span {
       font-size: 80%;
   }
+
+  footer a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  footer a:hover {
+    color: var(--black);
+    transition: .2s;
+  }
