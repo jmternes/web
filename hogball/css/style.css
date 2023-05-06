@@ -396,6 +396,9 @@ table {
     tbody tr :nth-child(even) {
         background: hsl(0 0% 0% / .175)
     }
+    .total-postseason {
+        display: none;
+    }
   }
 
   footer {
