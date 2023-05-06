@@ -367,6 +367,37 @@ table {
 
   }
 
+  /* MOBILE TABLE STYLING */
+
+  @media (max-width: 768px) {
+    .team-stats-header {
+        text-align: center;
+    }
+
+    table thead tr {
+        display: none;
+    }
+    table tr {
+        display: block;
+        margin-top: 3em;
+    }
+    table th, table td {
+        padding:  .5em;
+    }
+    table td {
+        text-align: right;
+        display: block;
+        font-size: 1.5em;
+    }
+    table td::before {
+        content: attr(data-title) " ";
+        float: left;
+    }
+    tbody tr :nth-child(even) {
+        background: hsl(0 0% 0% / .175)
+    }
+  }
+
   footer {
       background: var(--red);
       height: 40px;
