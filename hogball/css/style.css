@@ -380,10 +380,34 @@ table {
         width: 13vmin;
         height: 21vmin; /*FIX IMAGE MOBILE VIEW */
 
-    }
+    } /* FIX THIS, check codepen */
   }
 
   /* END MOBILE IMAGE TRACK STYLING */
+
+  /* MOBILE PLAYERCARD STYLING */
+
+  @media (max-width: 1350px) {
+    .playercards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+        padding-bottom: 2rem;
+        width: 100%;
+
+      }
+      .playercard-row {
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+      }
+      .playercard {
+        margin: 1rem;
+        width: fit-content;
+      } /* FIX THIS */
+  }
 
   /* ------ GENERAL MOBILE STYLING ------ */
 
@@ -450,6 +474,7 @@ table {
         align-items: center;
         padding: .5rem;
         padding-bottom: 2rem;
+        width: 100%;
 
       }
       .playercard-row {
@@ -459,7 +484,8 @@ table {
         text-align: center;
       }
       .playercard {
-        margin: 1rem 0;
+        margin: 1rem;
+        width: fit-content;
       }
 
     /* END MOBILE PLAYERS SECTION */
