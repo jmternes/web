@@ -366,6 +366,8 @@ table {
 
   }
 
+  /* MOBILE IMAGE TRACK STYLING */
+
   @media (max-width: 1650px) {
     #image-track {
         display: block;
@@ -381,11 +383,13 @@ table {
     }
   }
 
-  /* MOBILE TABLE STYLING */
+  /* END MOBILE IMAGE TRACK STYLING */
 
-  @media (max-width: 768px) {
+  /* ------ GENERAL MOBILE STYLING ------ */
 
-    /* NAVBAR */
+  @media (max-width: 780px) {
+
+    /* MOBILE NAVBAR */
 
     .navbar {
         display: flex;
@@ -405,9 +409,9 @@ table {
         margin: 10px 0;
       }
 
-      /* END NAVBAR */
+      /* END MOBILE NAVBAR */
 
-    /* HOME */
+    /* MOBILE HOME :D */
 
     .homecontainer {
         display: flex;
@@ -419,7 +423,7 @@ table {
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        font-size: 400%;
+        font-size: 450%;
         margin-top: 2em;
     }
 
@@ -430,9 +434,9 @@ table {
         transform: translate(-50%, 50%);
     }
 
-    /*END HOME*/
+    /* END MOBILE HOME D: */
 
-    /* PLAYERS SECTION */
+    /* MOBILE PLAYERS SECTION */
 
     .roster-header {
         font-size: 400%;
@@ -458,27 +462,28 @@ table {
         margin: 1rem 0;
       }
 
-    /* END PLAYERS SECTION */
+    /* END MOBILE PLAYERS SECTION */
 
-    /* HISTORY SECTION */
+    /* MOBILE HISTORY SECTION */
+
     .history-header {
         font-size: 400%;
         padding-left: 0;
         text-align: center;
     }
 
-    /*LOOK INTO IMAGE TRACK STYLING */
+    /* END MOBILE HISTORY SECTION */
 
-    /* END HISTORY SECTION */
-
-    /*
-
-    /* TABLES */
+    /* MOBILE TABLE STYLING */
 
     .team-stats-header {
         text-align: center;
         font-size: 400%;
         padding-left: 0;
+    }
+
+    .era-header {
+        font-size: 150%;
     }
 
     table thead tr {
@@ -507,14 +512,17 @@ table {
         display: none;
     }
 
-    /* END TABLES */
+    /* END MOBILE TABLE STYLING */
   }
+
+  /* END GENERAL MOBILE STYLING */
 
   footer {
       background: var(--red);
       height: 40px;
       bottom: 0;
       left: 0;
+      right: 0;
       width: 100%;
       margin-top: 0;
       padding: 1rem;
