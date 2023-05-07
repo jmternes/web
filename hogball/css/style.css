@@ -36,7 +36,6 @@ section {
 .navbar li {
     display: inline;
     margin: 0 .5rem;
-
 }
 
 .navbar a {
@@ -370,8 +369,99 @@ table {
   /* MOBILE TABLE STYLING */
 
   @media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul {
+          left: 50%;
+          transform: translateX(-5%); /* check this on different devices */
+      }
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      /* END NAVBAR */
+    
+    /* HOME */
+
+    .homecontainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-header {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 400%;
+        margin-top: 2em;
+    }
+
+    .home-subheader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    
+    /*END HOME*/
+
+    /* PLAYERS SECTION */
+
+    .roster-header {
+        font-size: 400%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .playercards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+        padding-bottom: 2rem;
+        
+      }
+      .playercard-row {
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+      }
+      .playercard {
+        margin: 1rem 0;
+      }
+
+    /* END PLAYERS SECTION */
+
+    /* HISTORY SECTION */
+    .history-header {
+        font-size: 400%;
+        padding-left: 0;
+        text-align: center;
+    } /*LOOK INTO IMAGE TRACK STYLING */
+
+    /* END HISTORY SECTION */
+
+    /*
+
+    /* TABLES */
+
     .team-stats-header {
         text-align: center;
+        font-size: 400%;
+        padding-left: 0;
     }
 
     table thead tr {
@@ -399,6 +489,8 @@ table {
     .total-postseason {
         display: none;
     }
+
+    /* END TABLES */
   }
 
   footer {
