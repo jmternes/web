@@ -155,6 +155,11 @@ section {
     color: var(--black);
 }
 
+.bottom {
+    border: 1px solid var(--black);
+
+}
+
 /*HISTORY CONTAINER STYLING */
 
 #historycontainer {
@@ -366,8 +371,9 @@ table {
 
   }
 
-  /* MOBILE IMAGE TRACK STYLING */
+  /* MOBILE IMAGE TRACK STYLING  */
 
+  /*
   @media (max-width: 1650px) {
     #image-track {
         display: block;
@@ -378,10 +384,10 @@ table {
 
     #image-track > img {
         width: 13vmin;
-        height: 21vmin; /*FIX IMAGE MOBILE VIEW */
+        height: 21vmin; FIX IMAGE MOBILE VIEW 
 
-    } /* FIX THIS, check codepen */
-  }
+    }  FIX THIS, check codepen 
+  } */
 
   /* END MOBILE IMAGE TRACK STYLING */
 
