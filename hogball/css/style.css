@@ -194,11 +194,6 @@ section {
     border: 1px solid black;
 }
 
-
-img:hover {
-    background-color: var(--red);
-}
-
 #image-track {
     position: relative;
     display: flex;
@@ -207,6 +202,7 @@ img:hover {
     justify-content: center;
 }
 
+  
 /*fix the script to make image track functional*/
 
 /* TEAM STATS STYLING */
@@ -371,9 +367,6 @@ table {
 
   }
 
-  /* MOBILE IMAGE TRACK STYLING  */
-
-  /*
   @media (max-width: 1650px) {
     #image-track {
         display: block;
@@ -386,8 +379,9 @@ table {
         width: 13vmin;
         height: 21vmin; FIX IMAGE MOBILE VIEW 
 
-    }  FIX THIS, check codepen 
-  } */
+    }  /*FIX THIS*/
+}
+  
 
   /* END MOBILE IMAGE TRACK STYLING */
 
