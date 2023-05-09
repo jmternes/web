@@ -270,6 +270,23 @@ section {
     font-size: 400%;
 }
 
+.player-twitter {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 200%;
+}
+
+.twitter-link {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.twitter-link:hover {
+    color: var(--red);
+    transition: .2s;
+}
+
 .player-info {
     position: absolute;
     left: 5%;
@@ -342,6 +359,8 @@ table {
 .small-data {
     font-size: 75%;
 }
+
+
 
   th {
     background-color: var(--black);
