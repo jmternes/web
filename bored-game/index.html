@@ -6,45 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bored-Game</title>
     <link rel="stylesheet" href="./css/style.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li class="item"><a href="index.html">Home</a></li>
-            <li class="item"><a href="about.html">About</a></li>
-            <li class="item"><a href="directory.html">Index</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="navbar-search">
+      <input type="text">
+      <button>Search</button>
+    </div>
+    <div class="navbar-links">
+      <a href="#">VIEW ALL GAMES</a>
+    </div>
+
+  </nav>
+
+  <h1 class="home-header">
+    Bored No More! Your Source For All Boardless Games
+  </h1>
+
+  <h3 class="home-subheader">
+    Want to play a game, but not sure which one? Use the filters below to search our databse of 100+ boardless games, including party games, card gaems, tabletop games, and more!
+  </h3>
+
+  <h3 class="search-header">
+    Search for the perfect game
+  </h3>
+
+  <div class="filter-wrapper">
+
+    <div class="tools-wrapper">
+      <h4>What tools do you have on hand?</h4>
+        <div class="tools-container">Deck of Cards</div>
+        <div class="tools-container">Dice</div>
+        <div class="tools-container">Dominoes</div>
+        <div class="tools-container">Coins</div>
+        <div class="tools-container">Marbles</div>
+        <div class="tools-container">Pen & Paper</div>
+        <div class="tools-container">Ping Pong Balls</div>
+        <div class="tools-container">Solo Cups</div>
+        <div class="tools-container">Spoons</div>
+        <div class="tools-container">Tabletop</div>
+        <div class="tools-container">No Tools</div>
+        <div class="tools-container">Other</div>
+    </div>
+
+    <div class="players-wrapper">
+      <h4>How many players are there?</h4>
+        <select name="players" id="players">
+          <option value="" disabled selected>Select number of players</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5-6">5-6</option>
+          <option value="7-8">7-8</option>
+          <option value="9-10">9-10</option>
+          <option value="11+">11+</option>
+        </select>
+    </div>
+
+    <div class="vibe-wrapper">
+      <h4>What is the vibe of your game group?</h4>
+      <div class="vibe-container">Competitive</div>
+      <div class="vibe-container">Collaborative</div>
+      <div class="vibe-container">High-Energy</div>
+      <div class="vibe-container">Chill</div>
+      <div class="vibe-container">Playful</div>
+      <div class="vibe-container">Serious</div>
+      <div class="vibe-container">Free-Flowing</div>
+      <div class="vibe-container">Rule-Abiding</div>
+      <div class="vibe-container">Loud</div>
+      <div class="vibe-container">Quiet</div>
+    </div>
+
+    <div class="time-wrapper">
+      <h4>How much time do you have?</h4>
+      <select name="time" id="time">
+        <option value="" disabled selected>Select</option>
+        <option value="Fewer than 5 Minutes">Fewer than 5 Minutes</option>
+        <option value="5-10">5-10 Minutes</option>
+        <option value="10-20">10-20 Minutes</option>
+        <option value="20-30">20-30 Minutes</option>
+        <option value="30-45">30-45 Minutes</option>
+        <option value="45-60">45-60 Minutes</option>
+        <option value="60+">60+ Minutes</option>
+      </select>
+    </div>
+
+    <div class="difficulty-wrapper">
+      <h4>What is your preferred difficulty level?</h4>
+        <select name="difficulty" id="difficulty">
+          <option value="" disabled selected>Select</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+    </div>
+
+    <div class="drinking-wrapper">
+      <h4>Include Drinking Games?</h4>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="include-drinking-games" value="yes">
+          <label for="no">No</label>
+          <input type="radio" id="no" name="include-drinking-games" value="no">
+    </div>
+
+    <div class="family-friendly-wrapper">
+      <h4>Only show family-friendly games?</h4>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="include-family-games" value="no">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="include-family-games" value="yes">
+    </div>
+
+    <button class="search-button">Search</button>
+
+  </div>
+
+
+
+
+
 
     <div class="cards-list">
-  
+
         <div class="card 1">
           <div class="card_title title-black">
             <p>ERS</p>
           </div>
         </div>
-        
+
           <div class="card 2">
           <div class="card_title title-black">
             <p>Go Fish</p>
           </div>
         </div>
-        
+
         <div class="card 3">
           <div class="card_title">
             <p>War</p>
           </div>
         </div>
-          
+
           <div class="card 4">
           <div class="card_title title-black">
             <p>Gin Rummy</p>
           </div>
           </div>
-        
+
         </div>
 
-    
+
 </body>
 </html>
