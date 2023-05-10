@@ -1,6 +1,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
+    --gray: #E9ECED;
     --coral: #FF7F5A;
     --turquoise: #69D3E8;
     --lavender: #A379C9;
@@ -18,7 +19,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(174, 166, 198);
+    background-color: var(--gray);
     font-family: 'Lexend', sans-serif;
 }
 
@@ -108,6 +109,13 @@ body {
   margin-left: 2.5rem;
   font-size: 24px;
   font-weight: bold;
+}
+
+.tools-img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .filter-container {
