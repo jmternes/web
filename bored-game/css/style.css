@@ -122,6 +122,10 @@ body {
     border: 1px solid black;
 }
 
+option:active {
+  border: 2px solid var(--coral);
+}
+
 /* END FILTER STYLING */
 
 
