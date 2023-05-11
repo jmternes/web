@@ -8,6 +8,8 @@
     --lavender: #A379C9;
     --selective-yellow: #FFB802;
     --golden-yellow: #FFD700;
+    --goldensearch: #FFDC58;
+    --searchhover: #EEC119;
     --turquoise-light: #A5EDFC;
     --dodger-blue: #1DA1F2;
     --electric-blue: #3300FF;
@@ -141,7 +143,7 @@ body {
 .filter-wrapper {
   width: 27rem;
   height: 135rem;
-  
+
 }
 
 .filter-container {
@@ -167,7 +169,8 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  text-align: right;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .tools-container {
@@ -218,6 +221,7 @@ body {
     font-size: 24px;
     line-height: 30px;
     text-align: left;
+    margin-left: 1rem;
 }
 
 /*.players-wrapper*/ select {
@@ -239,6 +243,10 @@ line-height: 28px;
 font-weight: 400;
 }
 
+option {
+  font-family: 'Lexend', sans-serif;
+}
+
 
 option:active {
   border: 2px solid var(--coral);
@@ -246,11 +254,13 @@ option:active {
 
 .vibe-wrapper {
   width: 27.31rem;
-  height: 34.13rem;
+  height: 45rem;
   border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .vibe-wrapper h4 {
@@ -262,15 +272,16 @@ option:active {
   font-size: 24px;
   line-height: 30px;
   text-align: left;
+  margin-left: 1rem;
 }
 
 .vibe-container {
-  width: calc((100% / 2) - 3rem);
+  width: calc((100% / 2) - 3.5rem);
   height: 4.38rem;
   border-radius: 4px;
   border: 2px solid var(--black);
   background: var(--gray);
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   font-size: 1.38rem;
   flex-direction: row;
@@ -279,7 +290,6 @@ option:active {
   padding: .5rem .5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 1rem;
 }
 
 .vibe-container:hover {
@@ -294,20 +304,40 @@ option:active {
 
 .time-wrapper {
   width: 27.31rem;
-  height: 9.38rem;
+  height: 10.3rem;
   border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
 }
 
+.time-wrapper h4 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .difficulty-wrapper {
   width: 27.31rem;
-  height: 11.25rem;
+  height: 12.2rem;
   border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
+}
+
+.difficulty-wrapper h4 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .drinking-wrapper {
@@ -319,15 +349,26 @@ option:active {
   margin-top: 2rem;
 }
 
+.drinking-wrapper h4 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .drinking-wrapper input {
   width: 2.5rem;
   height: 2.5rem;
   border: 2px solid var(--black);
   border-radius: 50%;
+  margin-left: 1rem;
 }
 
 .drinking-wrapper input:focus {
-  
+
 }
 
 .family-friendly-wrapper {
@@ -337,6 +378,46 @@ option:active {
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
+}
+
+.family-friendly-wrapper h4 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.search-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 155px;
+  gap: 8px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 27.31rem;
+  height: 3.5rem;
+  background-color: var(--goldensearch);
+  border: 2px solid var(--black);
+  border-radius: 12px;
+  font-family: 'Lexend';
+  font-size: 1.38rem;
+}
+
+.search-button:hover {
+  background-color: var(--searchhover);
+  box-shadow: 2px 2px 0px var(--black);
+}
+
+.search-button:active {
+  border: 2px solid var(--black);
+  background-color: var(--goldensearch);
+  box-shadow: none;
 }
 
 /* END FILTER STYLING */
