@@ -14,6 +14,7 @@
     --purple: #9723C9;
     --magenta: #DE11D7;
     --pink: #FF7EBF;
+    --lightblue: #BFEAF2;
 }
 
 html {
@@ -56,7 +57,10 @@ body {
   color: var(--black);
   text-decoration: none;
   font-size: 1.13rem;
+}
 
+.navbar-links:hover {
+  transform: scale(1.1);
 }
 
 .navbar-search {
@@ -69,9 +73,24 @@ body {
 
 .navbar-search input {
   border: 1px solid var(--black);
+  background-color: var(--softwhite);
   border-radius: 3px;
   height: 3.5rem;
   width: 30.88rem;
+  font-family: 'Lexend';
+  font-size: 1.5rem;
+  padding-left: .5rem;
+}
+
+.navbar-search input:hover {
+  border: 2px solid var(--coral);
+  outline: none;
+}
+
+.navbar-search input:focus {
+  border: 3px solid var(--coral);
+  background-color: var(--white);
+  outline: none;
 }
 
 /* END NAV STYLING */
@@ -119,13 +138,6 @@ body {
   line-height: 35px;
 }
 
-.tools-img {
-  width: 2rem;
-  height: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .filter-wrapper {
   width: 27rem;
   height: 135rem;
@@ -143,7 +155,7 @@ body {
   width: 27.31rem;
   height: 30.63rem;
   margin-left: 3rem;
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
   border-radius: 8px;
 }
 
@@ -173,10 +185,17 @@ body {
   width: 4rem;
   height: 4rem;
   margin: 10px auto;
+  filter: grayscale(100%);
 }
 
 .tools-img:hover {
   transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.tools-img:focus {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 .players-wrapper {
@@ -185,7 +204,7 @@ body {
   margin-left: 3rem;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 8px;
   font-weight: 400;
 }
@@ -201,7 +220,7 @@ body {
     text-align: left;
 }
 
-.players-wrapper select {
+/*.players-wrapper*/ select {
   display: flex;
 flex-direction: row;
 justify-content: center;
@@ -228,7 +247,7 @@ option:active {
 .vibe-wrapper {
   width: 27.31rem;
   height: 34.13rem;
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
@@ -236,37 +255,85 @@ option:active {
 
 .vibe-wrapper h4 {
   width: 25.31rem;
-    height: 3.75rem;
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: left;
+  height: 3.75rem;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .vibe-container {
-  width: 12.13rem;
+  width: calc((100% / 2) - 3rem);
   height: 4.38rem;
   border-radius: 4px;
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
   background: var(--gray);
-  display: flex;
+  display: none;
+  flex-wrap: wrap;
   font-size: 1.38rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: .5rem .5rem;
-  gap: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
 }
 
+.vibe-container:hover {
+  background-color: var(--lightblue);
+  box-shadow: 2px 2px 0px var(--black);
+}
+
+.vibe-container:focus {
+  background-color: var(--turquoise-light);
+  box-shadow: 2px 2px 0px var(--black);
+}
+
 .time-wrapper {
   width: 27.31rem;
   height: 9.38rem;
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.difficulty-wrapper {
+  width: 27.31rem;
+  height: 11.25rem;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.drinking-wrapper {
+  width: 27.31rem;
+  height: 11.25rem;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.drinking-wrapper input {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+}
+
+.drinking-wrapper input:focus {
+  
+}
+
+.family-friendly-wrapper {
+  width: 27.31rem;
+  height: 11.25rem;
+  border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
   margin-top: 2rem;
