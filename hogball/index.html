@@ -999,7 +999,7 @@ teamStatsTables.forEach((table) => {
   ths.forEach((th) => {
     th.addEventListener('click', function() {
       if (th.getAttribute('data-title') === 'Season') {
-        sortOrder = 'asc';
+        sortOrder = 'desc';
       } else {
         sortOrder = th.getAttribute('data-order') === 'desc' ? 'asc' : 'desc';
       }
