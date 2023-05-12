@@ -82,6 +82,7 @@ body {
   font-family: 'Lexend';
   font-size: 1.5rem;
   padding-left: .5rem;
+  background: transparent url("../assets/images/search.png") no-repeat right;
 }
 
 .navbar-search input:hover {
@@ -91,8 +92,22 @@ body {
 
 .navbar-search input:focus {
   border: 3px solid var(--coral);
-  background-color: var(--white);
   outline: none;
+}
+
+.navbar-search button[type="submit"] {
+  position: absolute;
+  height: 2.13rem;
+  width: 1.38rem;
+  position: absolute;
+  right: 29.5rem;
+  top: 5rem;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  border: 1px solid ;
+  border-radius: inherit;
+  cursor: pointer;
 }
 
 /* END NAV STYLING */
@@ -362,10 +377,31 @@ option:active {
 .drinking-wrapper input {
   width: 2.5rem;
   height: 2.5rem;
-  border: 2px solid var(--black);
   border-radius: 50%;
-  margin-left: 1rem;
+  display: inline-flex;
+  justify-content: end;
+
 }
+
+.drinking-wrapper label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 5rem;
+  cursor: pointer;
+  font-family: 'Lexend';
+  font-size: 1.38rem;
+}
+
+.drinking-wrapper input:checked {
+  background-color: var(--coral);
+  color: var(--coral);
+  border: 1px solid var(--coral);
+}
+
 
 .drinking-wrapper input:focus {
 
@@ -438,8 +474,8 @@ option:active {
   .card {
     box-sizing: border-box;
     display: none;
-    width: 210px;
-    height: 430px;
+    width: 13.13rem;
+    height: 26.88rem;
     justify-content: space-around;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -447,18 +483,28 @@ option:active {
   }
 
   .card_title {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    height: 40px;
-    border: 1px solid red;
+    display: inline-flex;
+    justify-content: start;
+    align-items: end;
+    font-family: 'Lexend';
+    font-size: 1.75rem;
+    font-weight: 600;
+    height: 4rem;
+    width: 12.13rem;
+  }
+
+  .card_title h5 {
+    font-size: 1.75rem;
   }
 
   .card-description {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
-    margin-top: 4rem;
+    font-family: 'Lexend';
+    font-size: .75rem;
+    line-height: 15px;
+    margin-top: 2.5rem;
     border: 1px solid red;
   }
 
