@@ -3,6 +3,7 @@
     --softwhite: #fcfcfc;
     --black: #000000;
     --gray: #E9ECED;
+    --darkgray: #6C6C6C;
     --coral: #FF7F5A;
     --turquoise: #69D3E8;
     --lavender: #A379C9;
@@ -557,6 +558,7 @@ option:active {
 
   .card_title h5 {
     font-size: 1.75rem;
+    margin-top: .5rem;
   }
 
   .card-description {
@@ -565,18 +567,26 @@ option:active {
     font-family: 'Lexend';
     font-size: .75rem;
     line-height: 15px;
-    margin-top: 2.5rem;
-
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 95%;
   }
 
   .card-images {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     /* border: 1px sold red; */
     width: auto;
     padding: .5rem;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card-images img {
@@ -591,17 +601,29 @@ option:active {
     font-size: .75rem;
     display: inline-flex;
     text-align: center;
+    color: var(--darkgray);
+  }
+
+  .card-filter-icons {
+    display: block;
+  }
+
+  .card-filter-text {
+    display: block;
+    text-align: center;
+    font-family: 'Lexend';
+    font-size: .75rem;
   }
 
   .card-filter-icons img {
-    width: 1rem;
-    height: 1rem;
+    width: 1.38rem;
+    height: 1.38rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
   .card-filter-text {
-    font-size: 12px;
+    font-size: .88rem;
 
   }
 
