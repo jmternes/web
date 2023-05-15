@@ -536,26 +536,26 @@ option:active {
 
   .card {
     box-sizing: border-box;
-    display: flex;
+    display: block;
     flex-grow: 1;
-  flex-basis: calc(25% - 1rem); /* Adjust the width and margin according to your needs */
-  margin: 10px;
-  max-width: 200px;
+    flex-basis: calc(25% - 1rem);
+    margin: 10px;
+    max-width: 200px;
     width: 13.13rem;
     height: 26.88rem;
-    justify-content: space-around;
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 8px;
   }
 
   .card_title {
-display: flex;
-    justify-content: end;
+    display: flex;
+    justify-content: ;
     align-items: start;
     font-family: 'Lexend';
     font-size: 1.75rem;
     font-weight: 600;
+    border: 1px solid blue;
   }
 
   .card_title h5 {
@@ -563,8 +563,7 @@ display: flex;
   }
 
   .card-description {
-    display: flex;
-    justify-content: start;
+    width: 100%;
     text-align: center;
     font-family: 'Lexend';
     font-size: .75rem;
@@ -575,9 +574,26 @@ display: flex;
 
   .card-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: 1px sold red;
+    width: fit-content;
+    height: 5.88rem;
+    padding: .5rem;
+    margin-top: 5rem;
+  }
+
+  .card-images img {
+    display: flex;
+    max-width: 94px;
+  }
+
+  .card-images p {
+    font-family: 'Lexend';
+    font-size: .75rem;
+    display: inline-flex;
+    text-align: center;
   }
 
   .card-filter-icons img {
