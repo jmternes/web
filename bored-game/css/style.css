@@ -531,7 +531,6 @@ option:active {
     position: absolute;
     top: 56.6rem;
     left: 29%;
-    border: 1px solid red;
   }
 
   .card {
@@ -540,8 +539,7 @@ option:active {
     flex-grow: 1;
     flex-basis: calc(25% - 1rem);
     margin: 10px;
-    max-width: 200px;
-    width: 13.13rem;
+    max-width: 15rem;
     height: 26.88rem;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -549,13 +547,12 @@ option:active {
   }
 
   .card_title {
-    display: flex;
-    justify-content: ;
-    align-items: start;
+    position: relative;
+    height: 4rem;
     font-family: 'Lexend';
     font-size: 1.75rem;
     font-weight: 600;
-    border: 1px solid blue;
+    margin-left: .5rem;
   }
 
   .card_title h5 {
@@ -569,24 +566,24 @@ option:active {
     font-size: .75rem;
     line-height: 15px;
     margin-top: 2.5rem;
-    border: 1px solid red;
+
   }
 
   .card-images {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 1px sold red;
-    width: fit-content;
-    height: 5.88rem;
+    /* border: 1px sold red; */
+    width: auto;
     padding: .5rem;
-    margin-top: 5rem;
   }
 
   .card-images img {
-    display: flex;
     max-width: 94px;
+    width: 94px;
+    height: 94px;
+    /* border: 1px solid red; */
   }
 
   .card-images p {
