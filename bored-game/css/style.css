@@ -523,17 +523,24 @@ option:active {
 
 .cards-list {
   display: flex;
-    z-index: 0;
-    width: 100%;
+    height: 80rem;
+    width: 68%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 10rem;
+    position: absolute;
+    top: 56.6rem;
+    left: 29%;
+    border: 1px solid red;
   }
 
   .card {
     box-sizing: border-box;
-    display: none;
+    display: flex;
+    flex-grow: 1;
+  flex-basis: calc(25% - 1rem); /* Adjust the width and margin according to your needs */
+  margin: 10px;
+  max-width: 200px;
     width: 13.13rem;
     height: 26.88rem;
     justify-content: space-around;
@@ -543,14 +550,12 @@ option:active {
   }
 
   .card_title {
-    display: inline-flex;
-    justify-content: start;
-    align-items: end;
+display: flex;
+    justify-content: end;
+    align-items: start;
     font-family: 'Lexend';
     font-size: 1.75rem;
     font-weight: 600;
-    height: 4rem;
-    width: 12.13rem;
   }
 
   .card_title h5 {
@@ -588,9 +593,7 @@ option:active {
   }
 
   .card:hover {
-    transform: scale(0.99, 0.99);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1),
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
+    box-shadow: 2px 2px 0px var(--black);
   }
 
   .title-white {
@@ -682,5 +685,5 @@ option:active {
 }
 
 .game-details li {
-  
+
 }
