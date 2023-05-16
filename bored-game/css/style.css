@@ -525,13 +525,14 @@ option:active {
 .cards-list {
   display: flex;
     height: 80rem;
-    width: 68%;
+    max-width: 60.5rem;
+    width: 58rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     position: absolute;
-    top: 56.6rem;
-    left: 29%;
+    top: 57.74rem;
+    left: 31rem;
   }
 
   .card {
@@ -540,7 +541,7 @@ option:active {
     flex-grow: 1;
     flex-basis: calc(25% - 1rem);
     margin: 10px;
-    max-width: 15rem;
+    max-width: 13.13rem;
     height: 26.88rem;
     background: #FFFFFF;
     border: 2px solid #000000;
