@@ -29,6 +29,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--gray);
+    min-height: 100vh;
 }
 
 /* NAV STYLING */
@@ -463,10 +464,6 @@ option:active {
 }
 
 
-.drinking-wrapper input:focus {
-
-}
-
 .family-friendly-wrapper {
   width: 27.31rem;
   height: 11.25rem;
@@ -594,6 +591,7 @@ option:active {
     max-width: 94px;
     width: 94px;
     height: 94px;
+    margin: 0;
     /* border: 1px solid red; */
   }
 
@@ -649,10 +647,21 @@ option:active {
 
   footer {
     height: 44px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin-top: 0;
+      padding: 1rem;
+      color: var(--black);
+      text-align: center;
+  }
 
+  footer a {
+    color: var(--black);
+    text-decoration: none;
   }
 
 
