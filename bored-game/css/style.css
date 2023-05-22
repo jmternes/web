@@ -776,11 +776,15 @@ option:active {
 }
 
 .game-vibes {
-
+  
 }
 
 .vibes-header {
   font-size: 3.13rem;
+}
+
+.pills-container {
+  display: inline-block;
 }
 
 .game-vibe-pills {
