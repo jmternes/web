@@ -583,7 +583,7 @@ option:active {
 
   .image-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -604,7 +604,8 @@ option:active {
   }
 
   .card-filter-icons {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .card-filter-text {
