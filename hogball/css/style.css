@@ -49,19 +49,15 @@ section {
     transition: .2s;
 }
 
-/*each container is full-screen */
-
-
 #homecontainer, #rostercontainer {
     height: 100vh;
     width: 100%;
-    /* width: 100vw; */
     margin: 0;
     padding: 0;
     margin-top: 0;
 }
 
-/*HOME CONTAINER STYLING*/
+/* Home Section Styling */
 
 .homecontainer {
     background: linear-gradient(180deg, #9D2235 30%, #121212);
@@ -90,7 +86,12 @@ section {
     height: 100%;
 }
 
-/*ROSTER CONTAINER STYLING*/
+/* End Home Section Styling */
+
+/* ----------------------------------------- */
+
+
+/* Roster Section Styling */
 
 #rostercontainer {
     background: linear-gradient(180deg, #121212 30%, #f2f2f4);
@@ -165,7 +166,13 @@ section {
 
 }
 
-/*HISTORY CONTAINER STYLING */
+/* End Roster Section Styling */
+
+
+/* ----------------------------------------- */
+
+
+/* History Section Styling */
 
 #historycontainer {
     background: linear-gradient(180deg, #f2f2f4 30%, #9d2235);
@@ -208,9 +215,11 @@ section {
 }
 
 
-/*fix the script to make image track functional*/
+/* End History Section Styling*/
 
-/* TEAM STATS STYLING */
+/* ----------------------------------------- */
+
+/* Team Stats Styling */
 
 .team-stats-container {
     background: var(--red);
@@ -250,9 +259,11 @@ section {
     color: var(--white);
 }
 
-/* END TEAM STATS STYLING */
+/* End Team Stats Styling */
 
-/* INDIVIDUAL PLAYER PAGES STYLING */
+/* ----------------------------------------- */
+
+/* Individual Stats Styling */
 
 .red-to-black {
     background: linear-gradient(180deg, #9d2235 60%, #121212);
@@ -303,27 +314,7 @@ section {
     margin-bottom: 1rem;
 }
 
-/* If Video --- Video Styling
-
-.video-container {
-    position: relative;
-    top: 60%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 50%;
-    height: fit-content;
-    padding-bottom: 56.25%;
-    border: 1px solid white;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-}
-
-*/
-
-/* If image --- Player Image Styling*/
+/* Player Image Styling */
 
 .player-img {
     position: absolute;
@@ -391,6 +382,12 @@ table {
 
   }
 
+  /* End Player Stats Styling */
+
+  /* ---------------------------- */
+
+  /* Mobile Image Track Styling */
+
   @media (max-width: 1650px) {
     #image-track {
         display: block;
@@ -406,9 +403,9 @@ table {
 }
 
 
-  /* END MOBILE IMAGE TRACK STYLING */
+  /* End Mobile Image Track Styling */
 
-  /* MOBILE PLAYERCARD STYLING */
+  /* Mobile Playercard Styling */
 
   @media (max-width: 1350px) {
     .playercards-container {
@@ -432,11 +429,16 @@ table {
       } /* FIX THIS */
   }
 
-  /* ------ GENERAL MOBILE STYLING ------ */
+  /* End Mobile Playercard Styling */
+
+  /* ------------------------------------------- */
+
+
+  /* ------ General Mobile Styling ------ */
 
   @media (max-width: 780px) {
 
-    /* MOBILE NAVBAR */
+    /* Navbar */
 
     .navbar {
         display: flex;
@@ -456,9 +458,9 @@ table {
         margin: 10px 0;
       }
 
-      /* END MOBILE NAVBAR */
+      /* End Navbar */
 
-    /* MOBILE HOME :D */
+    /* Mobile Home :D */
 
     .homecontainer {
         display: flex;
@@ -481,9 +483,9 @@ table {
         transform: translate(-50%, 50%);
     }
 
-    /* END MOBILE HOME D: */
+    /* End Mobile Home D: */
 
-    /* MOBILE PLAYERS SECTION */
+    /* Mobile Players Section */
 
     .roster-header {
         font-size: 400%;
@@ -511,7 +513,10 @@ table {
         width: fit-content;
       }
 
-    /* END MOBILE PLAYERS SECTION */
+    /* End Mobile Players Section */
+
+  /* ------------------------------------------------ */
+
 
     /* MOBILE HISTORY SECTION */
 
@@ -522,6 +527,9 @@ table {
     }
 
     /* END MOBILE HISTORY SECTION */
+
+  /* ------------------------------------------------ */
+
 
     /* MOBILE TABLE STYLING */
 
