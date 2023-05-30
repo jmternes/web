@@ -825,3 +825,38 @@ option:active {
   margin-top: 3.75rem;
   margin-left: 11rem;
 }
+
+
+/*** DIRECTORY PAGE STYLING ***/
+
+.sortby {
+
+}
+
+.advanced-search {
+
+}
+
+.directory-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+.directory-card {
+  box-sizing: border-box;
+    display: block;
+    flex-grow: 1;
+    flex-basis: calc(25% - 1rem);
+    margin: 10px;
+    max-width: 13.13rem;
+    height: 26.88rem;
+    background: #FFFFFF;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+}
