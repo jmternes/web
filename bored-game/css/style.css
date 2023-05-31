@@ -22,6 +22,9 @@
 
 html {
   font-family: 'Lexend';
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -30,6 +33,7 @@ body {
     padding: 0;
     background-color: var(--gray);
     min-height: 100vh;
+    height: 100%;
 }
 
 /* NAV STYLING */
@@ -401,6 +405,8 @@ option:active {
   margin-left: 1rem;
 }
 
+
+
 .radio {
   display: inline-flex;
   align-items: center;
@@ -439,14 +445,6 @@ option:active {
   transform: scale(1);
 }
 
-.drinking-wrapper input {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: end;
-
-}
 
 .drinking-wrapper label {
   display: inline-flex;
@@ -531,16 +529,17 @@ option:active {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    position: absolute;
-    top: 57.74rem;
-    left: 31rem;
+    position: relative;
+    margin-left: 35rem;
+    margin-top: -100rem;
   }
 
   .card {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    flex-basis: calc(25% - 1rem);
+    flex-basis: calc(25% - 3rem);
     margin: 10px;
     max-width: 13.13rem;
     height: 26.88rem;
@@ -650,7 +649,7 @@ option:active {
     }
   }
 
-  footer {
+  #footer {
     height: 44px;
     display: flex;
     justify-content: space-around;
@@ -658,10 +657,8 @@ option:active {
       left: 0;
       right: 0;
       width: 100%;
-      margin-top: 0;
-      padding: 1rem;
       color: var(--black);
-      text-align: center;
+    position: absolute;
   }
 
   footer a {
