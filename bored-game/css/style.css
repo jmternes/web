@@ -826,6 +826,19 @@ option:active {
 
 /*** DIRECTORY PAGE STYLING ***/
 
+.sort-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  list-style-type: none;
+  text-align: center;
+  font-weight: 600;
+}
+
 .sortby {
 
 }
