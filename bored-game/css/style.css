@@ -631,6 +631,7 @@ option:active {
   .card-filter-icons {
     display: flex;
     flex-direction: column;
+
     /* border: 1px solid red; */
   }
 
@@ -641,11 +642,15 @@ option:active {
   }
 
   .card-filter-text {
-    justify-content: space-between;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     font-family: 'Lexend';
     font-size: .5rem;
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
+  }
+
+  .card-filter-text p {
+    font-size: .839rem;
   }
 
   .card-filter-icons img {
@@ -654,11 +659,6 @@ option:active {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
-  }
-
-  .card-filter-text {
-    font-size: .88rem;
-
   }
 
   .card:hover {
@@ -914,7 +914,7 @@ option:active {
   margin-right: 3rem;
   list-style-type: none;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .directory-card {
