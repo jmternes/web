@@ -906,6 +906,7 @@ option:active {
 
 .directory-card-wrapper {
   display: flex;
+  min-height: 100vh;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 2rem;
@@ -913,7 +914,7 @@ option:active {
   margin-right: 3rem;
   list-style-type: none;
   text-align: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .directory-card {
