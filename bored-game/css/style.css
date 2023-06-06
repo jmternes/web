@@ -69,7 +69,7 @@ body {
 }
 
 .navbar-links:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: var(--coral);
   border-bottom: 2px solid var(--black);
 }
@@ -727,6 +727,10 @@ option:active {
   footer a {
     color: var(--black);
     text-decoration: none;
+  }
+
+  footer a:hover {
+    transform: scale(1.05);
   }
 
 
