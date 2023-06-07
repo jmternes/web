@@ -37,7 +37,7 @@ body {
     height: 100%;
 }
 
-/* NAV STYLING */
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -125,11 +125,11 @@ body {
   cursor: pointer;
 }
 
-/* END NAV STYLING */
+/* End Navbar */
 
-/* ----------------HOME PAGE STYLING ------------- */
+/* ---------------- HOME PAGE STYLING ------------- */
 
-/* HEADER STYLING */
+/* Header */
 
 .home-header {
     display: flex;
@@ -160,7 +160,9 @@ body {
   font-family: 'Lexend', sans-serif;
 }
 
-/* FILTER STYLING */
+/* End Header */
+
+/* Filter Section - Left Side */
 
 .search-header {
   padding-top: 2.5rem;
@@ -406,8 +408,6 @@ option:active {
   margin-left: 1rem;
 }
 
-
-
 .radio {
   display: inline-flex;
   align-items: center;
@@ -518,10 +518,10 @@ option:active {
   box-shadow: none;
 }
 
-/* END FILTER STYLING */
+/* End Filter Section */
 
 
-/* RESULTS STYLING */
+/* Results - Cards */
 
 .cards-list {
   display: flex;
@@ -665,6 +665,8 @@ option:active {
     box-shadow: 2px 2px 0px var(--black);
   }
 
+  /* End Results Cards */
+
   .reset-button {
     display: flex;
     flex-direction: row;
@@ -704,12 +706,18 @@ option:active {
     color: var(--black);
   }
 
+  /* Responsive Cards */
+
   @media all and (max-width: 500px) {
     .card-list {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
     }
   }
+
+  /* End Responsive Cards */
+
+  /* Footer */
 
   #footer {
     height: 44px;
@@ -733,6 +741,8 @@ option:active {
     transform: scale(1.05);
   }
 
+  /* End Footer */
+
 
   /*
   .card {
@@ -750,11 +760,10 @@ option:active {
   }
   */
 
-/* END RESULTS STYLING */
-
 /* -------- END HOME PAGE STYLING -------- */
 
-/* ABOUT PAGE STYLING */
+/* ------- About Page --------- */
+
 
 .about-container {
     border: 1px solid black;
@@ -768,9 +777,9 @@ option:active {
     color: blue;
 }
 
-/* END ABOUT PAGE STYLING */
+/* ------ End About Page ------ */
 
-/* DIRECTORY PAGE STYLING */
+/* ------ Directory Page ------ */
 
 .directory-container {
     border: 1px solid black;
@@ -780,8 +789,13 @@ option:active {
     margin-top: 5rem;
 }
 
-/* INDIVIDUAL GAME PAGE STYLING */
+/* ------- End Directory Page ------ */
 
+/* --------------------------------- */
+
+/* ----- Individual Game Page ----- */
+
+/* Hero Section */
 
 .game-main {
   width: 100%;
@@ -840,9 +854,9 @@ option:active {
   height: 1.38rem;
 }
 
-.game-details li {
+/* End Hero Section */
 
-}
+/* Requirements and Vibes Section - Next Row of Content */
 
 .requirements-vibes-wrapper {
   display: flex;
@@ -902,10 +916,12 @@ option:active {
   border-radius: 8px;
 }
 
+/* End Requirements and Vibes Section */
+
+/* Rules Section */
 
 .rules-wrapper {
   display: flex;
-
   gap: 5rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -940,8 +956,12 @@ option:active {
   width: 80%;
 }
 
+/* End Rules Section */
 
-/*** DIRECTORY PAGE STYLING ***/
+/* ------- End Individual Page ------- */
+
+
+/* ------- Directory Page ------- */
 
 .sort-wrapper {
   display: flex;
@@ -955,8 +975,6 @@ option:active {
   text-align: center;
   font-weight: 600;
 }
-
-
 
 .directory-card-wrapper {
   display: flex;
@@ -983,3 +1001,5 @@ option:active {
     border: 2px solid var(--black);
     border-radius: 8px;
 }
+
+/* ------ End Directory Page ------ */
