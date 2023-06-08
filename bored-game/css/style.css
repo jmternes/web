@@ -176,11 +176,11 @@ body {
 .filter-wrapper {
   width: 27rem;
   height: 135rem;
-
+  /* border: 1px solid red; */
 }
 
 .filter-container {
-    border: 1px solid black;
+    border: 1px solid var(--black);
 }
 
 .tools-wrapper {
@@ -532,9 +532,8 @@ option:active {
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    margin-left: 35rem;
-    margin-top: -100rem;
-    /* border: 1px solid red; */
+    margin-left: 31rem;
+    border: 1px solid red;
   }
 
   .card {
@@ -568,7 +567,7 @@ option:active {
 
   .card-description {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: 'Lexend';
     font-size: .75rem;
     line-height: 15px;
@@ -972,7 +971,7 @@ option:active {
   margin-top: 2rem;
   margin-bottom: 2rem;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 
@@ -985,7 +984,7 @@ option:active {
   margin-left: 3rem;
   margin-right: 3rem;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   /* border: 1px solid red; */
 }
 
