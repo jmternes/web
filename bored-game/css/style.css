@@ -526,16 +526,18 @@ option:active {
 /* Results - Cards */
 
 .cards-list {
-  display: flex;
     height: 150rem;
     max-width: 80rem;
-    width: 80-rem;
+    width: 80rem;
+    position: absolute;
+    top: 56rem;
+    right: 4rem;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    position: relative;
     margin-left: 31rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .card {
