@@ -434,6 +434,11 @@ option:active {
   padding: 2px;
 }
 
+.radio__radio:hover {
+  background: var(--turquoise-light);
+  
+}
+
 .radio__radio:after {
   content: "";
   width: 100%;
@@ -446,6 +451,7 @@ option:active {
 
 .radio__input:checked + .radio__radio:after {
   transform: scale(1);
+  background: radial-gradient(#69D3E8, #478e9d);
 }
 
 
@@ -528,23 +534,24 @@ option:active {
 .cards-list {
     height: 150rem;
     max-width: 80rem;
-    width: 80rem;
+    width: 52rem;
     position: absolute;
-    top: 56rem;
+    top: 58rem;
     right: 4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-left: 31rem;
-    /* border: 1px solid red; */
+    border: 1px solid red;
   }
 
   .card {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-basis: calc(25% - 3rem);
     margin: 10px;
     max-width: 13.13rem;
