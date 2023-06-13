@@ -449,6 +449,11 @@ option:active {
   transform: scale(0);
 }
 
+input[type=radio]:checked {
+  background: var(--black);
+  border: 5px solid var(--turquoise);
+}
+
 .radio__input:checked + .radio__radio:after {
   transform: scale(1);
   background: radial-gradient(#69D3E8, #478e9d);
@@ -988,7 +993,7 @@ option:active {
 .sort-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 2rem;
@@ -1002,7 +1007,7 @@ option:active {
   display: flex;
   min-height: 100vh;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
