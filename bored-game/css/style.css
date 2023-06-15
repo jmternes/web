@@ -436,7 +436,7 @@ option:active {
 
 .radio__radio:hover {
   background: var(--turquoise-light);
-  
+
 }
 
 .radio__radio:after {
@@ -945,6 +945,7 @@ input[type=radio]:checked {
   gap: 28rem;
   margin-left: 20rem;
   width: 70%;
+  margin-bottom: 10rem;
 }
 
 .rules-header {
