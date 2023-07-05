@@ -46,18 +46,18 @@
 
     <div class="tools-wrapper">
       <h4>What tools do you have on hand?</h4>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/cards.png" alt=""><p>Deck of Cards</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/dice.png" alt=""><p>Dice</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/dominoes.png" alt=""><p>Dominoes</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/coin.png" alt=""><p>Coins</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/marbles.png" alt=""><p>Marbles</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/paper.png" alt=""><p>Pen & Paper</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/pingpong.png" alt=""><p>Ping Pong Balls</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/cup.png" alt=""><p>Solo Cups</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/spoon.png" alt=""><p>Spoons</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/table.png" alt=""><p>Tabletop</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/notool.png" alt=""><p>No Tools</p> </div>
-        <div class="tools-container"><img class="tools-img" src="../bored-game/assets/images/othertool.png" alt=""><p>Other</p> </div>
+        <div id="tools-cards" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/cards.png" alt=""><p>Deck of Cards</p> </div>
+        <div id="tools-dice" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/dice.png" alt=""><p>Dice</p> </div>
+        <div id="tools-dominoes" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/dominoes.png" alt=""><p>Dominoes</p> </div>
+        <div id="tools-coins" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/coin.png" alt=""><p>Coins</p> </div>
+        <div id="tools-marbles" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/marbles.png" alt=""><p>Marbles</p> </div>
+        <div id="tools-paper" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/paper.png" alt=""><p>Pen & Paper</p> </div>
+        <div id="tools-balls" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/pingpong.png" alt=""><p>Ping Pong Balls</p> </div>
+        <div id="tools-cups" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/cup.png" alt=""><p>Solo Cups</p> </div>
+        <div id="tools-spoons" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/spoon.png" alt=""><p>Spoons</p> </div>
+        <div id="tools-table" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/table.png" alt=""><p>Tabletop</p> </div>
+        <div id="tools-false" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/notool.png" alt=""><p>No Tools</p> </div>
+        <div id="tools-other" class="tools-container"><img class="tools-img" src="../bored-game/assets/images/othertool.png" alt=""><p>Other</p> </div>
     </div>
 
     <div class="players-wrapper">
@@ -79,16 +79,16 @@
 
     <div class="vibe-wrapper">
       <h4>What is the vibe of your game group?</h4>
-      <div class="vibe-container" onclick="">Competitive</div>
-      <div class="vibe-container">Collaborative</div>
-      <div class="vibe-container">High-Energy</div>
-      <div class="vibe-container">Chill</div>
-      <div class="vibe-container">Playful</div>
-      <div class="vibe-container">Serious</div>
-      <div class="vibe-container">Free-Flowing</div>
-      <div class="vibe-container">Rule-Abiding</div>
-      <div class="vibe-container">Loud</div>
-      <div class="vibe-container">Quiet</div>
+      <div id="vibe-competitive" class="vibe-container" onclick="">Competitive</div>
+      <div  class="vibe-container">Collaborative</div>
+      <div id="vibe-highenergy" class="vibe-container">High-Energy</div>
+      <div id="vibe-chill" class="vibe-container">Chill</div>
+      <div id="vibe-playful" class="vibe-container">Playful</div>
+      <div id="vibe-serious" class="vibe-container">Serious</div>
+      <div id="vibe-freeflowing" class="vibe-container">Free-Flowing</div>
+      <div id="vibe-ruleabiding" class="vibe-container">Rule-Abiding</div>
+      <div id="vibe-loud" class="vibe-container">Loud</div>
+      <div id="vibe-quiet" class="vibe-container">Quiet</div>
     </div>
 
     <div class="time-wrapper">
@@ -119,12 +119,12 @@
       <h4>Include Drinking Games?</h4>
 
       <label for="Yes" class="radio">
-        <input type="radio" name="myRadioField" id="radioID" class="radio__input">
+        <input type="radio" name="myRadioField" id="drinkingradioIDyes" class="radio__input">
         <div class="radio__radio"></div>
         Yes
       </label>
       <label for="No" class="radio">
-        <input type="radio" name="myRadioField" id="radioID" class="radio__input">
+        <input type="radio" name="myRadioField" id="drinkingradioIDno" class="radio__input">
         <div class="radio__radio"></div>
         No
       </label>
@@ -134,12 +134,12 @@
       <h4>Only show family-friendly games?</h4>
 
       <label for="Yes" class="radio">
-        <input type="radio" name="myRadioField" id="radioID" class="radio__input">
+        <input type="radio" name="myRadioField" id="familyradioIDyes" class="radio__input">
         <div class="radio__radio"></div>
         Yes
       </label>
       <label for="No" class="radio">
-        <input type="radio" name="myRadioField" id="radioID" class="radio__input">
+        <input type="radio" name="myRadioField" id="familyradioIDno" class="radio__input">
         <div class="radio__radio"></div>
         No
       </label>
