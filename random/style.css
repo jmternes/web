@@ -1,0 +1,62 @@
+:root {
+  --white: #ffffff;
+  --blue: #17408b;
+  --red: #c9082a;
+}
+
+@font-face {
+  font-family: graduate;
+  src: url('font/Graduate-Regular.ttf') format(opentype);
+}
+
+body {
+  font-family: 'coluna', sans-serif;
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+}
+
+#image-container {
+    width: 300px;
+    height: 300px; 
+    margin: 5rem auto 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #random-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #generate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background: rgb(15, 15, 205);
+    color: var(--white);
+    font-family: graduate;
+    font-size: 40;
+    border: 5px solid #e80a33;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+  }
+  
+  #generate-button:hover {
+    background-color: var(--blue);
+    border: 7px solid var(--red);
+  }
+
+  #generate-button:active {
+    background-color: rgb(15, 15, 205);
+    border: 7px solid #e80a33;
+  }
