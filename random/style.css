@@ -11,6 +11,7 @@
 
 body {
   font-family: 'coluna', sans-serif;
+  background-color: white;
 }
 
 .image-wrapper {
@@ -21,18 +22,18 @@ body {
 
 #image-container {
     width: 300px;
-    height: 300px; 
+    height: 300px;
     margin: 5rem auto 5rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   #random-image {
     max-width: 100%;
     max-height: 100%;
   }
-  
+
   #generate-button {
     display: flex;
     justify-content: center;
@@ -50,7 +51,7 @@ body {
     height: 125px;
     width: 125px;
   }
-  
+
   #generate-button:hover {
     background-color: var(--blue);
     border: 7px solid var(--red);

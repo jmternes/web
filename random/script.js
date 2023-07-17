@@ -31,13 +31,15 @@ var imageUrls = [
     "https://1000logos.net/wp-content/uploads/2018/05/Utah_Jazz_Logo.png",
     "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/640px-Washington_Wizards_logo.svg.png"
   ];
-  
+
   function generateImage() {
-    // Get a random image URL from the array
-    var randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-  
-    // Update the image source
+
+    // Get a random URL from an array
+
+    var randomTeam = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+
+    // Image source
+
     var randomImage = document.getElementById("random-image");
-    randomImage.src = randomImageUrl;
+    randomImage.src = randomTeam;
   }
-  
