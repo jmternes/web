@@ -37,6 +37,45 @@ body {
     height: 100%;
 }
 
+/* Responsive - mobile */
+
+@media screen and (max-width: 480px){
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .home-subheader {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .search-header {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tools-wrapper {
+    width: 95%;
+    height: 100%;
+  }
+
+
+}
+
 /* Navbar */
 
 .navbar {
