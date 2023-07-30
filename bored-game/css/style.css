@@ -37,12 +37,23 @@ body {
     height: 100%;
 }
 
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+      body {
+        background-color: black;
+      }
+
+    }
+
 /* Responsive - mobile */
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
 
-  h1 {
-    font-size: 2rem;
+  .home-header {
+    font-size: 8px;
   }
 
   .home-subheader {
@@ -53,7 +64,7 @@ body {
   }
 
   .navbar {
-    display: none;
+    display: hidden;
   }
 
   .search-header {
