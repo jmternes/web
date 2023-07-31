@@ -3,6 +3,7 @@
     --softwhite: #fcfcfc;
     --black: #000000;
     --gray: #E9ECED;
+    --mobilegray: #3F3F3F;
     --darkgray: #6C6C6C;
     --lightcoral: #FDA38A;
     --coral: #FF7F5A;
@@ -36,35 +37,68 @@ body {
     min-height: 100vh;
     height: 100%;
 }
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) { 
+/*
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {
 
       body {
         background-color: black;
       }
 
     }
+    */
 
 /* Responsive - mobile */
 
-@media (max-width: 480px){
+@media (max-width: 500px){
 
-  .home-header {
-    font-size: 8px;
+
+  h1.home-header {
+    font-size: 2rem;
+    font-weight: 900;
+
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
   }
 
-  .home-subheader {
-    font-size: 1.25rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+  h3.home-subheader {
+    font-size: 1.13rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--mobilegray);
+    /* border: 1px solid red; */
   }
 
-  .navbar {
-    display: hidden;
+  h3.search-header {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10rem;
+    /* border: 1px solid red; */
+  }
+
+  nav.navbar {
+    width: 100%;
+    height: 134px;
+  }
+
+  div.navbar-logo {
+    content: url('../assets/images/mobile-logo.png');
+    width: 100px;
+    height: 100px;
+  }
+
+  div.navbar-search {
+    display: none;
+  }
+
+  div.navbar-links {
+    margin-right: 3rem;
+    font-size: .75rem;
   }
 
   .search-header {
@@ -74,16 +108,32 @@ body {
     margin-bottom: 2rem;
   }
 
-  .filter-wrapper {
-    width: 100%;
+  div.filter-wrapper {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    align-items: center;
   }
 
-  .tools-wrapper {
-    width: 95%;
+  div.tools-wrapper {
+    width: 90%;
     height: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
+  div.tools-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  div.tools-container {
+    width: 33.3%;
+  }
+
+
+  div.cards-list {
+    display: none;
+  }
 
 }
 
