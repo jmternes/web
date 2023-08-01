@@ -222,6 +222,43 @@ body {
 
 }
 
+/* TABLET */
+
+@media (min-width: 500px) and (max-width: 1280px) {
+
+  div.navbar-search {
+    display: none;
+  }
+
+  h1.home-header {
+    font-size: 3.13rem;
+    font-weight: 900;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+
+  h3.home-subheader {
+    font-size: 1.38rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: var(--mobilegray);
+  }
+
+  h3.search-header {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  div.cards-list {
+    display: none;
+  }
+
+}
+
 /* Navbar */
 
 .navbar {
