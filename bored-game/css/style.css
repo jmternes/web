@@ -112,14 +112,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 90%;
     align-items: center;
   }
 
   div.tools-wrapper {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 3rem;
   }
 
   div.tools-wrapper h4 {
@@ -128,6 +128,45 @@ body {
 
   div.tools-container {
     width: 33.3%;
+  }
+
+  div.players-wrapper {
+      width: 100%;
+  }
+
+  div.players-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  div.players-wrapper select {
+    width: 90%;
+  }
+
+  div.vibe-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  div.vibe-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  div.vibe-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin: .75rem;
+    font-size: 1.05rem;
+  }
+
+  div.time-wrapper {
+    /*Tuesday*/  
+  }
+
+ 
+  select {
+    margin: 1rem;
   }
 
 
