@@ -74,10 +74,11 @@ body {
   }
 
   h3.search-header {
-    font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10rem;
+   position: absolute;
+   top: 75%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 20px;
     /* border: 1px solid red; */
   }
 
@@ -161,16 +162,61 @@ body {
   }
 
   div.time-wrapper {
-    /*Tuesday*/  
+    /*Tuesday*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
- 
+  div.time-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  div.time-wrapper select {
+    width: 90%;
+  }
+
+  div.difficulty-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  div.difficulty-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  div.difficulty-wrapper select {
+    width: 90%;
+  }
+
+  div.family-friendly-wrapper {
+    width: 100%;
+
+  }
+
+  div.family-friendly-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+
   select {
     margin: 1rem;
   }
 
+  button.search-button {
+    width: 100%;
+
+  }
+
 
   div.cards-list {
+    display: none;
+  }
+
+  div.footer-section {
     display: none;
   }
 
