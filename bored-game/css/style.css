@@ -246,6 +246,9 @@ body {
 
   h3.search-header {
     font-size: 1.75rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   div.filter-wrapper {
@@ -264,7 +267,13 @@ body {
     font-size: 1.25rem;
   }
 
-  /* mon 8/7 */
+  div.time-wrapper, div.difficulty-wrapper {
+    padding-bottom: 1rem;
+  }
+
+
+
+  /* tue 8/8 search header and footer fixes, then done */
 
 
   div.cards-list {
