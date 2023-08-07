@@ -192,7 +192,7 @@ body {
 
   div.family-friendly-wrapper {
     width: 100%;
-
+    padding-bottom: 1rem;
   }
 
   div.family-friendly-wrapper h4 {
@@ -271,6 +271,19 @@ body {
     padding-bottom: 1rem;
   }
 
+
+
+  div.family-friendly-wrapper {
+    padding-bottom: 1rem;
+  }
+
+  div.footer-section {
+    display: none;
+  }
+
+  button.search-button {
+    margin-bottom: 1rem;
+  }
 
 
   /* tue 8/8 search header and footer fixes, then done */
