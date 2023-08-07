@@ -74,11 +74,10 @@ body {
   }
 
   h3.search-header {
-   position: absolute;
-   top: 75%;
-   margin-left: auto;
-   margin-right: auto;
-   font-size: 20px;
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     /* border: 1px solid red; */
   }
 
@@ -162,7 +161,6 @@ body {
   }
 
   div.time-wrapper {
-    /*Tuesday*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,9 +246,25 @@ body {
 
   h3.search-header {
     font-size: 1.75rem;
-    display: flex;
-    justify-content: center;
   }
+
+  div.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+  }
+
+  div.vibe-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: .75rem auto;
+    font-size: 1.25rem;
+  }
+
+  /* mon 8/7 */
 
 
   div.cards-list {
