@@ -28,7 +28,7 @@ const flipCup = new Game("Flip Cup", 4, 8, "Red solo cups", 10, "Easy", true, "I
 
 
 //Array of game objects
-const games = [rummy500, blackjack, hearts, bridge, solitaire, yahtzee, boxes, slam, mastermind, tictactoe, nim, cheat];
+const games = [rummy500, blackjack, hearts, bridge, solitaire, yahtzee, boxes, slam, mastermind, tictactoe, nim, cheat, flipCup];
 
 
 

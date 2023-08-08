@@ -69,6 +69,7 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     color: var(--mobilegray);
     /* border: 1px solid red; */
   }
@@ -76,8 +77,8 @@ body {
   h3.search-header {
     font-size: 20px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
+    margin-left: 5rem;
     /* border: 1px solid red; */
   }
 
@@ -165,6 +166,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-bottom: 1rem;
   }
 
   div.time-wrapper h4 {
@@ -180,6 +182,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-bottom: 1rem;
   }
 
   div.difficulty-wrapper h4 {
