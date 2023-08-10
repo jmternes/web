@@ -225,6 +225,8 @@ body {
 
 /* TABLET */
 
+/* Home Page */
+
 @media (min-width: 500px) and (max-width: 1280px) {
 
   div.navbar-search {
@@ -259,7 +261,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 90%;
-    align-items: center;
+    /* align-items: center; */
   }
 
   div.vibe-container {
