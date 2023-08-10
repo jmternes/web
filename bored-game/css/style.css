@@ -259,7 +259,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 90%;
-    align-items: center;
+    align-items: start;
   }
 
   div.vibe-container {
@@ -293,7 +293,15 @@ body {
 
 
   div.cards-list {
-    display: none;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+   
+  }
+ /* Fix This
+  div.card {
+    flex-basis: 
   }
 
 }
