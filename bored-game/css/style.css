@@ -56,7 +56,7 @@ body {
 
 
   h1.home-header {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
 
     margin-left: auto;
@@ -1019,7 +1019,7 @@ input[type=radio]:checked {
   #footer {
     height: 44px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-self: end;
       bottom: 0;
       left: 0;
@@ -1027,6 +1027,7 @@ input[type=radio]:checked {
       width: 100%;
       color: var(--black);
     position: relative;
+    gap: 124px;
     /* border: 1px solid red; */
   }
 
