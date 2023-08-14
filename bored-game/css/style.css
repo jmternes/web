@@ -52,7 +52,7 @@ body {
 
 /* Responsive - mobile */
 
-@media (max-width: 500px){
+@media (max-width: 700px){
 
 
   h1.home-header {
@@ -227,7 +227,7 @@ body {
 
 /* Home Page */
 
-@media (min-width: 500px) and (max-width: 1280px) {
+@media (min-width: 700px) and (max-width: 1280px) {
 
   div.navbar-search {
     display: none;
