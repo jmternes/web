@@ -492,29 +492,19 @@ table {
 
     .roster-header {
         font-size: 400%;
-        padding-left: 0;
-        text-align: center;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 2rem;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
     }
 
     .playercards-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: .5rem;
-        padding-bottom: 2rem;
-        width: 100%;
-
-      }
-      .playercard-row {
-        display: block;
-        width: 100%;
-        padding: 0;
-        text-align: center;
-      }
-      .playercard {
-        margin: 1rem;
-        width: fit-content;
-      }
+        align-items: space-evenly;
+        flex-wrap: wrap;
+    }
 
     /* End Mobile Players Section */
 
@@ -525,8 +515,19 @@ table {
 
     .history-header {
         font-size: 400%;
-        padding-left: 0;
-        text-align: center;
+        display: flex;
+        justify-content: start;
+        border-top: 1px solid var(--black);
+        border-bottom: 1px solid var(--black);
+    }
+
+    div#image-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     /* END MOBILE HISTORY SECTION */
@@ -537,9 +538,13 @@ table {
     /* MOBILE TABLE STYLING */
 
     .team-stats-header {
-        text-align: center;
+        display: flex;
+        justify-content: start;
+        align-items: start;
         font-size: 400%;
-        padding-left: 0;
+        margin-top: 5em;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
     }
 
     .era-header {
