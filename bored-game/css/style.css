@@ -54,6 +54,15 @@ body {
 
 @media (max-width: 700px){
 
+  div.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    font-size: 1.13rem;
+    /* border: 1px solid red; */
+  }
+
 
   h1.home-header {
     font-size: 2.3rem;
@@ -78,7 +87,7 @@ body {
     font-size: 20px;
     width: 90%;
     padding: 0;
-    margin-left: 5rem;
+    text-align: center;
     /* border: 1px solid red; */
   }
 
@@ -291,7 +300,80 @@ body {
   }
 
 
-  /* tue 8/8 search header and footer fixes, then done */
+  /* Game Page */
+
+  div.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    /* border: 1px solid red; */
+  }
+
+  div.game-main {
+    display: block;
+  }
+
+  div.header-and-sub {
+    width: 100%;
+  }
+
+  h1.game-header {
+    margin-left: 2rem;
+    font-size: 3.13rem;
+  }
+
+  p.game-subheader {
+    margin-left: 2rem;
+    margin-top: -1rem;
+    font-size: 1rem;
+    height: fit-content;
+    width: 90%;
+    font-weight: 400;
+    color: var(--mobilegray);
+    border: 1px solid red;
+  }
+
+  div.game-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    border: 1px solid red;
+    /* work on this */
+  }
+
+  div.game-details-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  div.game-details-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  div.requirements-vibes-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul.requirements-list {
+    display: flex;
+    justify-content: start;
+    /* more to be done here */
+  }
+
+  h2.rules-header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 2rem;
+  }
+
 
 
   div.cards-list {
@@ -331,11 +413,11 @@ body {
   font-size: 1.13rem;
 }
 
-.navbar-links:hover {
+.navbar-links a:hover {
   transform: scale(1.02);
-  color: var(--coral);
   border-bottom: 2px solid var(--black);
 }
+
 
 .navbar-search {
   display: flex;
