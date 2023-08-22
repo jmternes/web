@@ -331,7 +331,7 @@ body {
     width: 90%;
     font-weight: 400;
     color: var(--mobilegray);
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   div.game-details {
@@ -339,7 +339,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* work on this */
   }
 
@@ -358,13 +358,43 @@ body {
   div.requirements-vibes-wrapper {
     width: 90%;
     display: flex;
+
+  }
+
+  h2.requirements-header {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    margin: 2rem;
+  }
+
+  h2.vibes-header {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: 2rem;
+  }
+
+  div.pills-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
+    margin-left: 4rem;
+    /* border: 1px solid red; */
   }
 
   ul.requirements-list {
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0;
     /* more to be done here */
+  }
+
+  ul.requirements-list li {
+    display: block;
+    float: left;
   }
 
   h2.rules-header {
@@ -374,6 +404,21 @@ body {
     margin: 2rem;
   }
 
+  div.rules-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 4rem;
+    /* fix this next */
+    /* border: 1px solid red; */
+  }
+
+  p.gameplay-text {
+    margin-right: 5rem;
+    width: 100%;
+  }
 
 
   div.cards-list {
