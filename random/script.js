@@ -156,7 +156,7 @@ const nbaTeamsWithImages = [
 
 const teamNameElement = document.getElementById("team-name");
 
-const teamImageElement = document.getElementbyId("team-image");
+const teamImageElement = document.getElementById("team-image");
 
 const generateButton = document.getElementById("generate-button");
 
