@@ -90,7 +90,7 @@ const nbaTeamsWithImages = [
   },
   {
     name: "Memphis Grizzlies",
-    imageUrl: "https://gray-wmctv-prod.cdn.arcpublishing.com/resizer/fCEPiDlhHz2jD8qmPqE2nOsJ7uA=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/ZX4ANCQTIFHYPB2VXF3EQNLNYI.jpg"
+    imageUrl: "https://content.sportslogos.net/logos/6/231/full/4373_memphis_grizzlies-primary-2019.png"
   },
   {
     name: "Miami Heat",

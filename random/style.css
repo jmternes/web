@@ -1,5 +1,5 @@
 :root {
-  --white: #ffffff;
+  --white: #fafafa;
   --blue: #17408b;
   --red: #c9082a;
   --hoverblue: rgb(15, 15, 205);
@@ -12,7 +12,7 @@
 
 body {
   font-family: 'coluna', sans-serif;
-  background-color: var(--blue);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +22,11 @@ body {
 h1 {
   text-align: center;
   /* border: 1px solid white; */
-  text-align: center;
-  color: white;
-  font-size: 1rem;
-  font-weight: 200;
+  position: relative;
+  top: 5rem;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
 }
 
