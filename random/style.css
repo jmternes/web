@@ -2,6 +2,7 @@
   --white: #ffffff;
   --blue: #17408b;
   --red: #c9082a;
+  --hoverblue: rgb(15, 15, 205);
 }
 
 @font-face {
@@ -11,7 +12,21 @@
 
 body {
   font-family: 'coluna', sans-serif;
-  background-color: white;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  /* border: 1px solid white; */
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .image-wrapper {
@@ -42,7 +57,7 @@ body {
     padding: 10px;
     font-size: 18px;
     text-align: center;
-    background: rgb(15, 15, 205);
+    background: var(--blue);
     color: var(--white);
     font-family: graduate;
     font-size: 40;
@@ -53,11 +68,12 @@ body {
   }
 
   #generate-button:hover {
-    background-color: var(--blue);
+    background-color: var(--hoverblue);
     border: 7px solid var(--red);
   }
 
   #generate-button:active {
-    background-color: rgb(15, 15, 205);
+    background-color: var(--blue);
     border: 7px solid #e80a33;
   }
+
