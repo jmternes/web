@@ -94,7 +94,7 @@ const nbaTeamsWithImages = [
   },
   {
     name: "Miami Heat",
-    imageUrl: "https://1000logos.net/wp-content/uploads/2021/04/Miami-Heat-logo.png"
+    imageUrl: "https://content.sportslogos.net/logos/6/214/full/burm5gh2wvjti3xhei5h16k8e.gif"
   },
   {
     name: "Milwaukee Bucks",
@@ -122,7 +122,7 @@ const nbaTeamsWithImages = [
   },
   {
     name: "Philadelphia 76ers",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Phoenix_Suns_logo.svg/1200px-Phoenix_Suns_logo.svg.png"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Philadelphia-76ers-Logo-1977-1996.png"
   },
   {
     name: "Phoenix Suns",
