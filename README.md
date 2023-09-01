@@ -1,6 +1,6 @@
 # Web Passion Projects
 
-Here, I'll be posting some work I've done surrounding projects that involve the worldwide web.
+Here, I'll be posting some work I've done surrounding projects that involve the worldwide web. Technologies include vanilla HTML, CSS, and JavaScript with an emphasis on learning.
 
 
 ### Random NBA Team Generator
