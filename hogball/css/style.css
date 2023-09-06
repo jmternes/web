@@ -96,7 +96,7 @@ section {
 
 #rostercontainer {
     background: linear-gradient(180deg, #121212 30%, #f2f2f4);
-    padding-top: 0;
+    /* padding-top: 0; */
     padding-bottom: 2rem;
     min-height: 100vh;
     height: fit-content;
@@ -123,9 +123,10 @@ section {
 }
 
 .playercard-row {
-
+    display: flex;
+    justify-content: space-between;
     width: 90%;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 
@@ -180,6 +181,7 @@ section {
     background: linear-gradient(180deg, #f2f2f4 30%, #9d2235);
     min-height: 100vh;
     height: 75rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -208,12 +210,13 @@ section {
     border: 1px solid black;
 }
 
-#image-track {
+div#image-track {
     position: relative;
     display: flex;
-    gap: 4vmin;
-    padding-top: 5rem;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 
@@ -357,16 +360,25 @@ table {
 
   th {
     background-color: var(--black);
+    cursor: pointer;
   }
+
+  th:hover {
+    background: hsl(0 0% 0% / .01)
+  }
+
   th:first-child, td:first-child {
     border-left: none;
   }
+
   th:last-child, td:last-child {
     border-right: none;
   }
+
   tr:first-child th {
     border-top: none;
   }
+
   tr:last-child td {
     border-bottom: none;
   }
@@ -381,7 +393,6 @@ table {
 
   tr:nth-of-type(2n):hover {
     background: hsl(0 0% 0% / .375);
-
   }
 
   /* End Player Stats Styling */
@@ -548,6 +559,10 @@ table {
 
     .era-header {
         font-size: 150%;
+    }
+    
+    table {
+        pointer-events: none;
     }
 
     table thead tr {
