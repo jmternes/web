@@ -171,7 +171,7 @@ section {
     width: 15rem;
 }
 
-.bottom:hover {
+div.bottom img:hover {
     border: 2px solid black;
 }
 
