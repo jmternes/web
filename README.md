@@ -33,8 +33,8 @@ Here, I'll be posting some work I've done surrounding projects that involve the 
 
 ### Boredless Games
 
-- Designed in a collaborative effort with my UX/UI sister specialist, Boredless games is the perfect site for users to find a game that fits their neeeds.
-- Users filter the criteria for their situation (time available, tools on hand, etc) and results return in their view, with more details available.
+- Designed in a collaborative effort with my UX/UI sister-specialist, Boredless games is the perfect site for users to find a game that fits their needs.
+- Users customize their preferences based on their specific circumstances (such as available time and tools), and the site provides tailored results - complete with additional details.
 - Built with vanilla HTML, CSS, and JavaScript
 
 <br>
