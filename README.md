@@ -5,7 +5,7 @@ Here, I'll be posting some work I've done surrounding projects that involve the 
 ### Hog Ball
 
 - Hog Ball is a website dedicated to the Arkansas Razorbacks Men's collegiate Basketball team.
-- The site has features such as an updated roster section, history, and sortable team stats dating back to 1974.
+- The site has features such as an up-to-date roster section with player stats, a program history section, and sortable team stats dating back to 1974.
 - Built with vanilla HTML, CSS, and JavaScript
 
 
