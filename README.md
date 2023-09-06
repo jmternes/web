@@ -33,7 +33,7 @@ Here, I'll be posting some work I've done surrounding projects that involve the 
 
 ### Boredless Games
 
-- Created collaboratively with a UX/UI specialist, Boredless games helps users discover games that match their preferences.
+- Created collaboratively with a UX/UI sister-specialist, Boredless games helps users discover games that match their preferences.
 - Users customize preferences based on their specific circumstances (such as available time and tools), and the site provides tailored results - complete with additional details.
 - Built with vanilla HTML, CSS, and JavaScript
 
