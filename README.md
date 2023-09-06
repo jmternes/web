@@ -2,6 +2,12 @@
 
 Here, I'll be posting some work I've done surrounding projects that involve the worldwide web. Technologies include vanilla HTML, CSS, and JavaScript with an emphasis on learning.
 
+### Hog Ball
+
+- Hog Ball is a website dedicated to the Arkansas Razorbacks Men's collegiate Basketball team.
+- The site has features such as an updated roster section, history, and sortable team stats dating back to 1974.
+- Built with vanilla HTML, CSS, and JavaScript
+
 
 ### Random NBA Team Generator
 
