@@ -119,7 +119,7 @@ section {
     justify-content: center;
     padding: .5rem;
     padding-bottom: 2rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* .playercard-row {
@@ -151,6 +151,7 @@ section {
 
 .playercard img:hover {
     scale: 102%;
+    border: 2px solid white;
 }
 
 .playertext {
@@ -168,6 +169,10 @@ section {
 .bottom {
     border: 1px solid var(--black);
     width: 15rem;
+}
+
+.bottom:hover {
+    border: 2px solid black;
 }
 
 /* End Roster Section Styling */
@@ -518,8 +523,15 @@ table {
     .playercards-container {
         display: flex;
         flex-direction: column;
-        align-items: space-evenly;
+        gap: 2rem;
+        /* align-items: space-evenly;
+        justify-content: center; */
         flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .bottom {
+        width: 15rem;
     }
 
     /* End Mobile Players Section */
