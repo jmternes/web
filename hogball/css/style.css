@@ -114,20 +114,20 @@ section {
 .playercards-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 90%;
     padding: .5rem;
     padding-bottom: 2rem;
+    border: 2px solid red;
 }
 
-.playercard-row {
+/* .playercard-row {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    /* padding: 1rem; */
-}
+    /* padding: 1rem;
+} */
 
 
 
@@ -167,6 +167,7 @@ section {
 
 .bottom {
     border: 1px solid var(--black);
+    width: 15rem;
 }
 
 /* End Roster Section Styling */
@@ -216,7 +217,7 @@ div#image-track {
     flex-wrap: wrap;
     width: 90%;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -365,6 +366,11 @@ table {
 
   th:hover {
     background: hsl(0 0% 0% / .01)
+  }
+
+  th:active {
+    background: hsl(0 0% 0% / .01)
+
   }
 
   th:first-child, td:first-child {
@@ -560,7 +566,7 @@ table {
     .era-header {
         font-size: 150%;
     }
-    
+
     table {
         pointer-events: none;
     }
