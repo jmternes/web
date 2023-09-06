@@ -6,8 +6,8 @@ Here, I'll be posting some work I've done surrounding projects that involve the 
 
 ### Hog Ball
 
-- Hog Ball is a website dedicated to the Arkansas Razorbacks Men's collegiate Basketball team.
-- The site has features such as an up-to-date roster section with player stats, a program history section, and sortable team stats dating back to 1974.
+- Hog Ball is a dedicated website for the Arkansas Razorbacks Men's college basketball team.
+- The platform boasts various features, including an always current roster section complete with player statistics, a section chronicling the program's history, and sortable team statistics going all the way back to 1974.
 - Built with vanilla HTML, CSS, and JavaScript
 
 <br>
@@ -22,7 +22,7 @@ Here, I'll be posting some work I've done surrounding projects that involve the 
 
 ### Random NBA Team Generator
 
-- A simple but clean website project where the user can click a button to generate a random NBA team.
+- A simple yet polished website project that allows users to simply click a button and generate a random NBA team.
 - Built with vanilla HTML, CSS, and JavaScript
 
 <br>
