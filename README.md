@@ -3,9 +3,7 @@
 Here, I'll be posting some work I've done surrounding projects that involve the worldwide web. Technologies include vanilla HTML, CSS, and JavaScript with an emphasis on learning.
 
 <br>
-<br>
 <hr>
-<br>
 <br>
 
 ### Hog Ball
