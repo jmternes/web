@@ -431,28 +431,7 @@ table {
 
   /* Mobile Playercard Styling */
 
-  @media (max-width: 1350px) {
-    .playercards-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: .5rem;
-        padding-bottom: 2rem;
-        width: 100%;
-
-      }
-      .playercard-row {
-        display: block;
-        width: 100%;
-        padding: 0;
-        text-align: center;
-      }
-      .playercard {
-        margin: 1rem;
-        width: fit-content;
-      } /* FIX THIS */
-  }
-
+ 
   /* End Mobile Playercard Styling */
 
   /* ------------------------------------------- */
@@ -516,8 +495,8 @@ table {
         display: flex;
         justify-content: start;
         margin-bottom: 2rem;
-        border-top: 1px solid var(--white);
-        border-bottom: 1px solid var(--white);
+        /* border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white); */
     }
 
     .playercards-container {
@@ -530,11 +509,62 @@ table {
         height: fit-content;
     }
 
+    .playercard img:hover {
+        
+        cursor: pointer;
+    }
+
     .bottom {
         width: 15rem;
     }
 
     /* End Mobile Players Section */
+
+    /* Mobile Individual Player Section 
+    */
+
+    div.ind-player {
+        /* font-size: .5rem; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1.player-header {
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    div.player-info {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        /* margin-right: 1rem; */
+    }
+
+    div.player-img {
+        position: absolute;
+        left: 0;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        border: none;
+    }
+
+    div.player-img img {
+        width: 250px;
+        height: fit-content;
+        border: 1px solid white;
+    }
+
+    div.player-stats {
+        display: none;
+    }
 
   /* ------------------------------------------------ */
 
