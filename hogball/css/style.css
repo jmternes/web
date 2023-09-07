@@ -445,7 +445,7 @@ table {
 
     .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         height: 100%;
@@ -454,11 +454,14 @@ table {
       }
 
       .navbar ul {
-          left: 50%;
-          transform: translateX(-5%); /* check this on different devices */
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin: 1rem;
+          
       }
       .navbar li {
-        margin: 10px 0;
+        margin: .75rem;
       }
 
       /* End Navbar */
@@ -542,7 +545,6 @@ table {
         align-items: center;
         text-align: center;
         position: relative;
-        /* margin-right: 1rem; */
     }
 
     div.player-img {
@@ -599,10 +601,15 @@ table {
         display: flex;
         justify-content: start;
         align-items: start;
-        font-size: 400%;
+        font-size: 300%;
         margin-top: 5em;
         border-top: 1px solid var(--white);
         border-bottom: 1px solid var(--white);
+    }
+
+    .team-stats-table {
+        margin: 1rem;
+        width: 90%;
     }
 
     .era-header {
@@ -612,6 +619,11 @@ table {
     table {
         pointer-events: none;
     }
+
+    [data-title="Season"] {
+        font-weight: 900;
+    }
+
 
     table thead tr {
         display: none;
