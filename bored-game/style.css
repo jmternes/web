@@ -242,6 +242,14 @@ body {
     justify-content: space-around;
   }
 
+  h1.about-header {
+    font-size: 2rem;
+  }
+
+  p.about-subheader {
+    font-size: 1rem;
+  }
+
 
 
   footer {
