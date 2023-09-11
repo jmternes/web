@@ -477,6 +477,20 @@ body {
 
   }
 
+  /* About Page */
+
+  h1.about-header {
+    font-size: 3.13rem;
+    margin: 1rem;
+  }
+
+  p.about-subheader {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 80%;
+  }
+
+
 
 
 }
@@ -1253,16 +1267,24 @@ input[type=radio]:checked {
 /* ------- About Page --------- */
 
 
-.about-container {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+h1.about-header {
+  font-size: 4.25rem;
+  font-weight: 900;
+  margin-left: 13.9%;
+  padding-top: .5rem;
+  line-height: 6.25rem;
+  width: 100%;
 }
 
-.about-header {
-    color: blue;
+p.about-subheader {
+  width: 70%;
+  margin-left: 13.9%;
+  margin-top: .1rem;
+  font-weight: 400;
+  color: var(--mobilegray);
+  font-size: 1.38rem;
+  line-height: 130%;
+  margin-bottom: 5rem;
 }
 
 /* ------ End About Page ------ */
