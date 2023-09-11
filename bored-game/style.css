@@ -52,6 +52,26 @@ body {
 
 /* Responsive - mobile */
 
+h1.about-header {
+  font-size: 4.13rem;
+  font-weight: 900;
+  margin-left: 13.9%;
+  padding-top: .5rem;
+  line-height: 6.25rem;
+  width: 100%;
+}
+
+p.about-subheader {
+  width: 70%;
+  margin-left: 13.9%;
+  margin-top: .1rem;
+  font-weight: 400;
+  color: var(--mobilegray);
+  font-size: 1.38rem;
+  line-height: 130%;
+  margin-bottom: 5rem;
+}
+
 @media (max-width: 500px){
 
   div.navbar-links {
@@ -261,6 +281,29 @@ body {
 /* TABLET */
 
 @media (min-width: 500px) and (max-width: 1280px) {
+
+  h1.about-header {
+  font-size: 3.5rem;
+  font-weight: 900;
+  /* margin-left: 13.9%;
+   */
+  padding-left: 2rem;
+  padding-top: .5rem;
+  /* line-height: 6.25rem; */
+  width: 90%;
+}
+
+p.about-subheader {
+  width: 100%;
+  /* margin-left: 13.9%; */
+  padding-left: 1rem;
+  margin-top: .1rem;
+  font-weight: 400;
+  color: var(--mobilegray);
+  font-size: 1.38rem;
+  line-height: 130%;
+  margin-bottom: 5rem;
+}
 
   div.navbar-search {
     display: none;
@@ -1275,25 +1318,7 @@ input[type=radio]:checked {
 /* ------- About Page --------- */
 
 
-h1.about-header {
-  font-size: 4.25rem;
-  font-weight: 900;
-  margin-left: 13.9%;
-  padding-top: .5rem;
-  line-height: 6.25rem;
-  width: 100%;
-}
 
-p.about-subheader {
-  width: 70%;
-  margin-left: 13.9%;
-  margin-top: .1rem;
-  font-weight: 400;
-  color: var(--mobilegray);
-  font-size: 1.38rem;
-  line-height: 130%;
-  margin-bottom: 5rem;
-}
 
 /* ------ End About Page ------ */
 
