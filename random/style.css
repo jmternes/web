@@ -86,9 +86,8 @@ h1 {
 
 
   .switch-button {
-    width: 75px;
-    height: 75px;
-    border: 4px solid var(--red);
+    width: 140px;
+    height: 140px;
     position: absolute;
     right: 2.5%;
     top: 5%;
@@ -97,9 +96,10 @@ h1 {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--blue);
+    color: black;
     font-family: 'Crimson Pro', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
 
