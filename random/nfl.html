@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Team Generator - NFL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="team-name"></h1>
+    <div class="image-wrapper" id="">
+        <div id="image-container">
+    <img id="team-image" src="" alt="">
+  </div>
+    </div>
+
+  <button class="nfl-button" id="nfl-button">Generate</button>
+
+  <script>
+
+const nflTeams = [
+  {
+      name: "Arizona Cardinals",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/arizona-cardinals-logo-transparent.png",
+  },
+  {
+      name: "Atlanta Falcons",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-transparent.png",
+  },
+  {
+      name: "Baltimore Ravens",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/baltimore-ravens-logo-transparent.png",
+  },
+  {
+      name: "Buffalo Bills",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/buffalo-bills-logo-transparent.png",
+  },
+  {
+      name: "Carolina Panthers",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/carolina-panthers-logo-transparent.png",
+  },
+  {
+      name: "Chicago Bears",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/chicago-bears-logo-transparent.png",
+  },
+  {
+      name: "Cincinnati Bengals",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/cincinnati-bengals-logo-transparent.png",
+  },
+  {
+      name: "Cleveland Browns",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/cleveland-browns-logo-transparent.png",
+  },
+  {
+      name: "Dallas Cowboys",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/dallas-cowboys-logo-transparent.png",
+  },
+  {
+      name: "Denver Broncos",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/denver-broncos-logo-transparent.png",
+  },
+  {
+      name: "Detroit Lions",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/detroit-lions-logo-transparent.png",
+  },
+  {
+      name: "Green Bay Packers",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/green-bay-packers-logo-transparent.png",
+  },
+  {
+      name: "Houston Texans",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/houston-texans-logo-transparent.png",
+  },
+  {
+      name: "Indianapolis Colts",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/indianapolis-colts-logo-transparent.png",
+  },
+  {
+      name: "Jacksonville Jaguars",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/jacksonville-jaguars-logo-transparent.png",
+  },
+  {
+      name: "Kansas City Chiefs",
+      imageURL: "https://assets.stickpng.com/images/608968b9d598a5000448eaa2.png",
+  },
+  {
+      name: "Las Vegas Raiders",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/oakland-raiders-logo-transparent.png",
+  },
+  {
+      name: "Los Angeles Chargers",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/los-angeles-chargers-logo-transparent.png",
+  },
+  {
+      name: "Los Angeles Rams",
+      imageURL: "https://assets.stickpng.com/images/608968b9d598a5000448eaa2.png",
+  },
+  {
+      name: "Miami Dolphins",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/miami-dolphins-logo-transparent.png",
+  },
+  {
+      name: "Minnesota Vikings",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/minnesota-vikings-logo-transparent.png",
+  },
+  {
+      name: "New England Patriots",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/new-england-patriots-logo-transparent.png",
+  },
+  {
+      name: "New Orleans Saints",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/new-orleans-saints-logo-transparent.png",
+  },
+  {
+      name: "New York Giants",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/new-york-giants-logo-transparent.png",
+  },
+  {
+      name: "New York Jets",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/new-york-jets-logo-transparent.png",
+  },
+  {
+      name: "Philadelphia Eagles",
+      imageURL: "https://content.sportslogos.net/logos/7/6741/full/3227_washington_football_team-primary-20201.png",
+  },
+  {
+      name: "Pittsburgh Steelers",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/pittsburgh-steelers-logo-transparent.png",
+  },
+  {
+      name: "San Francisco 49ers",
+      imageURL: "https://assets.stickpng.com/images/580b585b2edbce24c47b2b55.png",
+  },
+  {
+      name: "Seattle Seahawks",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/seattle-seahawks-logo-transparent.png",
+  },
+  {
+      name: "Tampa Bay Buccaneers",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/tampa-bay-buccaneers-logo-transparent.png",
+  },
+  {
+      name: "Tennessee Titans",
+      imageURL: "https://cdn.freebiesupply.com/images/large/2x/tennessee-titans-logo-transparent.png",
+  },
+  {
+      name: "Washington Football Team",
+      imageURL: "https://content.sportslogos.net/logos/7/6741/full/3227_washington_football_team-primary-20201.png",
+  },
+];
+
+    const teamNameElement = document.getElementById("team-name");
+
+    const teamImageElement = document.getElementById("team-image");
+
+    const generateButton = document.getElementById("nfl-button");
+
+    generateButton.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * nflTeams.length);
+
+    teamNameElement.textContent = nflTeams[randomIndex].name;
+
+    teamImageElement.src = nflTeams[randomIndex].imageUrl;
+  
+});
+  </script>
+</body>
+</html>

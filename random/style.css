@@ -3,6 +3,8 @@
   --blue: #17408b;
   --red: #c9082a;
   --hoverblue: rgb(15, 15, 205);
+  --nflblue: #013369;
+  --nflred: #D50A0A;
 }
 
 @font-face {
@@ -79,3 +81,36 @@ h1 {
     border: 7px solid #e80a33;
   }
 
+
+
+
+  /********* NFL *********/
+
+  #nfl-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background: var(--nflblue);
+    color: var(--white);
+    font-family: graduate;
+    font-size: 40;
+    border: 5px solid var(--nflred);
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+  }
+
+  #nfl-button:hover {
+    background-color: #014186;
+    border: 7px solid #f30e0e;
+  }
+
+  #nfl-button:active {
+    background-color: var(--nflblue);
+    border: 7px solid var(--nflred);
+  }
