@@ -171,6 +171,143 @@ generateButton.addEventListener("click", () => {
 
 
 
+const nflTeams = [
+  {
+      name: "Arizona Cardinals",
+      imageURL: "URL_TO_ARIZONA_CARDINALS_LOGO",
+  },
+  {
+      name: "Atlanta Falcons",
+      imageURL: "URL_TO_ATLANTA_FALCONS_LOGO",
+  },
+  {
+      name: "Baltimore Ravens",
+      imageURL: "URL_TO_BALTIMORE_RAVENS_LOGO",
+  },
+  {
+      name: "Buffalo Bills",
+      imageURL: "URL_TO_BUFFALO_BILLS_LOGO",
+  },
+  {
+      name: "Carolina Panthers",
+      imageURL: "URL_TO_CAROLINA_PANTHERS_LOGO",
+  },
+  {
+      name: "Chicago Bears",
+      imageURL: "URL_TO_CHICAGO_BEARS_LOGO",
+  },
+  {
+      name: "Cincinnati Bengals",
+      imageURL: "URL_TO_CINCINNATI_BENGALS_LOGO",
+  },
+  {
+      name: "Cleveland Browns",
+      imageURL: "URL_TO_CLEVELAND_BROWNS_LOGO",
+  },
+  {
+      name: "Dallas Cowboys",
+      imageURL: "URL_TO_DALLAS_COWBOYS_LOGO",
+  },
+  {
+      name: "Denver Broncos",
+      imageURL: "URL_TO_DENVER_BRONCOS_LOGO",
+  },
+  {
+      name: "Detroit Lions",
+      imageURL: "URL_TO_DETROIT_LIONS_LOGO",
+  },
+  {
+      name: "Green Bay Packers",
+      imageURL: "URL_TO_GREEN_BAY_PACKERS_LOGO",
+  },
+  {
+      name: "Houston Texans",
+      imageURL: "URL_TO_HOUSTON_TEXANS_LOGO",
+  },
+  {
+      name: "Indianapolis Colts",
+      imageURL: "URL_TO_INDIANAPOLIS_COLTS_LOGO",
+  },
+  {
+      name: "Jacksonville Jaguars",
+      imageURL: "URL_TO_JACKSONVILLE_JAGUARS_LOGO",
+  },
+  {
+      name: "Kansas City Chiefs",
+      imageURL: "URL_TO_KANSAS_CITY_CHIEFS_LOGO",
+  },
+  {
+      name: "Las Vegas Raiders",
+      imageURL: "URL_TO_LAS_VEGAS_RAIDERS_LOGO",
+  },
+  {
+      name: "Los Angeles Chargers",
+      imageURL: "URL_TO_LOS_ANGELES_CHARGERS_LOGO",
+  },
+  {
+      name: "Los Angeles Rams",
+      imageURL: "URL_TO_LOS_ANGELES_RAMS_LOGO",
+  },
+  {
+      name: "Miami Dolphins",
+      imageURL: "URL_TO_MIAMI_DOLPHINS_LOGO",
+  },
+  {
+      name: "Minnesota Vikings",
+      imageURL: "URL_TO_MINNESOTA_VIKINGS_LOGO",
+  },
+  {
+      name: "New England Patriots",
+      imageURL: "URL_TO_NEW_ENGLAND_PATRIOTS_LOGO",
+  },
+  {
+      name: "New Orleans Saints",
+      imageURL: "URL_TO_NEW_ORLEANS_SAINTS_LOGO",
+  },
+  {
+      name: "New York Giants",
+      imageURL: "URL_TO_NEW_YORK_GIANTS_LOGO",
+  },
+  {
+      name: "New York Jets",
+      imageURL: "URL_TO_NEW_YORK_JETS_LOGO",
+  },
+  {
+      name: "Philadelphia Eagles",
+      imageURL: "URL_TO_PHILADELPHIA_EAGLES_LOGO",
+  },
+  {
+      name: "Pittsburgh Steelers",
+      imageURL: "URL_TO_PITTSBURGH_STEELERS_LOGO",
+  },
+  {
+      name: "San Francisco 49ers",
+      imageURL: "URL_TO_SAN_FRANCISCO_49ERS_LOGO",
+  },
+  {
+      name: "Seattle Seahawks",
+      imageURL: "URL_TO_SEATTLE_SEAHAWKS_LOGO",
+  },
+  {
+      name: "Tampa Bay Buccaneers",
+      imageURL: "URL_TO_TAMPA_BAY_BUCCANEERS_LOGO",
+  },
+  {
+      name: "Tennessee Titans",
+      imageURL: "URL_TO_TENNESSEE_TITANS_LOGO",
+  },
+  {
+      name: "Washington Football Team",
+      imageURL: "URL_TO_WASHINGTON_FOOTBALL_TEAM_LOGO",
+  },
+];
+
+// Example usage:
+console.log(nflTeams[0].name); // Prints "Arizona Cardinals"
+console.log(nflTeams[0].imageURL); // Prints the URL to the Arizona Cardinals logo
+
+
+
 
 
   // function generateImage() {
