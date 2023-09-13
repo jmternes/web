@@ -62,11 +62,12 @@ h1 {
     padding: 10px;
     font-size: 18px;
     text-align: center;
-    background: var(--blue);
+    background-color: #014186;
     color: var(--white);
     font-family: graduate;
     font-size: 40;
-    border: 5px solid #e80a33;
+    border: 5px solid #f30e0e;
+
     border-radius: 50%;
     height: 125px;
     width: 125px;
@@ -80,7 +81,7 @@ h1 {
 
   #generate-button:active {
     background-color: var(--blue);
-    border: 7px solid #e80a33;
+    border: 7px solid #f30e0e;
   }
 
 
@@ -100,6 +101,10 @@ h1 {
     font-family: 'Crimson Pro', serif;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  .switch-button:hover {
+    transform: scale(1.05);
   }
 
 
