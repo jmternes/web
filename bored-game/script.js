@@ -31,7 +31,7 @@ class Game {
 // const simonSays = new Game("Simon Says", 2, undefined, "No tools required", 10, "Easy", false, true);
 // const hideAndSeek = new Game("Hide and Seek", 2, undefined, "No tools required", 30, "Easy", false, true);
 // const pictionary = new Game("Pictionary", 4, undefined, "Pen and paper", 30, "Moderate", false, true);
-const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["../bored-game/assets/images/cards.png", "../bored-game/assets/images/spoon.png"], 20, "Easy", false, true);
+const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["bored-game/assets/images/cup.png", "bored-game/assets/images/cup.png"], 20, "Easy", false, true);
 // const liarsDice = new Game("Liar's Dice", 3, undefined, ["Dice", "Cups"], 30, "Moderate", false, true);
 
 
@@ -69,8 +69,18 @@ function displayGameDetails(game) {
 
 // Tools
 
-const toolsDiv = document.querySelector("div.image-title-container p");
-toolsDiv.textContent = `${spoons.tools}`;
+const toolsDiv = document.querySelector("div.image-title-container");
+
+// toolsDiv is emptied
+toolsDiv.innerHTML = '';
+
+// Iterate over each tool and append to the toolsDiv
+spoons.tools.forEach(tool => {
+    const toolElement = document.createElement('p');
+    toolElement.textContent = tool;
+    toolsDiv.appendChild(toolElement);
+});
+
 
 // Card filter Text
 
