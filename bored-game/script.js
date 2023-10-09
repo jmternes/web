@@ -30,14 +30,14 @@ class Game {
 // const charades = new Game("Charades", 4, undefined, "No tools required", 30, "Easy", false, true);
 // const simonSays = new Game("Simon Says", 2, undefined, "No tools required", 10, "Easy", false, true);
 // const hideAndSeek = new Game("Hide and Seek", 2, undefined, "No tools required", 30, "Easy", false, true);
-// const pictionary = new Game("Pictionary", 4, undefined, "Pen and paper", 30, "Moderate", false, true);
-const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["bored-game/assets/images/cup.png", "bored-game/assets/images/cup.png"], 20, "Easy", false, true);
+// const pictionary = new Game("Pictionary", "Pictionary is a fun game where players draw a hint for guessers to try to identify.", 4, undefined, ["Pen and paper"], ["./bored-game/assets/images/cup.png"], 30, "Moderate", false, true);
+const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["/assets/images/cup.png", "/assets/images/cup.png"], 20, "Easy", false, true);
 // const liarsDice = new Game("Liar's Dice", 3, undefined, ["Dice", "Cups"], 30, "Moderate", false, true);
 
 
 const gameTitleDiv = document.getElementById("gameTitle");
 gameTitleDiv.textContent = `${spoons.name}`;
-console.log(gameTitleDiv.textContent)
+// console.log(gameTitleDiv.textContent)
 
 const gameDescriptionDiv = document.querySelector("div.card-description p");
 gameDescriptionDiv.textContent = `${spoons.description}`;
@@ -53,6 +53,7 @@ function displayGameDetails(game) {
     if(imageContainers && game.images) {
         imageContainers.forEach((imgElement, index) => {
             if(game.images[index]) {
+                console.log(game.images[index]);
                 imgElement.src = game.images[index];
                 imgElement.alt = game.tools[index] || "Game tool image";
                 imgElement.style.display = "block";
@@ -64,7 +65,9 @@ function displayGameDetails(game) {
         console.error('No images defined for this game');
     }
 
-    // ... (here you would add other code to set game description, etc., using the `game` parameter)
+    
+
+    //  add other code to set game description, etc., using the `game` parameter)
 }
 
 // Tools
@@ -100,7 +103,7 @@ function displayGameDetails(game) {
         timeAvailableElement.textContent = `${game.timeAvailable} Minutes`;
 
         // Displaying the difficulty
-        console.log(game.difficulty);
+        // console.log(game.difficulty);
         difficultyElement.textContent = `${game.difficulty}`;
     } else {
         console.error('One or more elements not found');
