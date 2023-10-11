@@ -30,7 +30,7 @@ class Game {
 // const charades = new Game("Charades", 4, undefined, "No tools required", 30, "Easy", false, true);
 // const simonSays = new Game("Simon Says", 2, undefined, "No tools required", 10, "Easy", false, true);
 // const hideAndSeek = new Game("Hide and Seek", 2, undefined, "No tools required", 30, "Easy", false, true);
-// const pictionary = new Game("Pictionary", "Pictionary is a fun game where players draw a hint for guessers to try to identify.", 4, undefined, ["Pen and paper"], ["./bored-game/assets/images/cup.png"], 30, "Moderate", false, true);
+const pictionary = new Game("Pictionary", "Pictionary is a fun game where players draw a hint for guessers to try to identify.", 4, undefined, ["Pen and paper"], ["./bored-game/assets/images/cup.png"], 30, "Moderate", false, true);
 const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["/assets/images/cup.png", "/assets/images/cup.png"], 20, "Easy", false, true);
 // const liarsDice = new Game("Liar's Dice", 3, undefined, ["Dice", "Cups"], 30, "Moderate", false, true);
 
