@@ -34,81 +34,145 @@ class Game {
 const spoons = new Game("Spoons", "Spoons is a card game where players try to get rid of all their cards... Don't be the last person to grab a spoon!", 3, undefined, ["Deck of cards", "Spoons"], ["/assets/images/cup.png", "/assets/images/cup.png"], 20, "Easy", false, true);
 // const liarsDice = new Game("Liar's Dice", 3, undefined, ["Dice", "Cups"], 30, "Moderate", false, true);
 
+function createGameCard(game) {
+    const template = document.querySelector(".card");
+    const cardClone = template.cloneNode(true); // deep clone
 
-const gameTitleDiv = document.getElementById("gameTitle");
-gameTitleDiv.textContent = `${spoons.name}`;
-// console.log(gameTitleDiv.textContent)
-
-const gameDescriptionDiv = document.querySelector("div.card-description p");
-gameDescriptionDiv.textContent = `${spoons.description}`;
-
-document.addEventListener("DOMContentLoaded", (event) => {
-    displayGameDetails(spoons);
-});
-
-// Images
-
-function displayGameDetails(game) {
-    const imageContainers = document.querySelectorAll("div.image-container img");
-    if(imageContainers && game.images) {
-        imageContainers.forEach((imgElement, index) => {
-            if(game.images[index]) {
-                console.log(game.images[index]);
-                imgElement.src = game.images[index];
-                imgElement.alt = game.tools[index] || "Game tool image";
-                imgElement.style.display = "block";
-            } else {
-                imgElement.style.display = "none";
-            }
-        });
+    // Populate game title and description
+    const titleElement = cardClone.querySelector(".card_title h5");
+    if(titleElement) {
+        titleElement.textContent = game.name;
+        console.log(titleElement.textContent);
     } else {
-        console.error('No images defined for this game');
+        console.error('Title element not found');
     }
 
-    
+    const descriptionElement = cardClone.querySelector(".card-description p");
+    if(descriptionElement) {
+        descriptionElement.textContent = game.description;
+    } else {
+        console.error('Description element not found');
+    }
 
-    //  add other code to set game description, etc., using the `game` parameter)
-}
+    // game images and tools
+    const imageContainers = cardClone.querySelectorAll(".image-container img");
+    const imageTitles = cardClone.querySelectorAll(".image-title-container p");
+    game.images.forEach((imageSrc, index) => {
+        if (imageSrc) {
+            imageContainers[index].src = imageSrc;
+            imageContainers[index].alt = game.tools[index] || "Game tool image";
+            imageContainers[index].style.display = "block";
+            if(game.tools[index]) {
+                imageTitles[index].textContent = game.tools[index];
+            }
+        } else {
+            imageContainers[index].style.display = "none";
+        }
+    });
 
-// Tools
+    // Add the tools for each game
+    const toolsDiv = cardClone.querySelector("div.image-title-container");
+    toolsDiv.innerHTML = '';
+    game.tools.forEach(tool => {
+        const toolElement = document.createElement('p');
+        toolElement.textContent = tool;
+        toolsDiv.appendChild(toolElement);
+    });
 
-const toolsDiv = document.querySelector("div.image-title-container");
-
-// toolsDiv is emptied
-toolsDiv.innerHTML = '';
-
-// Iterate over each tool and append to the toolsDiv
-spoons.tools.forEach(tool => {
-    const toolElement = document.createElement('p');
-    toolElement.textContent = tool;
-    toolsDiv.appendChild(toolElement);
-});
-
-
-// Card filter Text
-
-function displayGameDetails(game) {
-
-    const noOfPlayersElement = document.getElementById("noOfPlayers");
-    const timeAvailableElement = document.getElementById("timeAvailable");
-    const difficultyElement = document.getElementById("difficultyText");
+    // Display number of players, time available, and difficulty
+    const noOfPlayersElement = cardClone.getElementById("noOfPlayers");
+    const timeAvailableElement = cardClone.getElementById("timeAvailable");
+    const difficultyElement = cardClone.getElementById("difficultyText");
 
     if (noOfPlayersElement && timeAvailableElement && difficultyElement) {
-        // Displaying the range of players. If maxPlayers is undefined, just show minPlayers
         noOfPlayersElement.textContent = game.maxPlayers
             ? `${game.minPlayers}-${game.maxPlayers} Players`
             : `${game.minPlayers}+ Players`;
-
-        // Displaying the time available
         timeAvailableElement.textContent = `${game.timeAvailable} Minutes`;
-
-        // Displaying the difficulty
-        // console.log(game.difficulty);
         difficultyElement.textContent = `${game.difficulty}`;
     } else {
         console.error('One or more elements not found');
     }
+
+    return cardClone;
 }
+
+
+
+// const gameTitleDiv = document.getElementById("gameTitle");
+// gameTitleDiv.textContent = `${spoons.name}`;
+// // console.log(gameTitleDiv.textContent)
+
+// const gameDescriptionDiv = document.querySelector("div.card-description p");
+// gameDescriptionDiv.textContent = `${spoons.description}`;
+
+// document.addEventListener("DOMContentLoaded", (event) => {
+//     displayGameDetails(spoons);
+// });
+
+// // Images
+
+// function displayGameDetails(game) {
+//     const imageContainers = document.querySelectorAll("div.image-container img");
+//     if(imageContainers && game.images) {
+//         imageContainers.forEach((imgElement, index) => {
+//             if(game.images[index]) {
+//                 console.log(game.images[index]);
+//                 imgElement.src = game.images[index];
+//                 imgElement.alt = game.tools[index] || "Game tool image";
+//                 imgElement.style.display = "block";
+//             } else {
+//                 imgElement.style.display = "none";
+//             }
+//         });
+//     } else {
+//         console.error('No images defined for this game');
+//     }
+
+
+
+//     //  add other code to set game description, etc., using the `game` parameter)
+// }
+
+// // Tools
+
+// const toolsDiv = document.querySelector("div.image-title-container");
+
+// // toolsDiv is emptied
+// toolsDiv.innerHTML = '';
+
+// // Iterate over each tool and append to the toolsDiv
+// spoons.tools.forEach(tool => {
+//     const toolElement = document.createElement('p');
+//     toolElement.textContent = tool;
+//     toolsDiv.appendChild(toolElement);
+// });
+
+
+// // Card filter Text
+
+// function displayGameDetails(game) {
+
+//     const noOfPlayersElement = document.getElementById("noOfPlayers");
+//     const timeAvailableElement = document.getElementById("timeAvailable");
+//     const difficultyElement = document.getElementById("difficultyText");
+
+//     if (noOfPlayersElement && timeAvailableElement && difficultyElement) {
+//         // Displaying the range of players. If maxPlayers is undefined, just show minPlayers
+//         noOfPlayersElement.textContent = game.maxPlayers
+//             ? `${game.minPlayers}-${game.maxPlayers} Players`
+//             : `${game.minPlayers}+ Players`;
+
+//         // Displaying the time available
+//         timeAvailableElement.textContent = `${game.timeAvailable} Minutes`;
+
+//         // Displaying the difficulty
+//         // console.log(game.difficulty);
+//         difficultyElement.textContent = `${game.difficulty}`;
+//     } else {
+//         console.error('One or more elements not found');
+//     }
+// }
 
 
 

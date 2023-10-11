@@ -246,6 +246,10 @@ p.about-subheader {
     display: none;
   }
 
+  .card.template {
+    display: none;
+  }
+
   div.footer-section {
     display: none;
   }
