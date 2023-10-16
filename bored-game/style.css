@@ -484,7 +484,7 @@ p.about-subheader {
 
 
 
-  h2.rules-header {
+  /* h2.rules-header {
     width: 100%;
     display: flex;
     justify-content: start;
@@ -499,11 +499,11 @@ p.about-subheader {
     width: 100%;
     margin: 0 auto;
     width: 90%;
-  }
-
+  } */
+/*
   h3.setup-header {
     margin-left: 0;
-  }
+  } */
 
   div.rules-wrapper {
     width: 90%;
@@ -519,6 +519,11 @@ p.about-subheader {
 
   div.rules-wrapper p {
     width: 40%;
+    font-size: 1.5rem;
+  }
+
+  .rules-text {
+    font-size: 2rem;
   }
 
 
