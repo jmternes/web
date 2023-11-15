@@ -1077,10 +1077,10 @@ input[type=radio]:checked {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
-    flex-basis: calc(25% - 3rem);
+    /* flex-grow: 0;
+    flex-basis: calc(25% - 3rem); */
     margin: 10px;
-    max-width: 13.13rem;
+    max-width: 13rem;
     height: 26.88rem;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -1115,17 +1115,29 @@ input[type=radio]:checked {
     font-weight: 800;
   }
 
-  .card-description {
+  /* .card-description {
     width: 100%;
     text-align: left;
     font-family: 'Lexend';
     font-size: .75rem;
     line-height: 15px;
     /* margin-top: 0.3rem; */
-    margin-left: .5rem;
+    /* margin-left: .5rem;
     margin-right: .5rem;
     width: 95%;
-  }
+  } */
+
+  div#gameDescription {
+      width: 100%;
+      text-align: left;
+      font-family: 'Lexend';
+      font-size: .75rem;
+      line-height: 15px;
+      margin-top: 0.3rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      width: 95%;
+    }
 
   .card-images {
     display: flex;

@@ -152,25 +152,33 @@
 
   <div class="cards-list">
 
-    <div class="card template" style="display: none;">
+    <div class="card template">
       <a href="game.html">
         <div class="card_title title-black">
         <h5 id="gameName"></h5>
       </div>
-      <div class="gameDescription">
+      <div id="gameDescription">
         <p></p>
     </div>
 
-    <div class="card-images">
+    <!-- <div class="card-images">
       <div class="image-container">
-        <img id="gameIMG" src="" alt="">
-        <img src="" alt="">
-      </div>
+        <img id="gameIMG" src="" alt=""> -->
+        <!-- <img src="" alt=""> -->
+      <!-- </div>
       <div class="image-title-container">
         <p></p>
         <p></p>
       </div>
-    </div>
+    </div> -->
+
+    <div class="card-images">
+      <div class="image-container" id="toolsImages">
+          <!-- Tool images will be added here dynamically -->
+      </div>
+      <!-- Other elements... -->
+  </div>
+
 
       <div class="card-filter-icons-wrapper">
          <div class="card-filter-icons">
@@ -179,9 +187,14 @@
           <img src="../bored-game/assets/images/challenge.png" alt="">
          </div>
         <div class="card-filter-text">
-          <p id="noOfPlayers"></p>
-          <p id="timeAvailable"></p>
-          <p id="difficultyText"></p>
+          <p>
+            <span id="minPlayers"></span>-<span id="maxPlayers"></span> players
+          </p>
+          <p>
+            <span id="timeAvailable"></span>
+            minutes
+          </p>
+          <p> <span id="difficultyText"></span></p>
          </div>
       </div>
       </a>
@@ -445,7 +458,7 @@
 
     <script src="data.js"></script>
     <script src="games.js"></script>
-    
+
 
 </body>
 </html>
