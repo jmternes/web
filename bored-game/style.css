@@ -1094,7 +1094,7 @@ input[type=radio]:checked {
 
   .card_title {
     position: relative;
-    height: 4rem;
+    height: 3rem;
     font-family: 'Lexend';
     font-size: 1.75rem;
     font-weight: 600;
@@ -1147,6 +1147,7 @@ input[type=radio]:checked {
     /* border: 1px sold red; */
     width: auto;
     padding: .5rem;
+    margin-top: .5rem;
   }
 
   .image-container {
@@ -1159,10 +1160,19 @@ input[type=radio]:checked {
   }
 
   .image-title-container {
+    font-size: .75rem;
+    margin-top: .33rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: var(--black);
+
+  }
+
+  div#toolsText p {
+    color: var(--black);
+    font-weight: 300;
   }
 
   .card-images {
@@ -1207,6 +1217,7 @@ input[type=radio]:checked {
     flex-direction: column;
     font-family: 'Lexend';
     font-size: .5rem;
+    font-weight: 200;
     /* margin-top: .5rem; */
   }
 
