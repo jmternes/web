@@ -1077,6 +1077,7 @@ input[type=radio]:checked {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     /* flex-grow: 0;
     flex-basis: calc(25% - 3rem); */
     margin: 10px;
@@ -1092,7 +1093,7 @@ input[type=radio]:checked {
     color: var(--black);
   }
 
-  .card_title {
+  /* .card-title {
     position: relative;
     height: 3rem;
     font-family: 'Lexend';
@@ -1101,17 +1102,27 @@ input[type=radio]:checked {
     margin-left: .5rem;
   }
 
-  .card_title h5 {
+  .card-title h5 {
     font-size: 1.75rem;
     margin-top: .5rem;
+  } */
+
+  .game-name {
+    position: relative;
+    height: 1rem; /* maybe, make dynamic? */
+    font-family: 'Lexend';
+    font-size: 1.75rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    margin-left: .5rem;
   }
 
-  .card_title a {
+  .card-title a {
     text-decoration: none;
     color: var(--black);
   }
 
-  .card_title a:hover {
+  .card-title a:hover {
     font-weight: 800;
   }
 
@@ -1127,8 +1138,7 @@ input[type=radio]:checked {
     width: 95%;
   } */
 
-  div#gameDescription {
-      width: 100%;
+  .game-description {
       text-align: left;
       font-family: 'Lexend';
       font-size: .75rem;
