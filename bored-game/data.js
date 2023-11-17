@@ -115,19 +115,21 @@ const gamesData = [
     //   "activity": "Involved",
     //   "rules": "<strong>Rules:</strong><br>\nSlam is a card game played with a standard deck of cards, typically by 2 or more players. The game combines strategy, psychology, and a bit of luck. The objective is to win tricks and score points.\n\n<strong>Gameplay:</strong><br>\n<em>1. Objective:</em><br>\nThe goal is to win tricks and score points by playing the highest-ranking cards in each trick. The player or team with the most points at the end of the game wins.<br><br>\n\n<em>2. Deck:</em><br>\nSlam is played with a standard 52-card deck.<br><br>\n\n<em>3. Number of Players:</em><br>\nSlam can be played by 2 or more players. In the case of more players, they can form teams.<br><br>\n\n<em>4. Dealing:</em><br>\nThe dealer shuffles the deck and deals a set number of cards to each player, typically starting with 13 cards each in a 4-player game.<br><br>\n\n<em>5. Bidding:</em><br>\nPlayers take turns bidding on the number of tricks they expect to win in the round. Bids determine the contract for the round.<br><br>\n\n<em>6. Playing Tricks:</em><br>\nPlayers take turns leading tricks by playing a card. Other players must follow suit if possible. The highest-ranking card of the led suit wins the trick. Points are scored based on the contract and the number of tricks won.<br><br>"
     // },
-    // {
-    //   "GameID": 9,
-    //   "Name": "Tic-Tac-Toe",
-    //   "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row horizontally, vertically, or diagonally. Quick, simple, and great for testing strategy and tactics.",
-    //   "minPlayers": 2,
-    //   "maxPlayers": 2,
-    //   "imageURL": "",
-    //   "timeAvailable": 5,
-    //   "difficultyLevel": "Easy",
-    //   "drinking": "FALSE",
-    //   "activity": "Relaxed",
-    //   "rules": ""
-    // },
+    {
+      "GameID": 9,
+      "Name": "Tic-Tac-Toe",
+      "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row horizontally, vertically, or diagonally. Quick, simple, and great for testing strategy and tactics.",
+      "minPlayers": 2,
+      "maxPlayers": 2,
+      "toolsRequired": ["./assets/images/dice.png", "./assets/images/paper.png"],
+      "toolsText": ["5 Dice", "Pen and Paper"],
+      "imageURL": "",
+      "timeAvailable": 5,
+      "difficultyLevel": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
     // {
     //   "GameID": 10,
     //   "Name": "Nim",

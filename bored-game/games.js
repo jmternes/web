@@ -16,8 +16,25 @@ function displayGameDetails(gameId) {
     if (game) {
         document.getElementById('gameName').textContent = game.Name || 'No name provided';
         document.getElementById('gameDescription').textContent = game.description || 'No description available';
-        document.getElementById('minPlayers').textContent = game.minPlayers || 'N/A';
-        document.getElementById('maxPlayers').textContent = game.maxPlayers || 'N/A';
+
+        const minPlayersSpan = document.getElementById('minPlayers');
+        const maxPlayersSpan = document.getElementById('maxPlayers');
+        const playersText = document.getElementById('noOfPlayers');
+
+        const playerCountSpan = document.getElementById('noOfPlayers');
+
+        // Determine player count text
+        if (game.minPlayers === game.maxPlayers) {
+            playerCountSpan.textContent = `${game.minPlayers} players`;
+        } else {
+            playerCountSpan.textContent = `${game.minPlayers}-${game.maxPlayers} players`;
+        }
+        // document.getElementById('minPlayers').textContent = game.minPlayers;
+        // document.getElementById('maxPlayers').textContent = game.maxPlayers || 'N/A';
+        // const playerText = (game.minPlayers === game.maxPlayers) ? 
+        //                    `${game.minPlayers} players` : 
+        //                    `${game.minPlayers}-${game.maxPlayers} players`;
+        // document.getElementById('noOfPlayers').textContent = playerText;
         document.getElementById('timeAvailable').textContent = game.timeAvailable || 'N/A';
         document.getElementById('difficultyText').textContent = game.difficulty || 'N/A';
 
@@ -47,6 +64,6 @@ function displayGameDetails(gameId) {
 
 
 
-displayGameDetails(6);
+displayGameDetails(9);
 
 
