@@ -101,6 +101,8 @@ function createCardsForAllGames() {
             toolsTextContainer.appendChild(caption);
         });
 
+// fix the css of the bottom half of card
+
         const filterIcons = document.createElement('div');
         filterIcons.classList.add('card-filter-icons');
         filterIcons.innerHTML = `
