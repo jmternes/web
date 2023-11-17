@@ -29,12 +29,7 @@ function displayGameDetails(gameId) {
         } else {
             playerCountSpan.textContent = `${game.minPlayers}-${game.maxPlayers} players`;
         }
-        // document.getElementById('minPlayers').textContent = game.minPlayers;
-        // document.getElementById('maxPlayers').textContent = game.maxPlayers || 'N/A';
-        // const playerText = (game.minPlayers === game.maxPlayers) ? 
-        //                    `${game.minPlayers} players` : 
-        //                    `${game.minPlayers}-${game.maxPlayers} players`;
-        // document.getElementById('noOfPlayers').textContent = playerText;
+
         document.getElementById('timeAvailable').textContent = game.timeAvailable || 'N/A';
         document.getElementById('difficultyText').textContent = game.difficulty || 'N/A';
 
@@ -65,5 +60,3 @@ function displayGameDetails(gameId) {
 
 
 displayGameDetails(9);
-
-

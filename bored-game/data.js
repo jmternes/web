@@ -118,14 +118,14 @@ const gamesData = [
     {
       "GameID": 9,
       "Name": "Tic-Tac-Toe",
-      "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row horizontally, vertically, or diagonally. Quick, simple, and great for testing strategy and tactics.",
+      "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
       "minPlayers": 2,
       "maxPlayers": 2,
-      "toolsRequired": ["./assets/images/dice.png", "./assets/images/paper.png"],
-      "toolsText": ["5 Dice", "Pen and Paper"],
+      "toolsRequired": ["./assets/images/paper.png"],
+      "toolsText": ["Pen and Paper"],
       "imageURL": "",
       "timeAvailable": 5,
-      "difficultyLevel": "Easy",
+      "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
       "rules": ""
