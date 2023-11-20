@@ -126,6 +126,13 @@ p.about-subheader {
     display: none;
   }
 
+  /* .navbar-search button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+  } */
+
   div.navbar-links {
     margin-right: 3rem;
     font-size: .75rem;
@@ -601,6 +608,7 @@ p.about-subheader {
 .navbar-search {
   display: flex;
 }
+
 
 
 .navbar-search input {
