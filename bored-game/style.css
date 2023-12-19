@@ -1162,7 +1162,7 @@ input[type=radio]:checked {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    /* border: 1px sold red; */
+    border: 1px sold red;
     width: auto;
     padding: .5rem;
     margin-top: .5rem;
@@ -1173,7 +1173,7 @@ input[type=radio]:checked {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
   }
 
