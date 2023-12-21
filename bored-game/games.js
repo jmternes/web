@@ -145,7 +145,10 @@ function createCardsForAllGames() {
         card.appendChild(playerCount);
 
         // Add other game details (like time available, difficulty, etc.)
-        // ...
+        // click event for when user clicks on card, it will take them to the game page
+        card.addEventListener('click', () => {
+            window.location.href = `game.html?gameId=${game.GameID}`;
+        });
 
         // Append the card to the list container
         cardsListContainer.appendChild(card);
