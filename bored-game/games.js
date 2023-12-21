@@ -101,7 +101,7 @@ function createCardsForAllGames() {
             toolsTextContainer.appendChild(caption);
         });
 
-// fix the css of the bottom half of card
+// fix the css of the bottom half of card - image-title-container tools-text and image-container tools-images in CSS
 
         const filterIcons = document.createElement('div');
         filterIcons.classList.add('card-filter-icons');
@@ -146,6 +146,7 @@ function createCardsForAllGames() {
 
         // Add other game details (like time available, difficulty, etc.)
         // click event for when user clicks on card, it will take them to the game page
+
         card.addEventListener('click', () => {
             window.location.href = `game.html?gameId=${game.GameID}`;
         });
