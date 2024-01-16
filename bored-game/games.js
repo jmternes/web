@@ -138,6 +138,9 @@ function createCardsForAllGames() {
         card.appendChild(filterIcons);
         card.appendChild(filterText);
 
+        // css to do: card: title - line spacing down
+        // increase padding / increase card width
+        // match bottom text to description text
 
 
         // Add player count - commented out - but might be useful
