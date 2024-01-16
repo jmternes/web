@@ -137,12 +137,12 @@ function createCardsForAllGames() {
         card.appendChild(toolsImagesContainer);
         card.appendChild(toolsTextContainer);
 
-        // Add player count
-        const playerCount = document.createElement('p');
-        playerCount.textContent = game.minPlayers === game.maxPlayers ?
-                                  `${game.minPlayers} players` :
-                                  `${game.minPlayers}-${game.maxPlayers} players`;
-        card.appendChild(playerCount);
+        // Add player count - commented out - but might be useful
+        // const playerCount = document.createElement('p');
+        // playerCount.textContent = game.minPlayers === game.maxPlayers ?
+        //                           `${game.minPlayers} players` :
+        //                           `${game.minPlayers}-${game.maxPlayers} players`;
+        // card.appendChild(playerCount);
 
         // Add other game details (like time available, difficulty, etc.)
         // click event for when user clicks on card, it will take them to the game page

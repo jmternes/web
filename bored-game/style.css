@@ -767,6 +767,15 @@ p.about-subheader {
   filter: grayscale(0%);
 }
 
+/* .tools-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+} */
+
 .players-wrapper {
   width: 27.31rem;
   height: 9.38rem;
@@ -1180,7 +1189,7 @@ input[type=radio]:checked {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
   }
 
@@ -1226,8 +1235,9 @@ input[type=radio]:checked {
 
   .card-filter-icons {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     /* border: 1px solid red; */
   }
 
@@ -1239,11 +1249,12 @@ input[type=radio]:checked {
 
   .card-filter-text {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
     font-family: 'Lexend';
     font-size: .5rem;
     font-weight: 200;
-    /* margin-top: .5rem; */
+    width: 100%;
   }
 
   .card-filter-text p {
