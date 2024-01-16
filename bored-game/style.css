@@ -767,14 +767,9 @@ p.about-subheader {
   filter: grayscale(0%);
 }
 
-/* .tools-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  border: 1px solid red;
-} */
+.tools-images {
+  transform: scale(.8);
+}
 
 .players-wrapper {
   width: 27.31rem;

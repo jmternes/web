@@ -129,13 +129,16 @@ function createCardsForAllGames() {
         difficultyText.innerHTML = `<span class="difficulty-text">${game.difficulty}</span>`;
         filterText.appendChild(difficultyText);
 
-        // Append the filter icons and text to the card
-        card.appendChild(filterIcons);
-        card.appendChild(filterText);
 
         // Append the tools container to the card
         card.appendChild(toolsImagesContainer);
         card.appendChild(toolsTextContainer);
+
+        // Append the filter icons and text to the card
+        card.appendChild(filterIcons);
+        card.appendChild(filterText);
+
+
 
         // Add player count - commented out - but might be useful
         // const playerCount = document.createElement('p');
