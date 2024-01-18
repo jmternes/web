@@ -145,19 +145,19 @@ const gamesData = [
       "activity": "Relaxed",
       "rules": ""
     },
-    // {
-    //   "GameID": 11,
-    //   "Name": "Cheat",
-    //   "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played. The catch? Bluffing is encouraged, and players often try to sneak in cards they don't actually have. It's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
-    //   "minPlayers": 3,
-    //   "maxPlayers": 8,
-    //   "imageURL": "",
-    //   "timeAvailable": 10,
-    //   "difficultyLevel": "Easy",
-    //   "drinking": "FALSE",
-    //   "activity": "Relaxed",
-    //   "rules": ""
-    // },
+    {
+      "GameID": 11,
+      "Name": "Cheat",
+      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played. The catch? Bluffing is encouraged, and players often try to sneak in cards they don't actually have. It's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
+      "minPlayers": 3,
+      "maxPlayers": 8,
+      "imageURL": "",
+      "timeAvailable": 10,
+      "difficultyLevel": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
     // {
     //   "GameID": 12,
     //   "Name": "Flip Cup",
