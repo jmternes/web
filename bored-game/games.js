@@ -201,6 +201,6 @@ document.addEventListener('DOMContentLoaded', createCardsForAllGames);
 
 
 
-// displayGameDetails(9);
+// displayGameDetails(10);
 
 // console.log(gameId);
