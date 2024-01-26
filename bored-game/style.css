@@ -245,7 +245,7 @@ p.about-subheader {
 
   button.search-button {
     width: 100%;
-
+    margin-top: 8rem;
   }
 
 
@@ -1048,9 +1048,9 @@ input[type=radio]:checked {
   padding: 16px 155px;
   gap: 8px;
   margin-left: 3rem;
-  margin-top: 2rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
-  width: 27.31rem;
+  width: 27.4rem;
   height: 3.5rem;
   background-color: var(--goldensearch);
   border: 2px solid var(--black);
@@ -1063,6 +1063,7 @@ input[type=radio]:checked {
 .search-button:hover {
   background-color: var(--searchhover);
   box-shadow: 2px 2px 0px var(--black);
+  cursor: pointer;
 }
 
 .search-button:active {
@@ -1283,9 +1284,9 @@ input[type=radio]:checked {
     padding: 16px 155px;
     gap: 8px;
     margin-left: 3rem;
-    margin-top: 2rem;
+    margin-top: 12rem; /* Updated margin-top value */
     margin-bottom: 2rem;
-    width: 40rem;
+    width: 27.4rem;
     height: 3.5rem;
     background-color: var(--lightcoral);
     border: 2px solid var(--black);
@@ -1293,11 +1294,13 @@ input[type=radio]:checked {
     font-family: 'Lexend';
     font-size: 1.38rem;
     font-weight: 600;
+    z-index: 1;
   }
 
   .reset-button:hover {
     background-color: var(--coral);
     box-shadow: 2px 2px 0px var(--black);
+    cursor: pointer;
   }
 
   .reset-button:active {
