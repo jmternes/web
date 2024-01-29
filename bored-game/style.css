@@ -1040,7 +1040,7 @@ input[type=radio]:checked {
   margin-left: 1rem;
 }
 
-.search-button {
+button.search-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1048,16 +1048,17 @@ input[type=radio]:checked {
   padding: 16px 155px;
   gap: 8px;
   margin-left: 3rem;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
+  margin-top: 12rem;
+  /* margin-bottom: 2rem; */
   width: 27.4rem;
   height: 3.5rem;
   background-color: var(--goldensearch);
   border: 2px solid var(--black);
   border-radius: 12px;
   font-family: 'Lexend';
-  font-size: 1.38rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -1284,7 +1285,7 @@ input[type=radio]:checked {
     padding: 16px 155px;
     gap: 8px;
     margin-left: 3rem;
-    margin-top: 12rem; /* Updated margin-top value */
+    margin-top: 2rem; /* Updated margin-top value */
     margin-bottom: 2rem;
     width: 27.4rem;
     height: 3.5rem;
@@ -1292,7 +1293,7 @@ input[type=radio]:checked {
     border: 2px solid var(--black);
     border-radius: 12px;
     font-family: 'Lexend';
-    font-size: 1.38rem;
+    font-size: 1.25rem;
     font-weight: 600;
     z-index: 1;
   }

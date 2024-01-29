@@ -1,6 +1,21 @@
 const gamesData = [
-    {
+  {
       "GameID": 1,
+      "name": "3s",
+      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played.  BIt's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
+      "minPlayers": 3,
+      "maxPlayers": 8,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      "imageURL": "",
+      "timeAvailable": 10,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
+    {
+      "GameID": 2,
       "name": "500 Rummy",
       "description": "A card game for 2 to 8 players using a standard deck. Form sets and runs with your cards to score points. The first player to reach or exceed 500 points wins. Strategic card play is the key to victory.",
       "minPlayers": 2,
@@ -15,7 +30,7 @@ const gamesData = [
       "rules": "Rules: Use a standard 52-card deck for 2 to 8 players. Deal 10 cards for 2 to 4 players, or 7 cards for 5 or more players. Place the remaining deck face down as a draw pile and turn the top card face up to start the discard pile. Gameplay: The objective is to score 500 points by forming sets and runs with your cards. Take turns drawing a card and optionally laying down sets/runs or adding to existing ones. End your turn by discarding a card onto the discard pile. Points are scored for valid sets/runs laid down on the table, while ungrouped cards count against your score. The first player to reach or exceed 500 points at the end of a hand wins."
     },
     {
-      "GameID": 2,
+      "GameID": 3,
       "name": "Blackjack",
       "description": "A popular casino card game where players aim to get a value as close to 21 as possible without going over. Face cards are worth 10 points, aces can be 1 or 11, and strategy is key. Beat the dealer and win the round.",
       "minPlayers": 2,
@@ -31,70 +46,7 @@ const gamesData = [
     },
 
     {
-      "GameID": 3,
-      "name": "Hearts",
-      "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
-      "minPlayers": 4,
-      "maxPlayers": 4,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      // "imageURL": "",
-      "timeAvailable": 20,
-      "difficulty": "Moderate",
-      "drinking": "FALSE",
-      "activity": "Involved",
-      "rules": "<strong>Rules: Hearts is played with a standard 52-card deck. Remove the 2 of clubs to start with 51 cards. Deal 13 cards to each player if you have 4 players. With 3 players, deal 17 cards to each player. If there are 5 players, use all 51 cards and deal 10 cards to each player.<br><br>\n\n<strong>Gameplay:</strong><br>The objective is to avoid taking cards with hearts and the queen of spades, which carry penalty points. In each trick, the player with the 2 of clubs leads. Other players must follow suit if possible. The player with the highest card of the led suit wins the trick. Hearts cannot be led until they have been \"broken\" by a player taking hearts in a previous trick. The game continues until all cards are played. The player with the fewest penalty points wins the game."
-    },
-
-    {
       "GameID": 4,
-      "name": "Bridge",
-      "description": "A four-player card game of strategy and communication. Form partnerships and use bids to determine the trump suit or play in no-trump. The objective is to win tricks by playing high-ranking cards. Bridge is a challenging game that combines teamwork and skill.",
-      "minPlayers": 4,
-      "maxPlayers": 4,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      // "imageURL": "",
-      "timeAvailable": 30,
-      "difficulty": "Hard",
-      "drinking": "FALSE",
-      "activity": "Involved",
-      "rules": "<strong>Rules:</strong><br> Bridge is played with a standard deck of 52 cards and four players in two partnerships. Each player is dealt 13 cards. Players sit opposite their partners. The dealer shuffles and deals the cards clockwise.<br><br>\n\n<strong>Gameplay:</strong><br> The objective is to win tricks by playing higher-ranking cards in a series of deals. Players communicate through bids to determine the trump suit or whether to play in no-trump. The player to the dealer's left leads the first card, and players must follow suit if possible. The highest-ranking card of the led suit wins the trick. Points are scored for successfully making the contracted number of tricks based on bids. The partnership with the most points at the end of the game wins."
-    },
-
-    {
-      "GameID": 5,
-      "name": "Solitaire",
-      "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
-      "minPlayers": 1,
-      "maxPlayers": 1,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      "timeAvailable": 20,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Relaxed",
-      "rules": ""
-    },
-
-    {
-      "GameID": 6,
-      "name": "Yahtzee",
-      "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
-      "minPlayers": 1,
-      "maxPlayers": 10,
-      "toolsRequired": ["./assets/images/dice.png", "./assets/images/paper.png"],
-      "toolsText": ["5 Dice", "Pen and Paper"],
-      // "imageURL": "",
-      "timeAvailable": 30,
-      "difficulty": "Moderate",
-      "drinking": "FALSE",
-      "activity": "Competitive",
-      "rules": ""
-    },
-
-    {
-      "GameID": 7,
       "name": "Boxes",
       "description": "A strategic paper-and-pencil game. Connect dots to create squares and claim them with your initials. Capture the most squares to win.",
       "minPlayers": 2,
@@ -110,100 +62,23 @@ const gamesData = [
     },
 
     {
-      "GameID": 8,
-      "name": "Slam",
-      "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
-      "minPlayers": 2,
-      "maxPlayers": 8,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      "imageURL": "",
-      "timeAvailable": 15,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Involved",
-      "rules": ""
-    },
-
-    {
-      "GameID": 9,
-      "name": "Tic-Tac-Toe",
-      "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
-      "minPlayers": 2,
-      "maxPlayers": 5,
-      "toolsRequired": ["./assets/images/paper.png"],
-      "toolsText": ["Pen and Paper"],
-      "imageURL": "./assets/images/paper.png",
-      "timeAvailable": 5,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Relaxed",
-      "rules": ""
-    },
-    {
-      "GameID": 10,
-      "name": "Nim",
-      "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
-      "minPlayers": 2,
-      "maxPlayers": 2,
-      "toolsRequired": ["./assets/images/othertool.png"],
-      "toolsText": ["Other Tools"],
-      // "imageURL": "",
-      "timeAvailable": 5,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Relaxed",
-      "rules": ""
-    },
-    {
-      "GameID": 11,
-      "name": "Cheat",
-      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played.  BIt's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
-      "minPlayers": 3,
-      "maxPlayers": 8,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      "imageURL": "",
-      "timeAvailable": 10,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Relaxed",
-      "rules": ""
-    },
-    {
-      "GameID": 12,
-      "name": "3s",
-      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played.  BIt's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
-      "minPlayers": 3,
-      "maxPlayers": 8,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
-      "imageURL": "",
-      "timeAvailable": 10,
-      "difficulty": "Easy",
-      "drinking": "FALSE",
-      "activity": "Relaxed",
-      "rules": ""
-    },
-
-    {
-      "GameID": 13,
-      "name": "Flip Cup",
-      "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
+      "GameID": 5,
+      "name": "Bridge",
+      "description": "A four-player card game of strategy and communication. Form partnerships and use bids to determine the trump suit or play in no-trump. The objective is to win tricks by playing high-ranking cards. Bridge is a challenging game that combines teamwork and skill.",
       "minPlayers": 4,
-      "maxPlayers": 12,
-      "toolsRequired": ["./assets/images/cup.png", "./assets/images/table.png"],
-      "toolsText": ["Cups", "Table"],
-      "imageURL": "",
-      "timeAvailable": 10,
-      "difficulty": "Easy",
-      "drinking": "TRUE",
+      "maxPlayers": 4,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      // "imageURL": "",
+      "timeAvailable": 30,
+      "difficulty": "Hard",
+      "drinking": "FALSE",
       "activity": "Involved",
-      "rules": ""
+      "rules": "<strong>Rules:</strong><br> Bridge is played with a standard deck of 52 cards and four players in two partnerships. Each player is dealt 13 cards. Players sit opposite their partners. The dealer shuffles and deals the cards clockwise.<br><br>\n\n<strong>Gameplay:</strong><br> The objective is to win tricks by playing higher-ranking cards in a series of deals. Players communicate through bids to determine the trump suit or whether to play in no-trump. The player to the dealer's left leads the first card, and players must follow suit if possible. The highest-ranking card of the led suit wins the trick. Points are scored for successfully making the contracted number of tricks based on bids. The partnership with the most points at the end of the game wins."
     },
 
     {
-      "GameID": 14,
+      "GameID": 6,
       "name": "Charades",
       "description": "Charades is a classic party game that requires no special equipment. Players take turns acting out a word or phrase without speaking while their team tries to guess what they're portraying. It's a fun and interactive game that often leads to lots of laughter and entertainment.",
       "minPlayers": 4,
@@ -219,7 +94,102 @@ const gamesData = [
     },
 
     {
-      "GameID": 15,
+      "GameID": 7,
+      "name": "Cheat",
+      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played.  BIt's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
+      "minPlayers": 3,
+      "maxPlayers": 8,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      "imageURL": "",
+      "timeAvailable": 10,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
+
+    {
+      "GameID": 8,
+      "name": "Flip Cup",
+      "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
+      "minPlayers": 4,
+      "maxPlayers": 12,
+      "toolsRequired": ["./assets/images/cup.png", "./assets/images/table.png"],
+      "toolsText": ["Cups", "Table"],
+      "imageURL": "",
+      "timeAvailable": 10,
+      "difficulty": "Easy",
+      "drinking": "TRUE",
+      "activity": "Involved",
+      "rules": ""
+    },
+
+    {
+      "GameID": 9,
+      "name": "Hearts",
+      "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
+      "minPlayers": 4,
+      "maxPlayers": 4,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      // "imageURL": "",
+      "timeAvailable": 20,
+      "difficulty": "Moderate",
+      "drinking": "FALSE",
+      "activity": "Involved",
+      "rules": "<strong>Rules: Hearts is played with a standard 52-card deck. Remove the 2 of clubs to start with 51 cards. Deal 13 cards to each player if you have 4 players. With 3 players, deal 17 cards to each player. If there are 5 players, use all 51 cards and deal 10 cards to each player.<br><br>\n\n<strong>Gameplay:</strong><br>The objective is to avoid taking cards with hearts and the queen of spades, which carry penalty points. In each trick, the player with the 2 of clubs leads. Other players must follow suit if possible. The player with the highest card of the led suit wins the trick. Hearts cannot be led until they have been \"broken\" by a player taking hearts in a previous trick. The game continues until all cards are played. The player with the fewest penalty points wins the game."
+    },
+
+    {
+      "GameID": 10,
+      "name": "Nim",
+      "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
+      "minPlayers": 2,
+      "maxPlayers": 2,
+      "toolsRequired": ["./assets/images/othertool.png"],
+      "toolsText": ["Other Tools"],
+      // "imageURL": "",
+      "timeAvailable": 5,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
+
+    {
+      "GameID": 11,
+      "name": "Slam",
+      "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      "imageURL": "",
+      "timeAvailable": 15,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Involved",
+      "rules": ""
+    },
+
+    {
+      "GameID": 12,
+      "name": "Solitaire",
+      "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
+      "minPlayers": 1,
+      "maxPlayers": 1,
+      "toolsRequired": ["./assets/images/cards.png"],
+      "toolsText": ["Cards"],
+      "timeAvailable": 20,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
+
+    {
+      "GameID": 13,
       "name": "Spoons",
       "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are essential for victory.",
       "minPlayers": 3,
@@ -233,4 +203,37 @@ const gamesData = [
       "activity": "Involved",
       "rules": ""
     },
+
+    {
+      "GameID": 14,
+      "name": "Tic-Tac-Toe",
+      "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
+      "minPlayers": 2,
+      "maxPlayers": 5,
+      "toolsRequired": ["./assets/images/paper.png"],
+      "toolsText": ["Pen and Paper"],
+      "imageURL": "./assets/images/paper.png",
+      "timeAvailable": 5,
+      "difficulty": "Easy",
+      "drinking": "FALSE",
+      "activity": "Relaxed",
+      "rules": ""
+    },
+
+    {
+      "GameID": 15,
+      "name": "Yahtzee",
+      "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
+      "minPlayers": 1,
+      "maxPlayers": 10,
+      "toolsRequired": ["./assets/images/dice.png", "./assets/images/paper.png"],
+      "toolsText": ["5 Dice", "Pen and Paper"],
+      // "imageURL": "",
+      "timeAvailable": 30,
+      "difficulty": "Moderate",
+      "drinking": "FALSE",
+      "activity": "Competitive",
+      "rules": ""
+    },
+
   ]
