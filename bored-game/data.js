@@ -1,12 +1,12 @@
 export const gamesData = [
   {
       "GameID": 1,
-      "name": "3s",
-      "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played.  BIt's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
+      "name": "31",
+      "description": "31 is a fast-paced and easy-to-learn card game where players try to get a hand totaling 31 points in one suit. It's an engaging game of strategy and chance, suitable for players of all ages.",
       "minPlayers": 3,
       "maxPlayers": 8,
-      "toolsRequired": ["./assets/images/cards.png"],
-      "toolsText": ["Cards"],
+      "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
+      "toolsText": ["Cards", "Money"],
       "imageURL": "",
       "timeAvailable": 10,
       "difficulty": "Easy",
@@ -117,7 +117,20 @@ export const gamesData = [
     },
 
     {
-      "GameID": 8,
+      "GameID": 8, // Replace with the next unique ID
+      "name": "Cribbage",
+      "description": "Cribbage is a classic card game known for its unique  scoring system. Players score points by forming combinations of cards.   The game is traditionally played with a special Cribbage board used for   scorekeeping.",
+      "minPlayers": 2,
+      "maxPlayers": 4,
+      "toolsRequired": ["./assets/images/cards.png", "./assets/images/paper.png"],
+      "toolsText": ["Cards", "Cribbage Board"],
+      "timeAvailable": 30,
+      "difficulty": "Moderate",
+      "vibes": ["Strategic", "Competitive", "Engaging"],
+    },
+
+    {
+      "GameID": 9,
       "name": "Flip Cup",
       "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
       "minPlayers": 4,
@@ -134,7 +147,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 9,
+      "GameID": 10,
       "name": "Hearts",
       "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
       "minPlayers": 4,
@@ -151,7 +164,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 10,
+      "GameID": 11,
       "name": "Nim",
       "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
       "minPlayers": 2,
@@ -168,7 +181,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 11,
+      "GameID": 12,
       "name": "Slam",
       "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
       "minPlayers": 2,
@@ -185,7 +198,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 12,
+      "GameID": 13,
       "name": "Solitaire",
       "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
       "minPlayers": 1,
@@ -201,7 +214,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 13,
+      "GameID": 14,
       "name": "Spoons",
       "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are essential for victory.",
       "minPlayers": 3,
@@ -218,7 +231,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 14,
+      "GameID": 15,
       "name": "Tic-Tac-Toe",
       "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
       "minPlayers": 2,
@@ -235,7 +248,7 @@ export const gamesData = [
     },
 
     {
-      "GameID": 15,
+      "GameID": 16,
       "name": "Yahtzee",
       "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
       "minPlayers": 1,

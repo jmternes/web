@@ -484,9 +484,15 @@ p.about-subheader {
   ul.requirements-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
+    background-color: blue;
+    border: 1px solid black;
     /* more to be done here */
+  }
+
+  ul.requirements-list p {
+    color: red;
   }
 
 
@@ -838,11 +844,6 @@ option:active {
   border: 2px solid var(--coral);
 }
 
-#sort-options {
-  width: 300px;
-  height: 50px;
-  font-size: .8rem;
-}
 
 .vibe-wrapper {
   width: 27.31rem;
@@ -1584,15 +1585,41 @@ button.search-button {
 .sort-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: end;
   margin-left: 3rem;
-  margin-right: 3rem;
+  margin-right: 6rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   list-style-type: none;
   text-align: left;
   font-weight: 600;
 }
+
+.sortby {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid var(--black); */
+}
+
+.sortby p {
+  margin-right: 1rem;
+}
+
+#sort-options {
+  width: 400px;
+  height: 55px;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.sortby select option {
+  font-size: 1.2rem;
+  font-family: 'Lexend', sans-serif;
+  background-color: var(--lightblue);
+}
+
 
 .directory-card-wrapper {
   display: flex;

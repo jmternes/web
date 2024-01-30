@@ -33,11 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Update other game details - players, time, and difficulty
         const detailsTextElements = document.querySelectorAll('.game-details-text p');
-        detailsTextElements[0].textContent = `${game.minPlayers}-${game.maxPlayers} Players`;
+
+        // Display number of players, time available, and difficulty
+        const playersText = game.minPlayers === game.maxPlayers ?
+                    `${game.minPlayers} Players` :
+                    `${game.minPlayers}-${game.maxPlayers} Players`;
+        detailsTextElements[0].textContent = playersText;
+
         detailsTextElements[1].textContent = `${game.timeAvailable} Minutes`;
         detailsTextElements[2].textContent = game.difficulty;
 
-        // Update the vibes - FIX 
+
+        // Update the vibes - FIX
         const pillsContainer = document.querySelector('.pills-container');
         pillsContainer.innerHTML = ''; // Clear existing pills
 
