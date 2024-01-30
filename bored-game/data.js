@@ -39,12 +39,12 @@ export const gamesData = [
       "maxPlayers": 7,
       "toolsRequired": ["./assets/images/cards.png"],
       "toolsText": ["Cards"],
-      "imageURL": "",
+      // "imageURL": "",
       "timeAvailable": 20,
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
-      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
+      "vibes": ["Chill", "Tight", "blackjack vibes", "Relaxed", "Children Friendly"],
       "rules": "Rules:<br> Blackjack is played with a standard deck of 52 cards. Players aim to create a hand value as close to 21 as possible without exceeding it. Deal 2 cards to each player, including the dealer. The dealer's first card is face-up, while the second is face-down.<br><br>\n\nGameplay:<br> Players take turns deciding whether to \"hit\" (take another card) or \"stand\" (keep their current hand). Face cards are worth 10 points, aces can be 1 or 11 points, and other cards are their face value. The player who gets closest to 21 without going over wins the round. If a player or the dealer goes over 21, they \"bust\" and lose the round. The first player to win a predetermined number of rounds or reach a target score wins the game."
     },
 
