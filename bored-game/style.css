@@ -825,18 +825,23 @@ select:hover {
   background: var(--lightblue);
 }
 
-option {
+option#filter-option {
   font-family: 'Lexend', sans-serif;
   background-color: var(--white);
 }
 
-option:hover {
+option#filter-option:hover {
   background-color: var(--lightblue);
 }
 
-
 option:active {
   border: 2px solid var(--coral);
+}
+
+#sort-options {
+  width: 300px;
+  height: 50px;
+  font-size: .8rem;
 }
 
 .vibe-wrapper {
@@ -1483,12 +1488,13 @@ button.search-button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 2rem;
-  margin-left: 15rem;
+  margin-top: 4rem;
+  margin-left: 8rem;
   width: 28rem;
   margin-bottom: 2rem;
   list-style-type: none;
   text-align: center;
+  /* border: 1px solid red; */
 }
 
 .game-vibes {

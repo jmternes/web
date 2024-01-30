@@ -1,4 +1,15 @@
-// updates the display when user clicks a sorting option in directory
+
+
+import { gamesData } from './data.js';
+
+
+// ----------------------------------------
+
+
+
+// DIRECTORY -  function updates the display when user clicks a sorting option
+
+
 
 function updateDisplay(sortedGames) {
     let gamesContainer = document.querySelector('.directory-card-wrapper');
@@ -196,6 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // createCardsForContainer('.cards-list', gamesData); since we don't want cards displaying on home by default
     createCardsForContainer('.directory-card-wrapper', gamesData);
 });
+
+
+
+
+
 
 
 

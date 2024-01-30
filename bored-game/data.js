@@ -1,4 +1,4 @@
-const gamesData = [
+export const gamesData = [
   {
       "GameID": 1,
       "name": "3s",
@@ -12,6 +12,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
     {
@@ -27,6 +28,7 @@ const gamesData = [
       "difficulty": "Moderate",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": "Rules: Use a standard 52-card deck for 2 to 8 players. Deal 10 cards for 2 to 4 players, or 7 cards for 5 or more players. Place the remaining deck face down as a draw pile and turn the top card face up to start the discard pile. Gameplay: The objective is to score 500 points by forming sets and runs with your cards. Take turns drawing a card and optionally laying down sets/runs or adding to existing ones. End your turn by discarding a card onto the discard pile. Points are scored for valid sets/runs laid down on the table, while ungrouped cards count against your score. The first player to reach or exceed 500 points at the end of a hand wins."
     },
     {
@@ -42,6 +44,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": "Rules:<br> Blackjack is played with a standard deck of 52 cards. Players aim to create a hand value as close to 21 as possible without exceeding it. Deal 2 cards to each player, including the dealer. The dealer's first card is face-up, while the second is face-down.<br><br>\n\nGameplay:<br> Players take turns deciding whether to \"hit\" (take another card) or \"stand\" (keep their current hand). Face cards are worth 10 points, aces can be 1 or 11 points, and other cards are their face value. The player who gets closest to 21 without going over wins the round. If a player or the dealer goes over 21, they \"bust\" and lose the round. The first player to win a predetermined number of rounds or reach a target score wins the game."
     },
 
@@ -58,6 +61,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -74,6 +78,7 @@ const gamesData = [
       "difficulty": "Hard",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": "<strong>Rules:</strong><br> Bridge is played with a standard deck of 52 cards and four players in two partnerships. Each player is dealt 13 cards. Players sit opposite their partners. The dealer shuffles and deals the cards clockwise.<br><br>\n\n<strong>Gameplay:</strong><br> The objective is to win tricks by playing higher-ranking cards in a series of deals. Players communicate through bids to determine the trump suit or whether to play in no-trump. The player to the dealer's left leads the first card, and players must follow suit if possible. The highest-ranking card of the led suit wins the trick. Points are scored for successfully making the contracted number of tricks based on bids. The partnership with the most points at the end of the game wins."
     },
 
@@ -90,6 +95,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -106,6 +112,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -122,6 +129,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "TRUE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -138,6 +146,7 @@ const gamesData = [
       "difficulty": "Moderate",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": "<strong>Rules: Hearts is played with a standard 52-card deck. Remove the 2 of clubs to start with 51 cards. Deal 13 cards to each player if you have 4 players. With 3 players, deal 17 cards to each player. If there are 5 players, use all 51 cards and deal 10 cards to each player.<br><br>\n\n<strong>Gameplay:</strong><br>The objective is to avoid taking cards with hearts and the queen of spades, which carry penalty points. In each trick, the player with the 2 of clubs leads. Other players must follow suit if possible. The player with the highest card of the led suit wins the trick. Hearts cannot be led until they have been \"broken\" by a player taking hearts in a previous trick. The game continues until all cards are played. The player with the fewest penalty points wins the game."
     },
 
@@ -154,6 +163,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -170,6 +180,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -185,6 +196,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -201,6 +213,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Involved",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -217,6 +230,7 @@ const gamesData = [
       "difficulty": "Easy",
       "drinking": "FALSE",
       "activity": "Relaxed",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
@@ -233,7 +247,10 @@ const gamesData = [
       "difficulty": "Moderate",
       "drinking": "FALSE",
       "activity": "Competitive",
+      "vibes": ["Chill", "Tight", "Competitive", "Relaxed", "Children Friendly"],
       "rules": ""
     },
 
   ]
+
+  console.log("data.js loaded", gamesData);

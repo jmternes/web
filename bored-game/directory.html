@@ -34,10 +34,10 @@
     <div class="sortby">
       <p>Sort By:</p>
       <select id="sort-options">
-        <option value="alphabetical">A-Z</option>
-        <option value="minPlayers">Players: Fewest First</option>
-        <option value="maxPlayers">Players: Most First</option>
-
+        <option id="sort-option" value="alphabetical">A-Z</option>
+        <option id="sort-option" value="minPlayers">Players Required: Fewest to Most</option>
+        <option id="sort-option" value="maxPlayers">Players Required: Most to Fewest</option>
+        <option id="sort-option" value="timeAvailable">Time Available: Least to Most</option>
         <!-- Add more options if needed -->
       </select>
     </div>
@@ -49,7 +49,7 @@
 
   <div class="directory-card-wrapper">
 
-
+<!-- 
     <div class="card template">
       <div class="card-title title-black">
         <h5 class="game-name"></h5>
@@ -63,7 +63,7 @@
       </div>
       <div class="card-filter-icons-wrapper"></div>
     </div>
-  </div>
+  </div> -->
 
 
     <footer id="footer">
@@ -72,8 +72,8 @@
       <a href=""><p>Contact</p></a>
     </footer>
 
-<script src="data.js"></script>
-<script src="games.js"></script>
+<script type="module" src="data.js"></script>
+<script type="module" src="games.js"></script>
 
 </body>
 </html>
