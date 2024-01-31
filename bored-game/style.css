@@ -79,7 +79,7 @@ p.about-subheader {
     justify-content: space-between;
     align-items: center;
     width: 220px;
-    font-size: 1.13rem;
+    font-size: 1.9rem;
     /* border: 1px solid red; */
   }
 
@@ -593,7 +593,7 @@ p.about-subheader {
 }
 
 .navbar-links {
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 600;
   margin-right: 2rem;
   font-family: 'Lexend', sans-serif;
@@ -602,7 +602,7 @@ p.about-subheader {
 .navbar-links a {
   color: var(--black);
   text-decoration: none;
-  font-size: 1.13rem;
+  font-size: 1.3rem;
 }
 
 .navbar-links a:hover {
@@ -668,7 +668,7 @@ p.about-subheader {
 
 /* Header */
 
-.home-header {
+/* .home-header { original
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,7 +681,56 @@ p.about-subheader {
     margin-bottom: 3rem;
     padding: 2.5rem;
     font-family: 'Lexend', sans-serif;
+} */
+
+/* new with responsive */
+
+.home-header {
+  display: block;
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 4.25rem;
+  font-weight: 900;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  width: 70%;
+  font-family: 'Lexend', sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
+
+.home-header em {
+  color: var(--darkgray);
+  /* font-style: italic; */
+  font-weight: 600;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home-header {
+      font-size: 3rem; /* Smaller font size for smaller screens */
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+
+/* end home header styling  */
+
+
+
+.emphasis {
+  font-style: oblique;
+  color: var(--lightblue);
+  font-weight: 800;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  letter-spacing: 0.04em;
+}
+
 
 .home-subheader {
   display: flex;
@@ -708,6 +757,7 @@ p.about-subheader {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 35px;
+  width: 33%;
 }
 
 .filter-wrapper {
