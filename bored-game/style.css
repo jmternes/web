@@ -610,9 +610,12 @@ p.about-subheader {
   border-bottom: 2px solid var(--black);
 }
 
+/* FIX BELOW - SEARCH BAR, ICON, BUTTON */
 
 .navbar-search {
   display: flex;
+  align-items: center;
+  position: relative
 }
 
 
@@ -621,12 +624,13 @@ p.about-subheader {
   border: 2px solid var(--black);
   background-color: var(--softwhite);
   border-radius: 3px;
-  height: 3.5rem;
+  height: 3.1rem;
   width: 30.88rem;
   font-family: 'Lexend';
   font-size: 1.5rem;
   padding-left: .5rem;
   background-color: var(--gray);
+  flex-grow: 1;
 }
 
 .navbar-search input:hover {
@@ -645,7 +649,21 @@ p.about-subheader {
   background-color: var(--white);
 }
 
-.navbar-search button[type="submit"] {
+.search-btn {
+  padding: 10px;
+  border: 1px solid #000000;
+
+  cursor: pointer;
+  /* Use an actual URL for your search icon image */
+  background-image: url('./assets/images/search.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px; /* Adjust based on your design */
+  width: 90px;
+
+}
+
+/* .navbar-search button[type="submit"] {
   position: absolute;
   height: 2.13rem;
   width: 1.38rem;
@@ -658,7 +676,7 @@ p.about-subheader {
   border: 1px solid ;
   border-radius: inherit;
   cursor: pointer;
-}
+} */
 
 /* End Navbar */
 
@@ -723,8 +741,8 @@ p.about-subheader {
   font-style: oblique;
   color: var(--lightblue);
   font-weight: 800;
-  text-shadow: 
-    -1px -1px 0 #000,  
+  text-shadow:
+    -1px -1px 0 #000,
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
