@@ -5,49 +5,6 @@ import { gamesData } from './data.js';
 
 // ----------------------------------------
 
-// HOME PAGE FILTERING BELOW
-
-// Function to collect filter values
-function getFilterValues() {
-  return {
-      tools: document.querySelectorAll('.tools-container.selected'), // Add a 'selected' class to tools on click
-      players: document.getElementById('players').value,
-      vibe: document.querySelectorAll('.vibe-container.selected'), // Add a 'selected' class to vibes on click
-      time: document.getElementById('time').value,
-      difficulty: document.getElementById('difficulty').value,
-      drinking: document.querySelector('input[name="myRadioField"]:checked').value,
-      familyFriendly: document.querySelector('input[name="myRadioField"]:checked').value
-  };
-}
-
-// Function to filter games based on selections
-function filterGames(filters) {
-  // Implement your filtering logic here using the filters object
-  // For example, if a game has the required tools and matches the number of players, etc.
-}
-
-// Function to display games
-function displayGames(games) {
-  // Clear the current display and append games that match the filter
-}
-
-// Event listener for the Search button
-document.querySelector('.search-button').addEventListener('click', () => {
-  const filters = getFilterValues();
-  const filteredGames = filterGames(filters);
-  displayGames(filteredGames);
-});
-
-// Event listener for the Reset button
-document.querySelector('.reset-button').addEventListener('click', () => {
-  // Reset all filters to their default state
-  // Optionally, call displayGames with the complete gamesData array to show all games again
-});
-
-
-
-
-// END OF FILTERING
 
 
 
@@ -260,21 +217,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Main page script for filtering/displaying games
+// HOME PAGE FILTERING BELOW
 
-function applyFilters() {
-    // Get filter values (you'll need to implement this based on your filters)
-    const filteredData = filterGames(gamesData); // Implement filterGames based on your filter logic
-
-    // Now create cards based on the filtered data
-    createCardsForContainer('.cards-list', filteredData);
+// Function to collect filter values
+function getFilterValues() {
+  return {
+      tools: document.querySelectorAll('.tools-container.selected'), // Add a 'selected' class to tools on click
+      players: document.getElementById('players').value,
+      vibe: document.querySelectorAll('.vibe-container.selected'), // Add a 'selected' class to vibes on click
+      time: document.getElementById('time').value,
+      difficulty: document.getElementById('difficulty').value,
+      drinking: document.querySelector('input[name="myRadioField"]:checked').value,
+      familyFriendly: document.querySelector('input[name="myRadioField"]:checked').value
+  };
 }
 
-// Setup event listeners for your filters
-// For example, if you have a button to apply filters:
-document.getElementById('filter-button').addEventListener('click', applyFilters);
+// Function to filter games based on selections
+function filterGames(filters) {
+  // Implement your filtering logic here using the filters object
+  // For example, if a game has the required tools and matches the number of players, etc.
+}
 
-// Don't call createCardsForContainer immediately on the main page
+// Function to display games
+function displayGames(games) {
+  // Clear the current display and append games that match the filter
+}
+
+// Event listener for the Search button
+document.querySelector('.search-button').addEventListener('click', () => {
+  const filters = getFilterValues();
+  const filteredGames = filterGames(filters);
+  displayGames(filteredGames);
+});
+
+// Event listener for the Reset button
+document.querySelector('.reset-button').addEventListener('click', () => {
+  // Reset all filters to their default state
+  // Optionally, call displayGames with the complete gamesData array to show all games again
+});
+
+
+
+
+// END OF FILTERING
+
 
 
 
