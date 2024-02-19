@@ -96,21 +96,25 @@ function updateDisplay(sortedGames) {
   }
 
 // sorting function, displays games based on user's sorting option
-  function sortGames(criteria) {
-    if (criteria === "minPlayers") {
+function sortGames(criteria) {
+  if (criteria === "minPlayers") {
       gamesData.sort((a, b) => a.minPlayers - b.minPlayers);
-    } else if (criteria === "maxPlayers") {
-      gamesData.sort((a, b) => b.maxPlayers - a.maxPlayers); // Corrected line
-    } else if (criteria === "alphabetical") {
+  } else if (criteria === "maxPlayers") {
+      gamesData.sort((a, b) => b.maxPlayers - a.maxPlayers);
+  } else if (criteria === "alphabetical") {
       gamesData.sort((a, b) => a.name.localeCompare(b.name));
-    }
-    updateDisplay(gamesData);
+  } else if (criteria === "timeAsc") { // Least to Most
+      gamesData.sort((a, b) => a.timeAvailable - b.timeAvailable);
+  } else if (criteria === "timeDesc") { // Most to Least
+      gamesData.sort((a, b) => b.timeAvailable - a.timeAvailable);
+  }
+  updateDisplay(gamesData);
 }
 
+document.getElementById('sort-options').addEventListener('change', function() {
+  sortGames(this.value);
+});
 
-  document.getElementById('sort-options').addEventListener('change', function() {
-    sortGames(this.value);
-  });
 
 
 

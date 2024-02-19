@@ -650,17 +650,21 @@ p.about-subheader {
 }
 
 .search-btn {
-  padding: 10px;
-  border: 1px solid #000000;
-
+  padding: 4px;
+  border: none;
   cursor: pointer;
-  /* Use an actual URL for your search icon image */
   background-image: url('./assets/images/search.png');
   background-repeat: no-repeat;
   background-position: center;
-  height: 90px; /* Adjust based on your design */
-  width: 90px;
+  height: 3.1rem; /* same height as the search bar */
+  width: 3.1rem;
+  margin-left: .5rem;
+  background-color: var(--gray);
+}
 
+.search-btn:hover {
+  background-color: var(--gray);
+  transform: rotate(-5deg);
 }
 
 /* .navbar-search button[type="submit"] {
