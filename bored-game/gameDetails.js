@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             requirementsList.appendChild(li);
         });
+
+        const rulesTextElement = document.querySelector('.rules-text');
+        rulesTextElement.innerHTML = game.rules;
     }
 
     // Get the game ID from the URL

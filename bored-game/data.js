@@ -262,7 +262,15 @@ export const gamesData = [
       "drinking": "FALSE",
       "activity": "Competitive",
       "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
-      "rules": ""
+      "rules": `<strong>Overview:</strong><br><br>
+        Yahtzee is played with five standard six-sided dice. The game is typically played solo or with multiple players. Each player has a scorecard to record their results.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em>  The goal is to achieve the highest total score by rolling and scoring different combinations of the dice.<br><br>
+        2. <em>Setup:</em> Players take turns rolling five dice up to three times per turn.<br><br>
+        3. <em>Scoring:</em> After each roll, players choose which category to score based on their dice results. Categories include ones, twos, threes, fours, fives, sixes, three of a kind, four of a kind, full house, small straight, large straight, chance, and Yahtzee (five of a kind).<br><br>
+        4. <em>Joker Rule:</em> In the Yahtzee category, players aim to get multiple Yahtzees for bonus points.<br><br>
+        5. <em>Strategy:</em>: Players must decide which category to score in after each roll to maximize their points.<br><br>
+        6. <em>Winning:</em> The player with the highest total score after completing all categories wins the game.`
     },
 
   ]
