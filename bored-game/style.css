@@ -104,7 +104,7 @@ p.about-subheader {
   }
 
   h3.search-header {
-    font-size: 20px;
+    font-size: 16px;
     width: 90%;
     padding: 0;
     text-align: center;
@@ -777,9 +777,9 @@ p.about-subheader {
   padding-left: 3rem;
   font-family: 'Lexend', sans-serif;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   line-height: 35px;
-  width: 33%;
+  width: 25%;
 }
 
 .filter-wrapper {
@@ -1161,7 +1161,7 @@ button.search-button {
     max-width: 80rem;
     min-width: 52rem;
     position: absolute;
-    top: 58rem;
+    top: 60rem;
     right: 4rem;
     display: flex;
     justify-content: flex-start;

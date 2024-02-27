@@ -1,8 +1,6 @@
 
 
 import { gamesData } from './data.js';
-
-
 // ----------------------------------------
 
 
@@ -222,77 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// HOME PAGE FILTERING
 
-// // Event listeners for the tools and vibes options
-// document.querySelectorAll('.tools-container, .vibe-container').forEach(item => {
-//   item.addEventListener('click', () => {
-//       item.classList.toggle('selected'); // Toggle a class to indicate selection
-//   });
-// });
-
-// // Dropdowns and Radio Buttons
-// ['#players', '#time', '#difficulty', 'input[name="drinkingOption"]', 'input[name="familyOption"]'].forEach(selector => {
-//   document.querySelectorAll(selector).forEach(element => {
-//       element.addEventListener('change', filterGames); // Call filterGames function on change
-//   });
-// });
-
-// // Function to collect filter values
-// function getFilterCriteria() {
-//   let criteria = {
-//       tools: Array.from(document.querySelectorAll('.tools-container.selected')).map(item => item.id),
-//       players: document.getElementById('players').value,
-//       vibes: Array.from(document.querySelectorAll('.vibe-container.selected')).map(item => item.id),
-//       time: document.getElementById('time').value,
-//       difficulty: document.getElementById('difficulty').value,
-//       drinking: document.querySelector('input[name="drinkingOption"]:checked') ? document.querySelector('input[name="drinkingOption"]:checked').value : '',
-//       familyFriendly: document.querySelector('input[name="familyOption"]:checked') ? document.querySelector('input[name="familyOption"]:checked').value : ''
-//   };
-//   return criteria;
-// }
-
-// // Function to filter games based on selected criteria
-// function filterGames() {
-//   let criteria = getFilterCriteria();
-//   let filteredGames = gamesData.filter(game => {
-//       let match = true;
-//       // Example: Implement similar logic for other criteria
-//       // Filtering by players (ensure your data structure supports this kind of comparison)
-//       if (criteria.players && !(game.minPlayers <= criteria.players && game.maxPlayers >= criteria.players)) match = false;
-//       // Add more conditions for other filters here
-//       return match;
-//   });
-//   updateDisplay(filteredGames);
-// }
-
-// // Function to update the display with filtered games
-// function updateDisplay(games) {
-//   const displayArea = document.querySelector('.cards-list'); // Ensure you have a container for the games
-//   displayArea.innerHTML = ''; // Clear current games
-//   games.forEach(game => {
-//       let gameElement = document.createElement('div');
-//       gameElement.textContent = game.name; // Extend this to include more details about each game
-//       displayArea.appendChild(gameElement);
-//   });
-// }
-
-// // Event listener for the Search button
-// document.querySelector('.search-button').addEventListener('click', filterGames);
-
-// // Event listener for the Reset button
-// document.querySelector('.reset-button').addEventListener('click', () => {
-//   document.querySelectorAll('.selected').forEach(item => item.classList.remove('selected'));
-//   document.getElementById('players').selectedIndex = 0;
-//   document.getElementById('time').selectedIndex = 0;
-//   document.getElementById('difficulty').selectedIndex = 0;
-//   document.querySelectorAll('input[name="drinkingOption"], input[name="familyOption"]').forEach(radio => radio.checked = false);
-//   updateDisplay(gamesData); // Assuming gamesData is your full list of games
-// });
-
-
-
-// END OF FILTERING
 
 
 
