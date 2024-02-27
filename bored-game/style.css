@@ -1501,6 +1501,15 @@ button.search-button {
     width: fit-content;
 }
 
+.aka-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 13.9%;
+  margin-top: -3rem;
+  color: var(--black);
+
+}
+
 .game-subheader {
   width: 29.44rem;
   margin-left: 13.9%;
@@ -1553,16 +1562,17 @@ button.search-button {
 .requirements-header {
   font-size: 3.13rem;
   font-weight: 900;
-  margin-left: 26%;
+  margin-left: 19rem;
   margin-top: 3.75rem;
 }
+
 
 .requirements-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 4rem;
-  margin-left: 8rem;
+  margin-left: 12rem;
   width: 28rem;
   margin-bottom: 2rem;
   list-style-type: none;
