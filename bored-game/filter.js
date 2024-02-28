@@ -136,7 +136,7 @@ document.querySelector('.reset-button').addEventListener('click', function() {
   // Optionally, reset any other filter elements you have to their default state here
 
   // Scroll the user up to the top of the page or to a specific section
-  const filterSection = document.querySelector('.filter-wrapper'); // Change '.filter-wrapper' to the class or ID of the section you want to scroll to
+  const filterSection = document.querySelector('.search-header'); // Change '.filter-wrapper' to the class or ID of the section you want to scroll to
   if (filterSection) {
     filterSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }

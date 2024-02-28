@@ -1219,6 +1219,7 @@ button.search-button {
     margin-top: .5rem;
     font-weight: 600;
     margin-left: .5rem;
+    line-height: 1.75rem;
   }
 
   .card-title a {

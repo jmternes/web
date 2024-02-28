@@ -81,7 +81,7 @@ export const gamesData = [
   {
     "GameID": 4,
     "name": "Boxes",
-    "aka": ["Dots and Boxes"],
+    "aka": ["Dots and Boxes", "Dot Game", "Dot-to-Dot", "Squares"],
     "description": "A strategic paper-and-pencil game. Connect dots to create squares and claim them with your initials. Capture the most squares to win.",
     "minPlayers": 2,
     "maxPlayers": 2,
@@ -191,7 +191,7 @@ export const gamesData = [
   {
     "GameID": 8, // Replace with the next unique ID
     "name": "Cribbage",
-    "aka": [""],
+    "aka": ["Crib"],
     "description": "Cribbage is a classic card game known for its unique  scoring system. Players score points by forming combinations of cards.   The game is traditionally played with a special Cribbage board used for   scorekeeping.",
     "minPlayers": 2,
     "maxPlayers": 4,
@@ -241,7 +241,7 @@ export const gamesData = [
   {
     "GameID": 10,
     "name": "Flip Cup",
-    "aka": [""],
+    "aka": ["Taps", "Flippy Cup", "Tippy Cup"],
     "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
     "minPlayers": 4,
     "maxPlayers": 12,
@@ -293,7 +293,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   {
     "GameID": 12,
     "name": "Nim",
-    "aka": [""],
+    "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
     "minPlayers": 2,
     "maxPlayers": 2,
@@ -318,6 +318,34 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
   {
     "GameID": 13,
+    "name": "Seven Card Stud",
+    "aka": ["Stud", "Stud Poker"],
+    "description": "Seven Card Stud is a classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. The game does not involve a flop and usually no community cards are used. Players aim to make the best five-card combination from the seven cards they are dealt.",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
+    "toolsText": ["Cards", "Chips"],
+    "imageURL": "",
+    "timeAvailable": 30,
+    "difficulty": "Moderate",
+    "drinking": "FALSE",
+    "activity": "Competitive",
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Seven Card Stud is one of the oldest forms of poker, where players are dealt seven cards throughout the hand, but only the best five-card hand possible for each player is used to determine the winner.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>Objective:</em><br><br> The goal is to create the best five-card poker hand from the seven cards you are dealt.<br><br>
+          2. <em>Setup:</em><br><br> Each player pays an ante and receives two cards face down (hole cards) and one card face up (door card).<br><br>
+          3. <em>Betting Rounds:</em><br><br> There are five betting rounds. The first round of betting starts with the player with the highest door card. Subsequent rounds follow the poker betting structure.<br><br>
+          4. <em>The Play:</em><br><br> Players receive three more face-up cards (the fourth, fifth, and sixth cards) and one final card face down (the seventh card), with a betting round after each.<br><br>
+          5. <em>Showdown:</em><br><br> Players reveal their hands in a showdown, with the best five-card hand winning the pot.<br><br>
+          6. <em>Strategy:</em><br><br> Paying attention to the up-cards of your opponents is crucial in determining the strength of your hand relative to theirs. Bluffing and reading other players are key elements of strategy in Seven Card Stud.<br><br>
+          <strong>Variations:</strong><br><br>1. <em>High-Low Split:</em> In some variations, the pot is split between the best high hand and the best low hand. Players can win both halves of the pot with the right combination of cards.<br><br>2. <em>Razz:</em> A lowball version of Seven Card Stud where the lowest hand wins. Aces are low, and straights and flushes do not count against the hand.<br><br>3. <em>Roll Your Own:</em> A variation where players choose which of their cards are face up and which are face down, adding an extra layer of strategy to the game.`
+  },
+
+
+  {
+    "GameID": 14,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -343,7 +371,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 14,
+    "GameID": 15,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -369,7 +397,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 15,
+    "GameID": 16,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -396,7 +424,35 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 16,
+    "GameID": 17,
+    "name": "Texas Hold'em",
+    "aka": ["Hold'em"],
+    "description": "Texas Hold'em is one of the most popular variants of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
+    "toolsText": ["Cards", "Chips"],
+    "imageURL": "",
+    "timeAvailable": 30, // This is a rough estimate; actual game length can vary greatly.
+    "difficulty": "Medium",
+    "drinking": "OPTIONAL", // Drinking rules can be optionally added to the game.
+    "activity": "Competitive",
+    "vibes": ["Competitive", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+              Texas Hold'em is a community card poker game with a focus on strategic betting. Players aim to control the amount of money in the pot based either on the hand they are holding or their prediction of what their opponents may be holding.<br><br><br>
+              <strong>Gameplay:</strong><br><br>
+              1. <em>Objective:</em><br><br> Win chips by either having the best hand or convincing others to fold their hand.<br><br>
+              2. <em>Setup:</em><br><br> Each player is dealt two private cards (known as 'hole cards') that belong to them alone. Five community cards are dealt face-up on the 'board'.<br><br>
+              3. <em>Betting Rounds:</em><br><br> There are four rounds of betting – after the hole cards are dealt, after the first three community cards are revealed (the flop), after the fourth community card is revealed (the turn), and after the fifth community card is revealed (the river).<br><br>
+              4. <em>Showdown:</em><br><br> If there are two or more players remaining after the final betting round, a showdown occurs. Players use the best five-card hand out of any combination of the seven cards (the five community cards and their two hole cards) to determine the winner.<br><br>
+              5. <em>Strategies:</em><br><br> Success in Texas Hold'em depends on the strategic bets made based on the strength of the hole cards, the community cards, and the perceived strength of other players' hands.<br><br>
+              6. <em>Winning:</em><br><br> The game continues until a player has all the chips, or until a predetermined time or number of hands has been played. The player with the most chips at the end is declared the winner.<br><br>
+              <strong>Variants:</strong><br><br> 1. <em>Omaha Hold'Em</em> (Omaha):<br><br> The primary difference between Texas Hold'em and Omaha is that players receive four hole cards instead of two. Players must use exactly two of their hole cards and three of the community cards to make their best hand.<br><br> 2. Pineapple Hold'Em (Crazy Pineapple):<br><br> Players receive three hole cards and must discard one after the flop. The game then proceeds as in Texas Hold'em. `
+  },
+
+
+  {
+    "GameID": 18,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -422,7 +478,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 17,
+    "GameID": 19,
     "name": "War",
     "aka": [""],
     "description": "War is a simple card game, typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -448,7 +504,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 18,
+    "GameID": 20,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
