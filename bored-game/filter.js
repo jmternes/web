@@ -106,6 +106,11 @@ document.querySelector('.search-button').addEventListener('click', function() {
   // Use the existing updateDisplay function to show the results
   updateDisplay(filteredGames);
 
+
+  const resultsSection = document.querySelector('.cards-list');
+  if (resultsSection) {
+    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 });
 
 // Event listeners for the tools and vibes options
