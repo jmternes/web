@@ -372,7 +372,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "GameID": 15,
     "name": "Spoons",
     "aka": [""],
-    "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are essential for victory.",
+    "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
     "minPlayers": 3,
     "maxPlayers": 13,
     "toolsRequired": ["./assets/images/cards.png", "./assets/images/spoon.png"],
@@ -391,7 +391,8 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
         3. <em>Card Distribution:</em><br><br>The dealer starts by taking a card from the deck, adding it to their hand, and discarding one card face-down to the player on their left. This continues rapidly around the table, with each player picking up the discarded card from their right and passing one to their left.<br><br>
         4. <em>Grabbing Spoons:</em><br><br>As soon as a player collects four of a kind, they grab a spoon from the center. Once one spoon is taken, all players may grab for a spoon, regardless of their hand.<br><br>
         5. <em>Elimination:</em><br><br>The player left without a spoon is eliminated from the game. One spoon is removed, and the game continues until only one winner remains.<br><br>
-        6. <em>Strategy:</em><br><br>Quick reflexes and keen observation are crucial. Players must be fast in collecting cards and grabbing spoons but also subtle enough not to alert others too soon when they've achieved four of a kind.`
+        6. <em>Strategy:</em><br><br>Quick reflexes and keen observation are crucial. Players must be fast in collecting cards and grabbing spoons but also subtle enough not to alert others too soon when they've achieved four of a kind.<br><br>
+        7. <em>No Spoons? No Problem:</em><br><br> To play the variant known as Pig, the gameplay is the same, but players signal by placing a finger on their nose, or performing another pre-determined action.`
   },
 
   {

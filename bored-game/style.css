@@ -153,6 +153,7 @@ p.about-subheader {
     align-items: center;
   }
 
+
   div.tools-wrapper {
     width: 100%;
     height: 100%;
@@ -786,6 +787,10 @@ p.about-subheader {
   width: 27rem;
   height: 135rem;
   /* border: 1px solid red; */
+}
+
+.filter-wrapper h4 {
+  margin-top: .75rem;
 }
 
 .filter-container {
