@@ -328,7 +328,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Relaxed",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Casual", "Chill", "Playful", "Free-Flowing", "Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Solitaire, also known as Patience, is a single-player card game. The game is played with a standard deck of 52 cards. The objective is to move all the cards to a foundation, organizing them by suit in ascending order from Ace to King.<br><br><br>
         <strong>Gameplay:</strong><br><br>
