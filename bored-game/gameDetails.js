@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Update the game title and description
         document.querySelector('.game-header').textContent = game.name;
+        document.querySelector('.aka-header').textContent = `AKA: ${game.aka.join(", ")}`;
         document.querySelector('.game-subheader').textContent = game.description;
 
         // Update other game details - players, time, and difficulty

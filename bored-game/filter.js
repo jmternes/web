@@ -106,12 +106,42 @@ document.querySelector('.search-button').addEventListener('click', function() {
   // Use the existing updateDisplay function to show the results
   updateDisplay(filteredGames);
 
-
+  // Scroll the user to the results section
   const resultsSection = document.querySelector('.cards-list');
   if (resultsSection) {
     resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 });
+
+// reset button functionality
+
+document.querySelector('.reset-button').addEventListener('click', function() {
+  // Clear the displayed game cards
+  let gamesContainer = document.querySelector('.cards-list');
+  if (gamesContainer) {
+    gamesContainer.innerHTML = ''; // Clear current content
+  }
+
+  // Reset all form elements to their default state
+  document.getElementById('players').selectedIndex = 0;
+  document.querySelectorAll('.tools-container.selected, .vibe-container.selected').forEach(item => {
+    item.classList.remove('selected'); // Remove 'selected' class
+  });
+  document.querySelectorAll('input[type="radio"]').forEach(radio => {
+    radio.checked = false; // Uncheck radio buttons
+  });
+  document.getElementById('time').selectedIndex = 0;
+  document.getElementById('difficulty').selectedIndex = 0;
+
+  // Optionally, reset any other filter elements you have to their default state here
+
+  // Scroll the user up to the top of the page or to a specific section
+  const filterSection = document.querySelector('.filter-wrapper'); // Change '.filter-wrapper' to the class or ID of the section you want to scroll to
+  if (filterSection) {
+    filterSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+});
+
 
 // Event listeners for the tools and vibes options
 // document.querySelectorAll('.tools-container, .vibe-container').forEach(item => {

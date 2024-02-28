@@ -15,7 +15,7 @@ export const gamesData = [
     "activity": "Relaxed",
     "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
-        31, also known as Scat, Blitz, or Ride the Bus, is a fast-paced card game that uses a standard 52-card deck. The game can be played by 2 to 9 players. Its objective is to assemble a hand closest in value to 31 points in the same suit.<br><br><br>
+        31 is a fast-paced card game that uses a standard 52-card deck. The game can be played by 2 to 9 players. Its objective is to assemble a hand closest in value to 31 points in the same suit.<br><br><br>
         <strong>Gameplay:</strong><br><br>
         1. <em>Objective:</em><br><br> Players aim to get a hand totaling as close to 31 points as possible in the same suit or to have the highest hand at the table to avoid the penalty.<br><br>
         2. <em>Setup:</em><br><br> Each player starts with three cards, and one card is placed face up to start the discard pile, with the rest of the deck forming the draw pile.<br><br>
@@ -108,7 +108,7 @@ export const gamesData = [
   {
     "GameID": 5,
     "name": "Bridge",
-    "aka": [""],
+    "aka": ["Contract Bridge"],
     "description": "A four-player card game of strategy and communication. Form partnerships and use bids to determine the trump suit or play in no-trump. The objective is to win tricks by playing high-ranking cards. Bridge is a challenging game that combines teamwork and skill.",
     "minPlayers": 4,
     "maxPlayers": 4,
@@ -212,6 +212,34 @@ export const gamesData = [
 
   {
     "GameID": 9,
+    "name": "Euchre",
+    "aka": ["Euker"],
+    "description": "Euchre is a trick-taking card game most commonly played with four people in two partnerships. It's a fast-paced game that involves strategic thinking and is played with a partial deck of cards.",
+    "minPlayers": 4,
+    "maxPlayers": 4,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Partial Deck (24 cards)"],
+    "imageURL": "",
+    "timeAvailable": 10,
+    "difficulty": "Moderate",
+    "drinking": "FALSE",
+    "activity": "Competitive",
+    "vibes": ["Strategic", "Social", "Competitive"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Euchre is a popular card game that involves capturing tricks. It is traditionally played with four players in teams of two. The game uses a partial standard deck of 24 cards, ranking from 9 to Ace.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> The main goal in Euchre is to win at least three of the five tricks in each hand. A team scores points by winning three or more tricks. Winning all five tricks scores more points.<br><br>
+        2. <em>Setup:</em><br><br> Remove all cards from the deck except 9s through Aces. Deal five cards to each player and flip one card face up to suggest the trump suit.<br><br>
+        3. <em>Bidding:</em><br><br> Starting to the dealer’s left, players decide whether to pass or order the dealer to pick up the face-up card, making that suit the trump. If all players pass, they can choose to select a trump suit or pass again.<br><br>
+        4. <em>Playing:</em><br><br> The player to the dealer’s left leads the first trick. Players must follow suit if possible. If they cannot, they may play any card. The highest card of the led suit wins the trick unless trumped.<br><br>
+        5. <em>Scoring:</em><br><br> Teams score points for winning three or more tricks. Winning all five tricks (a 'march') scores higher. The game is typically played to 10 points.<br><br>
+        6. <em>Strategy:</em><br><br> Players must work with their partners to win tricks by playing higher cards or using trump cards strategically. Communication and predicting opponents' moves are key to success.<br><br>
+        <strong>Winning:</strong><br><br> The game continues until one team scores 10 points, thus winning the game.`
+  },
+
+
+  {
+    "GameID": 10,
     "name": "Flip Cup",
     "aka": [""],
     "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
@@ -236,9 +264,9 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
   },
 
   {
-    "GameID": 10,
+    "GameID": 11,
     "name": "Hearts",
-    "aka": [""],
+    "aka": ["American Hearts", "Black Lady", "Black Maria", "Black Widow", "Slippery Anne"],
     "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
     "minPlayers": 4,
     "maxPlayers": 4,
@@ -263,7 +291,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 11,
+    "GameID": 12,
     "name": "Nim",
     "aka": [""],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -278,7 +306,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "activity": "Relaxed",
     "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
-        Nim is a mathematical strategy game for two players. It involves a number of objects (such as matches, coins, or stones) arranged in rows. Players take turns removing objects, with the goal of being the last to take an object.<br><br><br>
+        Nim is a mathematical strategy game for two players. It involves a number of objects (such as matches, coins, stones, or sugar packets) arranged in rows. Players take turns removing objects, with the goal of being the last to take an object.<br><br><br>
         <strong>Gameplay:</strong><br><br>
         1. <em>Objective:</em><br><br> The aim is to force the opponent to take the last object.<br><br>
         2. <em>Setup:</em><br><br> Objects are arranged in several rows, with the number of objects per row varying. The exact setup can vary, but a common one is three rows containing 3, 5, and 7 objects, respectively.<br><br>
@@ -289,36 +317,9 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 12,
-    "name": "Slam",
-    "aka": [""],
-    "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
-    "minPlayers": 2,
-    "maxPlayers": 8,
-    "toolsRequired": ["./assets/images/cards.png"],
-    "toolsText": ["Cards"],
-    "imageURL": "",
-    "timeAvailable": 15,
-    "difficulty": "Easy",
-    "drinking": "FALSE",
-    "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
-    "rules": `<strong>Overview:</strong><br><br>
-        Slam is a fast-paced game for two to eight players, using a standard 52-card deck. The objective is to be the first to get rid of  all your cards through quick thinking and faster reactions.<br><br><br>
-        <strong>Gameplay:</strong><br><br>
-        1. <em>Objective:</em><br><br> To win, players must be the first to play all of their cards by matching them to a central pile by either number or suit.<br><br>
-        2. <em>Setup:</em><br><br> Cards are evenly distributed among players. Each player holds their cards in a stack, face down. A central play area is designated for the  discard pile.<br><br>
-        3. <em>Playing:</em><br><br> The game starts with one player flipping a card from their stack into the central pile. Subsequent players must quickly play a card that  matches the top card of the central pile by either number or suit. If a player cannot play, they must draw a card from the central deck if available.<br><br>
-        4. <em>Slam Rule:</em><br><br> If a player puts down a card that exactly matches the top card of the central pile (both number and suit), they shout "Slam!" All other players must then quickly place one hand on the pile. The last player to do so must take the entire pile into their hand.<br><br>
-        5. <em>Speed and Reactions:</em><br><br> Quick thinking and fast reactions are crucial. Players must be alert to match the central pile's top card as quickly as possible or be ready to react to "Slam" calls.<br><br>
-        6. <em>Winning:</em><br><br> The first player to get rid of all their cards is declared the winner. If the game is played in rounds, players may play multiple rounds until  a pre-determined score or number of wins is reached.`
-
-  },
-
-  {
     "GameID": 13,
     "name": "Solitaire",
-    "aka": [""],
+    "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
     "minPlayers": 1,
     "maxPlayers": 1,
@@ -328,7 +329,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Relaxed",
-    "vibes": ["Casual", "Chill", "Playful", "Free-Flowing", "Quiet"],
+    "vibes": ["Casual", "Chill", "Serious", "Rule-Abiding", "Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Solitaire, also known as Patience, is a single-player card game. The game is played with a standard deck of 52 cards. The objective is to move all the cards to a foundation, organizing them by suit in ascending order from Ace to King.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -341,8 +342,34 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
         7. <em>Strategy:</em> <br><br>Effective strategy involves careful planning and the foresight to leave spaces for future moves, ensuring that sequences can be moved and not blocking access to cards that will be needed later.`
   },
 
-  {
+{
     "GameID": 14,
+    "name": "Spit",
+    "aka": ["Slam"],
+    "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Cards"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Involved",
+    "vibes": ["Competitive", "High-Energy", "Playful", "Rule-Abiding", "Loud"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Slam is a fast-paced game for two to eight players, using a standard 52-card deck. The objective is to be the first to get rid of  all your cards through quick thinking and faster reactions.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> To win, players must be the first to play all of their cards by matching them to a central pile by either number or suit.<br><br>
+        2. <em>Setup:</em><br><br> Cards are evenly distributed among players. Each player holds their cards in a stack, face down. A central play area is designated for the  discard pile.<br><br>
+        3. <em>Playing:</em><br><br> The game starts with one player flipping a card from their stack into the central pile. Subsequent players must quickly play a card that  matches the top card of the central pile by either number or suit. If a player cannot play, they must draw a card from the central deck if available.<br><br>
+        4. <em>Slam Rule:</em><br><br> If a player puts down a card that exactly matches the top card of the central pile (both number and suit), they shout "Slam!" All other players must then quickly place one hand on the pile. The last player to do so must take the entire pile into their hand.<br><br>
+        5. <em>Speed and Reactions:</em><br><br> Quick thinking and fast reactions are crucial. Players must be alert to match the central pile's top card as quickly as possible or be ready to react to "Slam" calls.<br><br>
+        6. <em>Winning:</em><br><br> The first player to get rid of all their cards is declared the winner. If the game is played in rounds, players may play multiple rounds until  a pre-determined score or number of wins is reached.`
+  },
+
+  {
+    "GameID": 15,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are essential for victory.",
@@ -355,7 +382,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive", "High-Energy", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         Spoons is a fast-paced, physical card game that combines the simplicity of matching games with the frantic excitement of musical chairs. Suitable for players of all ages, the game requires a standard deck of cards and spoons, with one fewer spoon than there are players.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -368,9 +395,9 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 15,
+    "GameID": 16,
     "name": "Tic-Tac-Toe",
-    "aka": [""],
+    "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
     "minPlayers": 2,
     "maxPlayers": 2,
@@ -381,9 +408,9 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Relaxed",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Casual", "Chill", "Playful", "Rule-Abiding", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
-        Tic-Tac-Toe, also known as Noughts and Crosses or Xs and Os, is a simple, two-player game. The game is played on a 3x3 grid, often on paper with a writing utensil. Each player chooses a symbol: typically X or O.<br><br><br>
+        Tic-Tac-Toe is a simple, two-player strategy game. The game is played on a 3x3 grid, often on paper with a writing utensil. Each player chooses a symbol: typically X or O.<br><br><br>
         <strong>Gameplay:</strong><br><br>
         1. <em>Objective:</em><br><br> The goal is to be the first to get three of your symbols in a row, horizontally, vertically, or diagonally.<br><br>
         2. <em>Setup:</em><br><br> Players decide who goes first. The first player will use X, and the second player will use O. The game is played on a blank 3x3 grid.<br><br>
@@ -394,7 +421,33 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 16,
+    "GameID": 17,
+    "name": "War",
+    "aka": [""],
+    "description": "War is a simple card game, typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Cards"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Casual",
+    "vibes": ["Casual", "Chill", "Playful", "Free-Flowing", "Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+        War is a simple, luck-based card game for two players. It requires no decision-making and is played with a standard deck of 52 cards.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> The goal is to win all of the cards.<br><br>
+        2. <em>Setup:</em><br><br> Shuffle the deck and deal all of the cards evenly between the two players. Each player holds their cards in a face-down stack.<br><br>
+        3. <em>Playing:</em><br><br> Both players reveal the top card of their stack simultaneously. The player with the higher card wins both cards, placing them at the bottom of their stack.<br><br>
+        4. <em>War:</em><br><br> If the revealed cards are of equal rank, 'war' is declared. Both players place the next three cards face down and then one card face up. The player with the higher face-up card wins all the cards played this round.<br><br>
+        5. <em>Winning:</em><br><br> The game continues until one player has all the cards or the players decide to call it a draw after a certain time.<br><br>`
+},
+
+
+  {
+    "GameID": 18,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
@@ -407,7 +460,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Moderate",
     "drinking": "FALSE",
     "activity": "Competitive",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Casual", "Chill", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         Yahtzee is played with five standard six-sided dice. The game is typically played solo or with multiple players. Each player has a scorecard to record their results.<br><br><br>
         <strong>Gameplay:</strong><br><br>
