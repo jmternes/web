@@ -340,7 +340,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           4. <em>The Play:</em><br><br> Players receive three more face-up cards (the fourth, fifth, and sixth cards) and one final card face down (the seventh card), with a betting round after each.<br><br>
           5. <em>Showdown:</em><br><br> Players reveal their hands in a showdown, with the best five-card hand winning the pot.<br><br>
           6. <em>Strategy:</em><br><br> Paying attention to the up-cards of your opponents is crucial in determining the strength of your hand relative to theirs. Bluffing and reading other players are key elements of strategy in Seven Card Stud.<br><br>
-          <strong>Variations:</strong><br><br>1. <em>High-Low Split:</em> In some variations, the pot is split between the best high hand and the best low hand. Players can win both halves of the pot with the right combination of cards.<br><br>2. <em>Razz:</em> A lowball version of Seven Card Stud where the lowest hand wins. Aces are low, and straights and flushes do not count against the hand.<br><br>3. <em>Roll Your Own:</em> A variation where players choose which of their cards are face up and which are face down, adding an extra layer of strategy to the game.`
+          <strong>Variants:</strong><br><br>1. <em>High-Low Split:</em> In some variations, the pot is split between the best high hand and the best low hand. Players can win both halves of the pot with the right combination of cards.<br><br>2. <em>Razz:</em> A lowball version of Seven Card Stud where the lowest hand wins. Aces are low, and straights and flushes do not count against the hand.<br><br>3. <em>Roll Your Own:</em> A variation where players choose which of their cards are face up and which are face down, adding an extra layer of strategy to the game.`
   },
 
 
@@ -348,7 +348,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "GameID": 14,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
-    "description": "A classic solo card game played with a standard deck.Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
+    "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
     "minPlayers": 1,
     "maxPlayers": 1,
     "toolsRequired": ["./assets/images/cards.png"],
