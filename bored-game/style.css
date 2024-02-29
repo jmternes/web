@@ -1502,6 +1502,7 @@ button.search-button {
     font-size: 4.25rem;
     font-weight: 900;
     margin-left: 13.2%;
+    margin-bottom: 3.25rem; /*delete if problems*/
     padding-top: .5rem;
     line-height: 6.25rem;
     width: 100%; /* OR FIT-CONTENT MAYBE */
