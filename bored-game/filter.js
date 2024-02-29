@@ -4,25 +4,54 @@ import { gamesData } from './data.js';
 
 document.querySelector('.search-button').addEventListener('click', function() {
   const playersSelection = document.getElementById('players').value;
+  const difficultySelection = document.getElementById('difficulty').value;
+  const timeSelection = document.getElementById('time').value;
+
   let minPlayers = 0;
   let maxPlayers = Infinity;
+  let minTime = 0;
+  let maxTime = Infinity;
 
   // Handle player range selection
-  if (playersSelection.includes('-')) {
-    const range = playersSelection.split('-');
-    minPlayers = parseInt(range[0], 10);
-    maxPlayers = parseInt(range[1], 10);
-  } else if (playersSelection.includes('+')) {
-    minPlayers = parseInt(playersSelection.replace('+', ''), 10);
-  } else {
-    minPlayers = maxPlayers = parseInt(playersSelection, 10);
+  if (playersSelection) {
+    if (playersSelection.includes('-')) {
+      const range = playersSelection.split('-');
+      minPlayers = parseInt(range[0], 10);
+      maxPlayers = parseInt(range[1], 10);
+    } else if (playersSelection.includes('+')) {
+      minPlayers = parseInt(playersSelection.replace('+', ''), 10);
+    } else {
+      minPlayers = maxPlayers = parseInt(playersSelection, 10);
+    }
   }
 
-  // Filter games based on the number of players
+  // Handle time selection
+  switch (timeSelection) {
+    case "Fewer than 5 Minutes":
+      maxTime = 5;
+      break;
+    case "5-10":
+      minTime = 5;
+      maxTime = 10;
+      break;
+    // Add other cases here
+    case "60+":
+      minTime = 60;
+      break;
+    // Default case not needed since minTime and maxTime are initialized
+  }
+
+  // Filter games based on the selected criteria
   const filteredGames = gamesData.filter(game => {
     const gameMinPlayers = parseInt(game.minPlayers, 10);
-    const gameMaxPlayers = parseInt(game.maxPlayers, 10) || Infinity; // Handle open-ended max players
-    return (minPlayers <= gameMaxPlayers && maxPlayers >= gameMinPlayers);
+    const gameMaxPlayers = parseInt(game.maxPlayers, 10) || Infinity;
+    const gameTime = parseInt(game.timeAvailable, 10);
+
+    const matchesPlayerCriteria = playersSelection ? (minPlayers <= gameMaxPlayers && maxPlayers >= gameMinPlayers) : true;
+    const matchesDifficultyCriteria = difficultySelection ? game.difficulty === difficultySelection : true;
+    const matchesTimeCriteria = timeSelection ? (gameTime >= minTime && gameTime <= maxTime) : true;
+
+    return matchesPlayerCriteria && matchesDifficultyCriteria && matchesTimeCriteria;
   });
 
   // render the cards with updatedisplay

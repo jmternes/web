@@ -141,7 +141,7 @@ export const gamesData = [
     "minPlayers": 4,
     "maxPlayers": 20,
     "toolsRequired": ["./assets/images/notool.png"],
-    "toolsText": ["None"],
+    "toolsText": ["No Tools Required"],
     "imageURL": "",
     "timeAvailable": 10,
     "difficulty": "Easy",
