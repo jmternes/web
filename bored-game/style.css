@@ -1216,10 +1216,10 @@ button.search-button {
     height: 1rem; /* maybe, make dynamic? */
     font-family: 'Lexend';
     font-size: 1.75rem;
-    margin-top: .5rem;
+    margin-top: .65rem;
     font-weight: 600;
     margin-left: .5rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
   }
 
   .card-title a {

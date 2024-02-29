@@ -1,9 +1,35 @@
 export const gamesData = [
+
   {
     "GameID": 1,
+    "name": "20 Questions",
+    "aka": ["Person, Place, or Thing"],
+    "description": "A classic parlour game that encourages deductive reasoning and creativity. One player thinks of an object, and the other players have up to 20 questions to guess what it is, with the answerer only responding 'yes' or 'no'. The object in  can be any noun, proper or not.",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "toolsRequired": ["./assets/images/notool.png"],
+    "toolsText": ["No Tools Required"],
+    "imageURL": "",
+    "timeAvailable": 10,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Casual",
+    "vibes": ["Casual", "High-Energy or Chill", "Playful", "Free-Flowing",  "Loud or Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+        20 Questions is a simple, engaging game that tests players' ability to think creatively and ask strategic questions. Perfect for parties or casual gatherings, it requires no tools or preparations.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> Guess the secret object within 20 questions.<br><br>
+        2. <em>Setup:</em><br><br> Choose one player to think of an object and keep it secret from the others.<br><br>
+        3. <em>Playing:</em><br><br> The guessers take turns asking yes-or-no questions to narrow down the possibilities. The thinker can only respond with 'yes', 'no', or 'I don't know'.<br><br>
+        4. <em>Winning:</em><br><br> The game ends when a guesser correctly identifies the object or when 20 questions have been asked without success. The correct guesser or the thinker wins, respectively.<br><br>
+        <strong>Variants</strong><br><br><em>Smurf:</em><br><br>Instead of guessing a person, place, or thing, guessers ask yes or no questions in search of a secret verb, or action. Players use the word 'smurf' to ask questions. eg "Do I smurf every day?"`
+},
+
+  {
+    "GameID": 2,
     "name": "31",
     "aka": ["Scat", "Blitz"],
-    "description": "31 is a fast-paced and easy-to-learn card game where players try to get a hand totaling 31 points in one suit. It's an engaging game of strategy and chance, suitable for players of all ages.",
+    "description": "A fast-paced and easy-to-learn card game where players try to get a hand totaling 31 points in one suit. It's an engaging game of strategy and chance, suitable for players of all ages.",
     "minPlayers": 3,
     "maxPlayers": 8,
     "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
@@ -27,7 +53,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 2,
+    "GameID": 3,
     "name": "Blackjack",
     "aka": ["21"],
     "description": "A popular casino card game where players aim to get a value as close to 21 as possible without going over. Face cards are worth 10 points, aces can be 1 or 11, and strategy is key. Beat the dealer and win the round.",
@@ -53,7 +79,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 3,
+    "GameID": 4,
     "name": "Boxes",
     "aka": ["Dots and Boxes", "Dot Game", "Dot-to-Dot", "Squares"],
     "description": "A strategic paper-and-pencil game. Connect dots to create squares and claim them with your initials. Capture the most squares to win.",
@@ -80,7 +106,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 4,
+    "GameID": 5,
     "name": "Bridge",
     "aka": ["Contract Bridge"],
     "description": "A four-player card game of strategy and communication. Form partnerships and use bids to determine the trump suit or play in no-trump. The objective is to win tricks by playing high-ranking cards. Bridge is a challenging game that combines teamwork and skill.",
@@ -108,10 +134,10 @@ export const gamesData = [
   },
 
   {
-    "GameID": 5,
+    "GameID": 6,
     "name": "Charades",
     "aka": [""],
-    "description": "Charades is a classic party game that requires no special equipment. Players take turns acting out a word or phrase without speaking while their team tries to guess what they're portraying. It's a fun and interactive game that often leads to lots of laughter and entertainment.",
+    "description": "A classic party game that requires no special equipment. Players take turns acting out a word or phrase without speaking while their team tries to guess what they're portraying. It's a fun and interactive game that often leads to lots of laughter and entertainment.",
     "minPlayers": 4,
     "maxPlayers": 20,
     "toolsRequired": ["./assets/images/notool.png"],
@@ -136,7 +162,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 6,
+    "GameID": 7,
     "name": "Cheat",
     "aka": ["BS", "Bullshit"],
     "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played. It's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
@@ -151,7 +177,7 @@ export const gamesData = [
     "activity": "Relaxed",
     "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
-        Cheat (also known as BS) is a game of deception where players aim to be the first to get rid of all their cards. It can be played by a group of 3 or more players with a standard deck of cards.<br><br><br>
+        Cheat is a game of deception where players aim to be the first to get rid of all their cards. It can be played by a group of 3 or more players with a standard deck of cards.<br><br><br>
         <strong>Gameplay:</strong><br><br>
         1. <em>Objective:</em><br><br> The goal is to discard all your cards. Players do this by taking turns placing cards face down in the center and declaring them to be a certain rank. Players can lie about the rank of the cards they are playing.<br><br>
         2. <em>Setup:</em><br><br> The deck is shuffled and cards are dealt evenly to all players. The order of play is decided, often by drawing the highest card from the deck.<br><br>
@@ -163,10 +189,10 @@ export const gamesData = [
   },
 
   {
-    "GameID": 7, // Replace with the next unique ID
+    "GameID": 8,
     "name": "Cribbage",
     "aka": ["Crib"],
-    "description": "Cribbage is a classic card game known for its unique  scoring system. Players score points by forming combinations of cards.   The game is traditionally played with a special Cribbage board used for   scorekeeping.",
+    "description": "A classic card game known for its unique  scoring system. Players score points by forming combinations of cards.   The game is traditionally played with a special Cribbage board used for   scorekeeping.",
     "minPlayers": 2,
     "maxPlayers": 4,
     "toolsRequired": ["./assets/images/cards.png"],
@@ -185,9 +211,38 @@ export const gamesData = [
   },
 
   {
-    "GameID": 8,
+    "GameID": 9,
+    "name": "Dominoes",
+    "aka": ["Block Dominoes",],
+    "description": "A tile-based game with a long history and many variations, where players match ends of tiles to extend the line of play. The game's objective varies by version but often involves emptying one's hand while blocking the opponent or scoring based on the pips on the tiles.",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "toolsRequired": ["./assets/images/dominoes.png"],
+    "toolsText": ["Dominoes"],
+    "imageURL": "",
+    "timeAvailable": 30,
+    "difficulty": "Medium",
+    "drinking": "FALSE",
+    "activity": "Competitive",
+    "vibes": ["Strategic", "Rule-Abiding", "Competitive", "Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Dominoes is a classic, strategic game played with rectangular tiles. Each tile is divided into two square ends, each with a number of pips (or empty).<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> The primary goal in most domino games is to play all your tiles onto the table before your opponents do or score the highest points based on the pips at the ends of the chain.<br><br>
+        2. <em>Setup:</em><br><br> Tiles are shuffled face down and each player draws a set number, forming their hand. The remaining tiles form the "boneyard".<br><br>
+        3. <em>Playing:</em><br><br> Players in turn lay a tile onto the table positioning it so that it touches either end of the domino chain which thus gradually increases in length. A tile may only be placed if it has an end that matches one of the ends of the chain.<br><br>
+        4. <em>Scoring:</em><br><br> Scoring can occur during the play by making the exposed ends of the chain total to a multiple of five (in some variations). The game can also end when one player uses up all their tiles, or when no more plays can be made. At that point, the player with the least pips or no tiles wins.<br><br>
+        <strong>Variants</strong><br><br>
+        1. <em>Block Dominoes:</em><br><br> One of the simplest and most widely played versions of the game, suitable for 2 to 4 players. In Block Dominoes, players aim to empty their hands while blocking their opponents from doing so, and the game ends when one player has played all their dominoes or when the game is blocked and no more moves are available. Points are then tallied based on the number of pips (dots) on the dominoes left in the opponents' hands, with the goal of having the lowest score.<br><br>
+        2. <em>Chickenfoot</em><br><br> A fun and engaging domino variant that starts with a central double domino. Players take turns laying down matching dominoes, creating a shape that resembles a chicken's foot. The game introduces a unique twist: when a double domino is played, the next three plays must branch off from it, forming the "chickenfoot." Gameplay continues until one player has played all their dominoes or no further moves are possible.<br><br>
+        3. <em>Mexican Train:</em><br><br> This popular variant differs from traditional block or draw dominoes by allowing players to create their own line of play (or "train") starting from a central hub or station. Additionally, there's a communal "Mexican Train" that any player can add onto if they cannot play on their personal train or others'. The game starts with a double domino in the center, and players aim to be the first to play all their dominoes by matching the number of pips. It introduces more strategic opportunities and can accommodate more players, making it a favorite for group and family play.`
+},
+
+
+  {
+    "GameID": 10,
     "name": "Euchre",
-    "aka": ["Euker"],
+    "aka": ["Eucre"],
     "description": "Euchre is a trick-taking card game most commonly played with four people in two partnerships. It's a fast-paced game that involves strategic thinking and is played with a partial deck of cards.",
     "minPlayers": 4,
     "maxPlayers": 4,
@@ -213,7 +268,7 @@ export const gamesData = [
 
 
   {
-    "GameID": 9,
+    "GameID": 11,
     "name": "Flip Cup",
     "aka": ["Taps", "Flippy Cup", "Tippy Cup"],
     "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
@@ -238,7 +293,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
   },
 
   {
-    "GameID": 10,
+    "GameID": 12,
     "name": "Hearts",
     "aka": ["American Hearts", "Black Lady", "Black Maria", "Black Widow", "Slippery Anne"],
     "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
@@ -265,7 +320,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 11,
+    "GameID": 13,
     "name": "Nim",
     "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -291,7 +346,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 12,
+    "GameID": 14,
     "name": "Kings Corner",
     "aka": ["Kings in the Corner"],
     "description": "A card game for 2-4 players that combines elements of solitaire and poker. Players aim to play all their cards by forming card sequences in a common play area, with kings placed in the corners serving as the foundation for new sequences.",
@@ -316,10 +371,10 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 13,
+    "GameID": 15,
     "name": "Palace",
     "aka": ["Shithead", "Karma", "Threes"],
-    "description": "Palace is a casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
+    "description": "A casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
     "minPlayers": 2,
     "maxPlayers": 5,
     "toolsRequired": ["./assets/images/cards.png"],
@@ -342,10 +397,10 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 14,
+    "GameID": 16,
     "name": "Rummy",
     "aka": ["Rum?"],
-    "description": "Rummy is a group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
+    "description": "Rummy is group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
     "minPlayers": 2,
     "maxPlayers": 6,
     "toolsRequired": ["./assets/images/cards.png"],
@@ -363,16 +418,17 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
         3. <em>Playing:</em><br><br> Players draw from either the stock or discard pile to form melds. Unmatched cards count as deadwood.<br><br>
         4. <em>Scoring:</em><br><br> Games can be played to a set point limit, with players scoring for melds and subtracting for deadwood.<br><br>
         <strong>Variants</strong><br><br> 1. <em>Gin Rummy:</em><br><br> distinguishes itself with a unique gameplay mechanic where the objective is to "knock." Players aim to improve their hand by forming melds (sets and runs) and eliminating deadwood (unmatched cards). Unlike traditional Rummy, where players may lay off cards on opponents' melds, in Gin Rummy, players must keep their melds in hand until they can end the round by knocking. Knocking is permitted only when the total value of deadwood in the knocker's hand is 10 points or less.<br><br>
-        2. <em>500 Rum:</em><br><br>a variant of Rummy that supports 2-8 players and uses a larger deck of cards, often two 52-card decks with jokers. The game's objective is similar to basic Rummy, aiming to form melds of three or more cards of the same rank or sequential cards in the same suit. However, 500 Rum introduces the concept of "buying" cards from the discard pile, adding a strategic layer to the game. Players can "buy" the top discard by taking it into their hand, provided they also draw an additional card from the stock as a penalty. First to 500 points wins.<br><br> <em>Contract Rummy</em><br><br>A Rummy variation that introduces predefined requirements ("contracts") for each round, such as a specific number of sets or runs a player must achieve before they can lay down any cards. The game progresses through several rounds, with each round having a unique contract, increasing in difficulty.`
+        2. <em>500 Rum:</em><br><br>a variant of Rummy that supports 2-8 players and uses a larger deck of cards, often two 52-card decks with jokers. The game's objective is similar to basic Rummy, aiming to form melds of three or more cards of the same rank or sequential cards in the same suit. However, 500 Rum introduces the concept of "buying" cards from the discard pile, adding a strategic layer to the game. Players can "buy" the top discard by taking it into their hand, provided they also draw an additional card from the stock as a penalty. First to 500 points wins.<br><br>
+        3. <em>Contract Rummy</em><br><br>A Rummy variation that introduces predefined requirements ("contracts") for each round, such as a specific number of sets or runs a player must achieve before they can lay down any cards. The game progresses through several rounds, with each round having a unique contract, increasing in difficulty.`
 },
 
 
 
   {
-    "GameID": 15,
+    "GameID": 17,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
-    "description": "Seven Card Stud is a classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
+    "description": "A classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
     "minPlayers": 2,
     "maxPlayers": 8,
     "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
@@ -397,7 +453,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 16,
+    "GameID": 18,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -423,7 +479,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 17,
+    "GameID": 19,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -449,7 +505,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 18,
+    "GameID": 20,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -476,10 +532,10 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 19,
+    "GameID": 21,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
-    "description": "Texas Hold'em is one of the most popular variants of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
+    "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
     "minPlayers": 2,
     "maxPlayers": 10,
     "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
@@ -504,7 +560,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 20,
+    "GameID": 22,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -530,10 +586,10 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 21,
+    "GameID": 23,
     "name": "War",
     "aka": [""],
-    "description": "War is a simple card game, typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
+    "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
     "minPlayers": 2,
     "maxPlayers": 2,
     "toolsRequired": ["./assets/images/cards.png"],
@@ -556,7 +612,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 22,
+    "GameID": 24,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
