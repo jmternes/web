@@ -317,10 +317,37 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 13,
+    "GameID": [13],
+    "name": "Palace",
+    "aka": ["Shithead", "Karma", "Threes"],
+    "description": "Palace is a casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Deck of Cards"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "OPTIONAL", // Indicate if drinking is optional or part of the game
+    "activity": "Relaxed",
+    "vibes": ["Competitive", "Playful", "Casual"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Palace is a fast-paced card game where the objective is to be the first to play all of your cards. The game involves strategy, luck, and the ability to bluff and read your opponents.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>The Pack:</em><br><br> Two players use one standard deck of 52 cards. For 3-5 players, two decks are used.<br><br>
+          2. <em>Rank of Cards:</em><br><br> The ranking is A down to 3, with 2 being a special card that resets the deck.<br><br>
+          3. <em>Object of the Game:</em><br><br> The aim is to be the first to discard all your cards by playing them in ascending order on the discard pile.<br><br>
+          4. <em>The Deal:</em><br><br> Each player is dealt three face-down cards, six to their hand, and then places three from their hand face-up on the face-down cards.<br><br>
+          5. <em>The Play:</em><br><br> Players take turns playing cards equal to or higher than the start card. A '2' card resets the discard pile, while a '10' removes it from the game. Four identical numbers in a row also clear the discard pile. The game proceeds until one player has no cards left, using their hand, face-up, and eventually face-down cards.<br><br>
+          6. <em>How to Keep Score:</em><br><br> The first player to play all their cards (hand, face-up, and face-down) wins the game.`
+  },
+
+
+  {
+    "GameID": 14,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
-    "description": "Seven Card Stud is a classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. The game does not involve a flop and usually no community cards are used. Players aim to make the best five-card combination from the seven cards they are dealt.",
+    "description": "Seven Card Stud is a classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
     "minPlayers": 2,
     "maxPlayers": 8,
     "toolsRequired": ["./assets/images/cards.png", "./assets/images/coin.png"],
@@ -345,7 +372,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 14,
+    "GameID": 15,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -371,7 +398,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 15,
+    "GameID": 16,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -397,7 +424,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 16,
+    "GameID": 17,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -424,7 +451,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 17,
+    "GameID": 18,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "Texas Hold'em is one of the most popular variants of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -452,7 +479,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 18,
+    "GameID": 19,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -478,7 +505,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 19,
+    "GameID": 20,
     "name": "War",
     "aka": [""],
     "description": "War is a simple card game, typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -504,7 +531,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 20,
+    "GameID": 21,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
