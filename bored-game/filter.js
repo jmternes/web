@@ -2,10 +2,39 @@
 
 import { gamesData } from './data.js';
 
+/* new below */
+
+// event listeners for filter containers
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Toggle selection for tools containers
+  document.querySelectorAll('.tools-container').forEach(item => {
+      item.addEventListener('click', () => {
+          item.classList.toggle('selected'); // Toggle a class to indicate
+      }
+      );
+  });
+});
+
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Toggle selection for vibe containers
+  document.querySelectorAll('.vibe-container').forEach(item => {
+      item.addEventListener('click', () => {
+          item.classList.toggle('selected'); // Toggle a class to indicate selection
+      });
+  });
+});
+
+/* new above */
+
 document.querySelector('.search-button').addEventListener('click', function() {
   const playersSelection = document.getElementById('players').value;
   const difficultySelection = document.getElementById('difficulty').value;
   const timeSelection = document.getElementById('time').value;
+  let selectedTools = Array.from(document.querySelectorAll('.tools-container.selected')).map(container => container.querySelector('p').textContent.trim());
+  let selectedVibes = Array.from(document.querySelectorAll('.vibe-container.selected')).map(vibe => vibe.textContent.trim());
 
   let minPlayers = 0;
   let maxPlayers = Infinity;
@@ -47,11 +76,13 @@ document.querySelector('.search-button').addEventListener('click', function() {
     const gameMaxPlayers = parseInt(game.maxPlayers, 10) || Infinity;
     const gameTime = parseInt(game.timeAvailable, 10);
 
+    const matchesToolCriteria = selectedTools.length === 0 || game.toolsText.some(tool => selectedTools.includes(tool));
     const matchesPlayerCriteria = playersSelection ? (minPlayers <= gameMaxPlayers && maxPlayers >= gameMinPlayers) : true;
     const matchesDifficultyCriteria = difficultySelection ? game.difficulty === difficultySelection : true;
     const matchesTimeCriteria = timeSelection ? (gameTime >= minTime && gameTime <= maxTime) : true;
+    const matchesVibeCriteria = selectedVibes.length === 0 || selectedVibes.some(vibe => game.vibes && game.vibes.includes(vibe));
 
-    return matchesPlayerCriteria && matchesDifficultyCriteria && matchesTimeCriteria;
+    return matchesPlayerCriteria && matchesDifficultyCriteria && matchesTimeCriteria && matchesVibeCriteria && matchesToolCriteria;
   });
 
   // render the cards with updatedisplay

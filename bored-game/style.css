@@ -845,6 +845,11 @@ p.about-subheader {
   filter: grayscale(0%);
 }
 
+.tools-container.selected img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
 .tools-img:focus {
   transform: scale(1.1);
   filter: grayscale(0%);
@@ -961,6 +966,7 @@ option:active {
   padding: .5rem .5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .vibe-container:hover {
@@ -970,6 +976,11 @@ option:active {
 
 .vibe-container:focus {
   background-color: var(--turquoise-light);
+  box-shadow: 2px 2px 0px var(--black);
+}
+
+.vibe-container.selected {
+  background-color: var(--turquoise);
   box-shadow: 2px 2px 0px var(--black);
 }
 
@@ -1105,7 +1116,7 @@ input[type=radio]:checked {
 
 .family-friendly-wrapper {
   width: 27.31rem;
-  height: 11.25rem;
+  height: 9.5rem;
   border: 2px solid var(--black);
   border-radius: 8px;
   margin-left: 3rem;
@@ -1131,7 +1142,7 @@ button.search-button {
   padding: 16px 155px;
   gap: 8px;
   margin-left: 3rem;
-  margin-top: 12rem;
+  /* margin-top: 2rem; */
   /* margin-bottom: 2rem; */
   width: 27.4rem;
   height: 3.5rem;
