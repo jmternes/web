@@ -60,7 +60,7 @@ export const gamesData = [
     "minPlayers": 2,
     "maxPlayers": 4,
     "toolsRequired": ["./assets/images/pingpong.png", "./assets/images/cup.png", "./assets/images/table.png"],
-    "toolsText": ["Ping Pong Balls", "Cups", "Tabletop"],
+    "toolsText": ["Balls", "Cups", "Tabletop"],
     "timeAvailable": 20, // Estimated average game length in minutes
     "difficulty": "Easy",
     "drinking": "TRUE",
