@@ -606,7 +606,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   {
     "GameID": 24,
     "name": "War",
-    "aka": [""],
+    "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
     "minPlayers": 2,
     "maxPlayers": 2,

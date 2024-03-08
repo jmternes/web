@@ -838,6 +838,7 @@ p.about-subheader {
   height: 4rem;
   margin: 10px auto;
   filter: grayscale(100%);
+  cursor: pointer;
 }
 
 .tools-img:hover {
@@ -1175,16 +1176,17 @@ button.search-button {
 .cards-list {
     height: 100vh;
     max-width: 80rem;
-    min-width: 52rem;
+    /* min-width: 52rem; */
     position: absolute;
     top: 60rem;
-    right: 4rem;
+    left: 30%;
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 31rem;
+    /* border: 1px solid red; */
+    /* margin-left: 31rem; */
     /* border: 1px solid red; */
   }
 
