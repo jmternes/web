@@ -572,6 +572,32 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
   {
     "GameID": 23,
+    "name": "Ship, Captain, Crew",
+    "aka": ["Ship, Captain, and Crew", "Ship, Captain, Mate, Crew", "Ship, Captain, Mate, and Crew"],
+    "description": "A classic dice game where players roll dice to assemble a 'ship' (6), 'captain' (5), and 'crew' (4) in that order, with the remaining two dice representing the 'cargo' or score. The game combines luck and strategy, as players decide which dice to keep and which to re-roll to complete their set.",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "toolsRequired": ["./assets/images/dice.png"],
+    "toolsText": ["Dice"],
+    "timeAvailable": 20,
+    "difficulty": "Medium",
+    "drinking": "Optional",
+    "activity": "Indoor",
+    "vibes": ["Competitive", "Casual", "Playful", "Rule-Abiding"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Ship, Captain, and Crew is a dice game played with five six-sided dice. The goal is to roll a 6 (ship), 5 (captain), and 4 (crew) in that order, using up to three rolls per turn. The score is determined by the sum of the remaining two dice, representing the 'cargo'.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>Objective:</em><br><br> To be the player with the highest cargo score after a predetermined number of rounds or to reach a set score first.<br><br>
+          2. <em>Setup:</em><br><br> Players decide the number of rounds and any variations to the rules. Each player takes turns rolling the dice.<br><br>
+          3. <em>Playing:</em><br><br> On their turn, a player rolls all five dice. They must roll a 6, 5, and 4 in order to establish their ship, captain, and crew. Only after these are established can the cargo (the sum of the remaining two dice) be counted.<br><br>
+          4. <em>Scoring:</em><br><br> If a player fails to establish their ship, captain, and crew in three rolls, they score zero for that round. Otherwise, their score is the sum of the two 'cargo' dice.<br><br>
+          5. <em>Winning:</em><br><br> The player with the highest total cargo score after the agreed-upon number of rounds wins, or the first player to reach the set score is declared the winner. Drinking rules can be added for additional fun.`
+  },
+
+
+
+  {
+    "GameID": 24,
     "name": "Six Card Golf",
     "aka": ["6-Card Golf", "Golf", "Polish Poker"],
     "description": "A fun, fast-paced card game that combines strategy and luck, aiming to score as low as possible over nine rounds by replacing cards in a 3x2 layout with new ones from the deck or discard pile.",
@@ -596,7 +622,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 24,
+    "GameID": 25,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -622,7 +648,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 25,
+    "GameID": 26,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -648,7 +674,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 26,
+    "GameID": 27,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -675,7 +701,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 27,
+    "GameID": 28,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -703,7 +729,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 28,
+    "GameID": 29,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -729,7 +755,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 29,
+    "GameID": 30,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -755,7 +781,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 30,
+    "GameID": 31,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
