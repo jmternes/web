@@ -1155,6 +1155,7 @@ button.search-button {
   font-size: 1.25rem;
   font-weight: 600;
   cursor: pointer;
+  transform: translateY(-15rem);
 }
 
 .search-button:hover {
@@ -1394,6 +1395,7 @@ button.search-button {
     font-size: 1.25rem;
     font-weight: 600;
     z-index: 1;
+    transform: translateY(-15rem);
   }
 
   .reset-button:hover {
