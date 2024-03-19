@@ -324,7 +324,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Casual",
-    "vibes": ["Casual", "Playful", "Free-Flowing"],
+    "vibes": ["Casual", "High-Energy or Chill", "Playful", "Free-Flowing", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
               Go Fish is a card game where players try to collect sets of four matching cards, asking opponents for specific cards and 'fishing' from the deck when necessary.<br><br><br>
               <strong>Gameplay:</strong><br><br>
@@ -335,7 +335,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
               5. <em>Forming Sets:</em><br><br> When a player collects a set of four matching cards, they place it face up.<br><br>
               6. <em>Winning:</em><br><br> The game ends when all sets are formed. The player with the most sets wins.`
   },
-  
+
 
   {
     "GameID": 14,
@@ -351,7 +351,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
     "difficulty": "Moderate",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive or Casual", "Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
 Hearts is a trick-taking card game played by four players. The game uses a standard 52-card deck, and the objective is to score as few points as possible. Hearts and the Queen of Spades carry penalty points, while the other cards are point-free.<br><br><br>
 <strong>Gameplay:</strong><br><br>
@@ -378,7 +378,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
     "difficulty": "Easy",
     "drinking": "OPTIONAL",
     "activity": "Strategic",
-    "vibes": ["Competitive", "Playful", "Rule-Abiding"],
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
           Liar's Dice combines luck, skill, and a bit of social engineering as players attempt to out-bluff their opponents to win. Each player begins with a set of dice hidden under a cup.<br><br><br>
           <strong>Gameplay:</strong><br><br>
@@ -388,8 +388,8 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           4. <em>Challenging:</em><br><br> Any player can challenge the current bid, leading to all dice being revealed. If the bid is not met, the bidder loses a die; if the bid is met or exceeded, the challenger loses a die.<br><br>
           5. <em>Winning:</em><br><br> The game continues until only one player has dice remaining, declaring them the winner. Liar's Dice is a game of strategy, daring, and the ability to read one's opponents.`
   },
-  
-  
+
+
 
   {
     "GameID": 16,
@@ -490,7 +490,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           4. <em>Scoring:</em><br><br> Teams move their piece on the game board based on the number of words correctly guessed within the time limit. Special squares on the board add variety to the gameplay.<br><br>
           5. <em>Winning:</em><br><br> The first team to reach the end of the board wins the game. The game combines elements of drawing, strategy, and quick thinking, making it an entertaining challenge for all players.`
   },
-  
+
 
   {
     "GameID": 20,
