@@ -366,6 +366,33 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
   {
     "GameID": 15,
+    "name": "Liar's Dice",
+    "aka": ["Dudo", "Perudo"],
+    "description": "Liar's Dice is a game of bluffing and deception where players bid on the numbers appearing on dice under their cups, with the goal of being the last player remaining or successfully challenging another player's bid.",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "toolsRequired": ["./assets/images/dice.png"],
+    "toolsText": ["Dice"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "OPTIONAL",
+    "activity": "Strategic",
+    "vibes": ["Competitive", "Playful", "Rule-Abiding"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Liar's Dice combines luck, skill, and a bit of social engineering as players attempt to out-bluff their opponents to win. Each player begins with a set of dice hidden under a cup.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>Objective:</em><br><br> To be the last player with dice remaining, by accurately challenging others' bids or making bids that go unchallenged.<br><br>
+          2. <em>Setup:</em><br><br> Each player starts with five dice and a cup. Dice are rolled secretly, and bids are made on how many of a certain die face are present under all cups combined.<br><br>
+          3. <em>Bidding:</em><br><br> Players take turns making increasingly higher bids on the total number of a specific dice face showing under all cups.<br><br>
+          4. <em>Challenging:</em><br><br> Any player can challenge the current bid, leading to all dice being revealed. If the bid is not met, the bidder loses a die; if the bid is met or exceeded, the challenger loses a die.<br><br>
+          5. <em>Winning:</em><br><br> The game continues until only one player has dice remaining, declaring them the winner. Liar's Dice is a game of strategy, daring, and the ability to read one's opponents.`
+  },
+  
+  
+
+  {
+    "GameID": 16,
     "name": "Nim",
     "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -387,11 +414,10 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
         3. <em>Playing:</em><br><br> Players take turns removing any number of objects from a single row. At least one object must be taken, but a player may take as many as they wish from the chosen row.<br><br>
         4. <em>Strategy:</em><br><br> Winning at Nim requires strategic planning. Players must think ahead to leave their opponent in a position where they have no choice but to take the last object. The game involves mathematical underpinnings, particularly the concept of Nim-sums, which can determine the best moves.<br><br>
         5. <em>Winning:</em><br><br> The game ends when all objects have been taken. The player who takes the last object is the loser in traditional rules, but variations exist where taking the last object makes a player the winner.`
-
   },
 
   {
-    "GameID": 16,
+    "GameID": 17,
     "name": "Kings Corner",
     "aka": ["Kings in the Corner"],
     "description": "A card game for 2-4 players that combines elements of solitaire and poker. Players aim to play all their cards by forming card sequences in a common play area, with kings placed in the corners serving as the foundation for new sequences.",
@@ -416,7 +442,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 17,
+    "GameID": 18,
     "name": "Palace",
     "aka": ["Shithead", "Karma", "Threes"],
     "description": "A casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
@@ -442,7 +468,32 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 18,
+    "GameID": 19,
+    "name": "Pictionary",
+    "aka": ["Guess the Word"],
+    "description": "A word-guessing game where players draw a word on a piece of paper while their teammates try to guess what the word is. The faster the word is guessed, the more points the team earns.",
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "toolsRequired": ["./assets/images/paper.png"],
+    "toolsText": ["Pen & Paper"],
+    "timeAvailable": 30,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Involved",
+    "vibes": ["Playful", "Creative", "Competitive", "Casual"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Pictionary is a party game suitable for players of all ages. Teams take turns drawing and guessing words or phrases from a given card, with a set time limit to make the game challenging.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>Objective:</em><br><br> To guess words from teammates' drawings to advance on the game board.<br><br>
+          2. <em>Setup:</em><br><br> Divide into teams. Each team gets a pad of paper, a drawing pen, and a set of Pictionary cards. Determine the order of play.<br><br>
+          3. <em>Drawing and Guessing:</em><br><br> The designated artist for the turn draws the word indicated by the card drawn from the deck, without using letters, numbers, or verbal cues. The teammates guess the word before the time runs out.<br><br>
+          4. <em>Scoring:</em><br><br> Teams move their piece on the game board based on the number of words correctly guessed within the time limit. Special squares on the board add variety to the gameplay.<br><br>
+          5. <em>Winning:</em><br><br> The first team to reach the end of the board wins the game. The game combines elements of drawing, strategy, and quick thinking, making it an entertaining challenge for all players.`
+  },
+  
+
+  {
+    "GameID": 20,
     "name": "Rummy",
     "aka": ["Rum?"],
     "description": "Rummy is group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
@@ -470,7 +521,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 19,
+    "GameID": 21,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
     "description": "A classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
@@ -497,7 +548,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 20,
+    "GameID": 22,
     "name": "Six Card Golf",
     "aka": ["6-Card Golf", "Golf", "Polish Poker"],
     "description": "A fun, fast-paced card game that combines strategy and luck, aiming to score as low as possible over nine rounds by replacing cards in a 3x2 layout with new ones from the deck or discard pile.",
@@ -522,7 +573,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 21,
+    "GameID": 23,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -548,7 +599,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 22,
+    "GameID": 24,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -574,7 +625,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 23,
+    "GameID": 25,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -601,7 +652,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 24,
+    "GameID": 26,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -629,7 +680,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 25,
+    "GameID": 27,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -655,7 +706,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 26,
+    "GameID": 28,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -681,14 +732,14 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 27,
+    "GameID": 29,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
     "minPlayers": 1,
     "maxPlayers": 10,
     "toolsRequired": ["./assets/images/dice.png", "./assets/images/paper.png"],
-    "toolsText": ["5 Dice", "Pen and Paper"],
+    "toolsText": ["Dice", "Pen and Paper"],
     // "imageURL": "",
     "timeAvailable": 30,
     "difficulty": "Moderate",
