@@ -389,10 +389,33 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           5. <em>Winning:</em><br><br> The game continues until only one player has dice remaining, declaring them the winner. Liar's Dice is a game of strategy, daring, and the ability to read one's opponents.`
   },
 
+  {
+    "GameID": 16,
+    "name": "Marbles",
+    "aka": ["Ringer", "Ring Taw", "Kimmies"],
+    "description": "A traditional game played worldwide, marbles is a game of skill, strategy, and precision, often played in different variations across cultures. Players compete to knock marbles out of the ring or to collect the most marbles by the end of the game.",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "toolsRequired": ["./assets/images/marbles.png"],
+    "toolsText": ["Marbles"],
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Outdoor",
+    "vibes": ["Competitive", "Casual", "Playful"],
+    "rules": `<strong>Overview:</strong><br><br>
+          Marbles is a classic outdoor game that tests players' dexterity and strategy. It's played with small, colorful marbles, aiming to knock opponents' marbles out of a ring or accumulate the highest number of marbles.<br><br><br>
+          <strong>Gameplay:</strong><br><br>
+          1. <em>Objective:</em><br><br> To hit or capture opponents' marbles by shooting your own marbles accurately.<br><br>
+          2. <em>Setup:</em><br><br> Draw a circle on the ground. Players contribute an equal number of marbles, placing them randomly within the circle. Players take turns flicking their shooter marble from outside the ring aiming to knock marbles out.<br><br>
+          3. <em>Playing:</em><br><br> Players take turns shooting at marbles within the circle from a designated starting line. If a player knocks any marbles out of the circle, they collect those marbles and shoot again.<br><br>
+          4. <em>Scoring:</em><br><br> The game can end when all the marbles are knocked out of the circle. The player with the most marbles wins. Various rule variations exist, including playing for keeps, where players keep the marbles they win during the game.<br><br>
+          5. <em>Winning:</em><br><br> The winner is either the player who collects the most marbles by the end of the game or the last player remaining in the game after all others have lost their marbles.`
+  },
 
 
   {
-    "GameID": 16,
+    "GameID": 17,
     "name": "Nim",
     "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -417,7 +440,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 17,
+    "GameID": 18,
     "name": "Kings Corner",
     "aka": ["Kings in the Corner"],
     "description": "A card game for 2-4 players that combines elements of solitaire and poker. Players aim to play all their cards by forming card sequences in a common play area, with kings placed in the corners serving as the foundation for new sequences.",
@@ -442,7 +465,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 18,
+    "GameID": 19,
     "name": "Palace",
     "aka": ["Shithead", "Karma", "Threes"],
     "description": "A casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
@@ -468,7 +491,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 19,
+    "GameID": 20,
     "name": "Pictionary",
     "aka": ["Guess the Word"],
     "description": "A word-guessing game where players draw a word on a piece of paper while their teammates try to guess what the word is. The faster the word is guessed, the more points the team earns.",
@@ -493,7 +516,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 20,
+    "GameID": 21,
     "name": "Rummy",
     "aka": ["Rum?"],
     "description": "Rummy is group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
@@ -521,7 +544,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 21,
+    "GameID": 22,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
     "description": "A classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
@@ -548,7 +571,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 22,
+    "GameID": 23,
     "name": "Six Card Golf",
     "aka": ["6-Card Golf", "Golf", "Polish Poker"],
     "description": "A fun, fast-paced card game that combines strategy and luck, aiming to score as low as possible over nine rounds by replacing cards in a 3x2 layout with new ones from the deck or discard pile.",
@@ -573,7 +596,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 23,
+    "GameID": 24,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -599,7 +622,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 24,
+    "GameID": 25,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -625,7 +648,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 25,
+    "GameID": 26,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -652,7 +675,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 26,
+    "GameID": 27,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -680,7 +703,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 27,
+    "GameID": 28,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -706,7 +729,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 28,
+    "GameID": 29,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -732,7 +755,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 29,
+    "GameID": 30,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
