@@ -1736,6 +1736,10 @@ button.search-button {
   /* border: 1px solid red; */
 }
 
+.hidden {
+  display: none;
+}
+
 .directory-card {
   box-sizing: border-box;
     display: block;
