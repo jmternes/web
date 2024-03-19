@@ -573,7 +573,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   {
     "GameID": 23,
     "name": "Ship, Captain, Crew",
-    "aka": ["Ship, Captain, and Crew", "Ship, Captain, Mate, Crew", "Ship, Captain, Mate, and Crew"],
+    "aka": ["Ship, Captain, Mate, Crew"],
     "description": "A classic dice game where players roll dice to assemble a 'ship' (6), 'captain' (5), and 'crew' (4) in that order, with the remaining two dice representing the 'cargo' or score. The game combines luck and strategy, as players decide which dice to keep and which to re-roll to complete their set.",
     "minPlayers": 2,
     "maxPlayers": 6,

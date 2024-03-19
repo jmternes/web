@@ -861,6 +861,11 @@ p.about-subheader {
   transform: scale(.8);
 }
 
+.tools-images img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
 .players-wrapper {
   width: 27.31rem;
   height: 9.38rem;
@@ -1313,8 +1318,8 @@ button.search-button {
 
   .card-images img {
     max-width: 94px;
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     margin: 0;
     /* border: 1px solid red; */
   }
@@ -1368,6 +1373,7 @@ button.search-button {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
+    /* border: 1px solid red; */
   }
 
   .card:hover {
