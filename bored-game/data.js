@@ -312,6 +312,33 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
 
   {
     "GameID": 13,
+    "name": "Go Fish",
+    "aka": ["Fish"],
+    "description": "A simple card game often played by children. The goal is to collect as many sets of four identical cards as possible. It's a game of asking other players for specific cards to complete your sets.",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Cards"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Casual",
+    "vibes": ["Casual", "Playful", "Free-Flowing"],
+    "rules": `<strong>Overview:</strong><br><br>
+              Go Fish is a card game where players try to collect sets of four matching cards, asking opponents for specific cards and 'fishing' from the deck when necessary.<br><br><br>
+              <strong>Gameplay:</strong><br><br>
+              1. <em>Objective:</em><br><br> Collect the most sets of four matching cards.<br><br>
+              2. <em>Setup:</em><br><br> The deck is shuffled, and each player is dealt five cards (or seven if only two players). The remaining deck is placed face down as the draw pile.<br><br>
+              3. <em>Asking for Cards:</em><br><br> On a player's turn, they ask another player for a specific rank of card. If the asked player has one or more of those cards, they must hand them over.<br><br>
+              4. <em>Go Fish:</em><br><br> If the asked player does not have the requested card, they say 'Go Fish', and the asking player draws a card from the draw pile.<br><br>
+              5. <em>Forming Sets:</em><br><br> When a player collects a set of four matching cards, they place it face up.<br><br>
+              6. <em>Winning:</em><br><br> The game ends when all sets are formed. The player with the most sets wins.`
+  },
+  
+
+  {
+    "GameID": 14,
     "name": "Hearts",
     "aka": ["American Hearts", "Black Lady", "Black Maria", "Black Widow", "Slippery Anne"],
     "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
@@ -338,7 +365,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 14,
+    "GameID": 15,
     "name": "Nim",
     "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -364,7 +391,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 15,
+    "GameID": 16,
     "name": "Kings Corner",
     "aka": ["Kings in the Corner"],
     "description": "A card game for 2-4 players that combines elements of solitaire and poker. Players aim to play all their cards by forming card sequences in a common play area, with kings placed in the corners serving as the foundation for new sequences.",
@@ -389,7 +416,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 16,
+    "GameID": 17,
     "name": "Palace",
     "aka": ["Shithead", "Karma", "Threes"],
     "description": "A casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
@@ -415,7 +442,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 17,
+    "GameID": 18,
     "name": "Rummy",
     "aka": ["Rum?"],
     "description": "Rummy is group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
@@ -443,7 +470,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 18,
+    "GameID": 19,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
     "description": "A classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
@@ -469,9 +496,33 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           <strong>Variants:</strong><br><br>1. <em>High-Low Split:</em> In some variations, the pot is split between the best high hand and the best low hand. Players can win both halves of the pot with the right combination of cards.<br><br>2. <em>Razz:</em> A lowball version of Seven Card Stud where the lowest hand wins. Aces are low, and straights and flushes do not count against the hand.<br><br>3. <em>Roll Your Own:</em> A variation where players choose which of their cards are face up and which are face down, adding an extra layer of strategy to the game.`
   },
 
+  {
+    "GameID": 20,
+    "name": "Six Card Golf",
+    "aka": ["6-Card Golf", "Golf", "Polish Poker"],
+    "description": "A fun, fast-paced card game that combines strategy and luck, aiming to score as low as possible over nine rounds by replacing cards in a 3x2 layout with new ones from the deck or discard pile.",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Cards"],
+    "imageURL": "",
+    "timeAvailable": 30,
+    "difficulty": "Medium",
+    "drinking": "FALSE",
+    "activity": "Casual",
+    "vibes": ["Competitive", "Strategic", "Engaging"],
+    "rules": `<strong>Overview:</strong><br><br>
+              6-Card Golf is a game where players aim to get the lowest possible score by replacing cards from a 6-card layout with ones from the deck or discard pile. It's played over nine rounds, mixing elements of strategy and chance.<br><br><br>
+              <strong>Gameplay:</strong><br><br>
+              1. <em>Objective:</em><br><br> Achieve the lowest score by replacing higher value cards with lower ones or matching cards in a column.<br><br>
+              2. <em>Setup:</em><br><br> Each player is dealt 6 cards face down in a 3x2 layout. Players may look at the two bottom cards of their layout at the beginning. The rest of the deck forms a draw pile, and the top card is turned over to start the discard pile.<br><br>
+              3. <em>Playing:</em><br><br> Players take turns drawing a card from either the deck or the discard pile. The drawn card can replace any card in the player's layout, which is then placed in the discard pile. Players may only look at all their cards at the end of a round.<br><br>
+              4. <em>Scoring:</em><br><br> After nine rounds, scores are tallied. Cards in columns that are of the same rank score zero. Each card otherwise scores points according to its face value (Jacks are 11, Queens are 12, Kings are 0, and Aces are 1). The game can also be played over fewer rounds for quicker play.<br><br>
+              5. <em>Winning:</em><br><br> The player with the lowest total score after the final round wins. Strategies involve risk management and deciding when to keep certain cards based on the likelihood of finding matches.`
+  },
 
   {
-    "GameID": 19,
+    "GameID": 21,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -497,7 +548,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 20,
+    "GameID": 22,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -523,7 +574,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 21,
+    "GameID": 23,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -550,7 +601,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 22,
+    "GameID": 24,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -578,7 +629,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 23,
+    "GameID": 25,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -604,7 +655,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 24,
+    "GameID": 26,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -630,7 +681,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 25,
+    "GameID": 27,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
