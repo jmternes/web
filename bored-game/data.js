@@ -53,7 +53,34 @@ export const gamesData = [
   },
 
   {
-    "GameID": "3",
+    "GameID": 3,
+    "name": "Bananagrams",
+    "aka": ["Speed Scrabble"],
+    "description": "Bananagrams is a fast-paced, word-building game where players race against each other to build a grid of words using their letter tiles. Unlike traditional word games, there's no board, and players can rearrange their words as often as they like.",
+    "minPlayers": 1,
+    "maxPlayers": 8,
+    "toolsRequired": ["./assets/images/othertool.png"],
+    "toolsText": ["Letter Tiles"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "Engaging",
+    "vibes": ["Competitive", "Fast-Paced", "Educational"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Bananagrams is a dynamic and educational game that challenges players to think quickly and flexibly. It encourages vocabulary development and spelling skills in a fun, competitive format.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> Players aim to be the first to use all of their tiles to create a word grid (words intersecting and connecting like a crossword puzzle).<br><br>
+        2. <em>Setup:</em><br><br> All tiles are placed face down in the center. Depending on the number of players, each player draws a certain number of tiles to start.<br><br>
+        3. <em>Playing:</em><br><br> At the start signal, all players simultaneously flip their tiles and begin forming their grid. When a player uses all their tiles, they shout 'Peel!' forcing every player to draw another tile from the center.<br><br>
+        4. <em>Dumping:</em><br><br> A player can swap a difficult tile by saying 'Dump!' but must take three tiles from the center as a penalty.<br><br>
+        5. <em>Winning:</em><br><br> The first player to use all their tiles in a valid grid after the center pile is depleted shouts 'Bananas!' and is the winner, pending validation of their grid.<br><br>
+        <strong>Variants:</strong><br><br> Bananagrams can be adapted for solo play or teams. Variations can adjust the rules for forming words, adding educational or thematic twists to the game.`
+  },
+  
+
+  {
+    "GameID": 4,
     "name": "Beer Pong",
     "aka": ["Pong", "Beirut"],
     "description": "A competitive party game where players throw a ping pong ball across a table with the intent of landing the ball in one of several cups of beer on the other end.",
@@ -71,7 +98,7 @@ export const gamesData = [
 
 
   {
-    "GameID": 4,
+    "GameID": 5,
     "name": "Blackjack",
     "aka": ["21"],
     "description": "A popular casino card game where players aim to get a value as close to 21 as possible without going over. Face cards are worth 10 points, aces can be 1 or 11, and strategy is key. Beat the dealer and win the round.",
@@ -97,7 +124,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 5,
+    "GameID": 6,
     "name": "Boxes",
     "aka": ["Dots and Boxes", "Dot Game", "Dot-to-Dot", "Squares"],
     "description": "A strategic paper-and-pencil game. Connect dots to create squares and claim them with your initials. Capture the most squares to win.",
@@ -124,7 +151,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 6,
+    "GameID": 7,
     "name": "Bridge",
     "aka": ["Contract Bridge"],
     "description": "A four-player card game of strategy and communication. Form partnerships and use bids to determine the trump suit or play in no-trump. The objective is to win tricks by playing high-ranking cards. Bridge is a challenging game that combines teamwork and skill.",
@@ -152,7 +179,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 7,
+    "GameID": 8,
     "name": "Charades",
     "aka": [""],
     "description": "A classic party game that requires no special equipment. Players take turns acting out a word or phrase without speaking while their team tries to guess what they're portraying. It's a fun and interactive game that often leads to lots of laughter and entertainment.",
@@ -180,7 +207,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 8,
+    "GameID": 9,
     "name": "Cheat",
     "aka": ["BS", "Bullshit"],
     "description": "A strategic and deceptive card game where players take turns playing cards and making claims about the cards they've played. It's all about convincing your opponents while catching them in their own bluffs. A game of wits, psychology, and careful observation.",
@@ -207,7 +234,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 9,
+    "GameID": 10,
     "name": "Cribbage",
     "aka": ["Crib"],
     "description": "A classic card game known for its unique  scoring system. Players score points by forming combinations of cards.   The game is traditionally played with a special Cribbage board used for   scorekeeping.",
@@ -229,7 +256,7 @@ export const gamesData = [
   },
 
   {
-    "GameID": 10,
+    "GameID": 11,
     "name": "Dominoes",
     "aka": ["Block Dominoes",],
     "description": "A tile-based game with a long history and many variations, where players match ends of tiles to extend the line of play. The game's objective varies by version but often involves emptying one's hand while blocking the opponent or scoring based on the pips on the tiles.",
@@ -258,7 +285,7 @@ export const gamesData = [
 
 
   {
-    "GameID": 11,
+    "GameID": 12,
     "name": "Euchre",
     "aka": ["Eucre"],
     "description": "Euchre is a trick-taking card game most commonly played with four people in two partnerships. It's a fast-paced game that involves strategic thinking and is played with 24 playing cards.",
@@ -286,7 +313,7 @@ export const gamesData = [
 
 
   {
-    "GameID": 12,
+    "GameID": 13,
     "name": "Flip Cup",
     "aka": ["Taps", "Flippy Cup", "Tippy Cup"],
     "description": "A high-energy drinking game where teams compete to flip plastic cups upside down by flicking the rim with their fingers. Players take turns racing against the opposing team to successfully flip all their cups. Speed and coordination are key in this fun and social party game.",
@@ -311,7 +338,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
   },
 
   {
-    "GameID": 13,
+    "GameID": 14,
     "name": "Go Fish",
     "aka": ["Fish"],
     "description": "A simple card game often played by children. The goal is to collect as many sets of four identical cards as possible. It's a game of asking other players for specific cards to complete your sets.",
@@ -338,7 +365,7 @@ Flip Cup is a team-based drinking game that involves flipping cups off the edge 
 
 
   {
-    "GameID": 14,
+    "GameID": 15,
     "name": "Hearts",
     "aka": ["American Hearts", "Black Lady", "Black Maria", "Black Widow", "Slippery Anne"],
     "description": "A classic trick-taking card game for four players. Avoid taking hearts and the queen of spades, which carry penalty points. The player with the fewest penalty points wins. Simple yet strategic fun for all.",
@@ -365,7 +392,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 15,
+    "GameID": 16,
     "name": "Liar's Dice",
     "aka": ["Dudo", "Perudo"],
     "description": "Liar's Dice is a game of bluffing and deception where players bid on the numbers appearing on dice under their cups, with the goal of being the last player remaining or successfully challenging another player's bid.",
@@ -390,7 +417,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 16,
+    "GameID": 17,
     "name": "Marbles",
     "aka": ["Ringer", "Ring Taw", "Kimmies"],
     "description": "A traditional game played worldwide, marbles is a game of skill, strategy, and precision, often played in different variations across cultures. Players compete to knock marbles out of the ring or to collect the most marbles by the end of the game.",
@@ -413,9 +440,34 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
           5. <em>Winning:</em><br><br> The winner is either the player who collects the most marbles by the end of the game or the last player remaining in the game after all others have lost their marbles.`
   },
 
+  {
+    "GameID": 18,
+    "name": "Nerts",
+    "aka": ["Pounce", "Peanuts", "Racing Demon"],
+    "description": "Nerts is a fast-paced, real-time, multiplayer card game often described as a combination of Solitaire and Speed, where players simultaneously play cards into common area piles in ascending order, aiming to be the first to deplete their Nerts pile. *Note: Nerts requires multiple decks of cards.*",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "toolsRequired": ["./assets/images/cards.png"],
+    "toolsText": ["Cards"],
+    "imageURL": "",
+    "timeAvailable": 15,
+    "difficulty": "Medium",
+    "drinking": "FALSE",
+    "activity": "Energetic",
+    "vibes": ["Competitive", "High-Energy", "Fast-Paced"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Nerts is a competitive card game where each player or team uses a unique deck of cards. It's played with the goal of being the first to empty your Nerts pile by playing cards onto shared foundation piles in ascending numerical order.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> The main objective is to play all your cards from your Nerts pile to the shared play area before your opponents.<br><br>
+        2. <em>Setup:</em><br><br> Each player has a Nerts pile of 13 cards, a working pile of four cards, and the rest of the cards in hand or a draw pile. Players work to play cards from their hand, Nerts pile, or working piles onto the shared foundation piles in the center.<br><br>
+        3. <em>Playing:</em><br><br> Players rapidly play cards, without taking turns, from their layout onto the foundation piles. These piles start with an Ace and build up in sequential order to the Kings, exclusively with cards of the same suit.<br><br>
+        4. <em>Winning:</em><br><br> The game ends immediately when a player empties their Nerts pile. Points are scored based on the number of cards played to the foundations minus the cards left in the Nerts pile.<br><br>
+        <strong>Variants:</strong><br><br> Nerts can be played individually or in teams, adjusting the complexity and speed of the game. Some variations include penalties for incorrect plays or specific rules about when cards can be moved from the working piles to the foundation piles.`
+  },
+  
 
   {
-    "GameID": 17,
+    "GameID": 19,
     "name": "Nim",
     "aka": ["Marienbad Game"],
     "description": "A simple mathematical game where players take turns removing a certain number of objects (like stones, or sugar packets) from distinct piles. The goal is to force your opponent into taking the last object. Nim involves strategic thinking and careful planning to outwit your opponent.",
@@ -440,7 +492,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 18,
+    "GameID": 20,
     "name": "Kings Corner",
     "aka": ["Kings in the Corner"],
     "description": "A card game for 2-4 players that combines elements of solitaire and poker. Players aim to play all their cards by forming card sequences in a common play area, with kings placed in the corners serving as the foundation for new sequences.",
@@ -465,7 +517,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 19,
+    "GameID": 21,
     "name": "Palace",
     "aka": ["Shithead", "Karma", "Threes"],
     "description": "A casual card game for 2 to 5 players that is easy to learn and offers quick, fun rounds. The objective is to be the first to play all your cards by placing them on the discard pile, following specific rules for card ranks.",
@@ -491,7 +543,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 20,
+    "GameID": 22,
     "name": "Pictionary",
     "aka": ["Guess the Word"],
     "description": "A word-guessing game where players draw a word on a piece of paper while their teammates try to guess what the word is. The faster the word is guessed, the more points the team earns.",
@@ -516,7 +568,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 21,
+    "GameID": 23,
     "name": "Rummy",
     "aka": ["Rum?"],
     "description": "Rummy is group of matching-card games known for gameplay based on matching cards of the same rank or sequence and same suit.",
@@ -544,7 +596,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 22,
+    "GameID": 24,
     "name": "Seven Card Stud",
     "aka": ["Stud", "Stud Poker"],
     "description": "A classic poker game where each player receives a mix of face-down and face-up cards dealt in multiple betting rounds. Players aim to make the best five-card combination from the seven cards they are dealt.",
@@ -571,7 +623,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 23,
+    "GameID": 25,
     "name": "Ship, Captain, Crew",
     "aka": ["Ship, Captain, Mate, Crew"],
     "description": "A classic dice game where players roll dice to assemble a 'ship' (6), 'captain' (5), and 'crew' (4) in that order, with the remaining two dice representing the 'cargo' or score. The game combines luck and strategy, as players decide which dice to keep and which to re-roll to complete their set.",
@@ -597,7 +649,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 24,
+    "GameID": 26,
     "name": "Six Card Golf",
     "aka": ["6-Card Golf", "Golf", "Polish Poker"],
     "description": "A fun, fast-paced card game that combines strategy and luck, aiming to score as low as possible over nine rounds by replacing cards in a 3x2 layout with new ones from the deck or discard pile.",
@@ -622,7 +674,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 25,
+    "GameID": 27,
     "name": "Solitaire",
     "aka": ["Patience", "Card Solitaire"],
     "description": "A classic solo card game played with a standard deck. Arrange cards to build foundation piles from Ace to King. Strategic moves and careful planning are your keys to success.",
@@ -648,7 +700,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
 {
-    "GameID": 26,
+    "GameID": 28,
     "name": "Spit",
     "aka": ["Slam"],
     "description": "A dynamic card game of tricks. Play your cards wisely to capture valuable tricks and outwit your opponents.",
@@ -674,7 +726,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 27,
+    "GameID": 29,
     "name": "Spoons",
     "aka": [""],
     "description": "A fast-paced card game of speed and strategy. Players aim to collect a set of cards and grab a spoon from the center of the table. The player left without a spoon loses the round. Quick reflexes and keen observation skills are keys to victory.",
@@ -701,7 +753,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 28,
+    "GameID": 30,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -729,7 +781,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 29,
+    "GameID": 31,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -755,7 +807,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 30,
+    "GameID": 32,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -781,7 +833,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 31,
+    "GameID": 33,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",
