@@ -52,7 +52,7 @@ export const gamesData = [
 
   },
 
-  // if toolstext !=, it can be other tools
+  // if toolstext !=, it can be other tools, and when we click no tools, it deselects all other tools? in the filter wrapper
   {
     "GameID": 3,
     "name": "Bananagrams",
