@@ -52,6 +52,7 @@ export const gamesData = [
 
   },
 
+  // if toolstext !=, it can be other tools
   {
     "GameID": 3,
     "name": "Bananagrams",
