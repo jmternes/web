@@ -2,8 +2,9 @@
 
 import { gamesData } from './data.js';
 
-/* to do: vibe should return if vibe matches one or the other (includes the word)
-other tools should just be anything that doesnt match one of the tools */
+/* to do: error catch for no filter found
+other tools should just be anything that doesnt match one of the tools
+add select options for no preference for difficulty, etc. */
 
 // event listeners for filter containers
 
@@ -169,6 +170,8 @@ document.querySelector('.search-button').addEventListener('click', function() {
       gamesContainer.appendChild(card);
     });
   }
+
+  
 
 
 
