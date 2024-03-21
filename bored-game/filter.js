@@ -4,7 +4,8 @@ import { gamesData } from './data.js';
 
 /* to do: error catch for no filter found
 other tools should just be anything that doesnt match one of the tools
-add select options for no preference for difficulty, etc. */
+add select options for no preference for difficulty, etc. 
+time option for 60+ mins, not working.*/
 
 // event listeners for filter containers
 
