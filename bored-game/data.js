@@ -39,7 +39,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Relaxed",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive", "High-Energy or Chill", "Playful", "Rule-Abiding", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         31 is a fast-paced card game that uses a standard 52-card deck. The game can be played by 2 to 9 players. Its objective is to assemble a hand closest in value to 31 points in the same suit.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -67,7 +67,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Engaging",
-    "vibes": ["Competitive", "Fast-Paced", "Educational"],
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Bananagrams is a dynamic and educational game that challenges players to think quickly and flexibly. It encourages vocabulary development and spelling skills in a fun, competitive format.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -93,7 +93,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "TRUE",
     "activity": "High-Energy",
-    "vibes": ["Competitive", "High-Energy", "Playful", "Loud"],
+    "vibes": ["Competitive or Casual", "High-Energy", "Playful", "Free-Flowing or Rule-Abiding", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>Beer Pong is a beloved party game that tests players' aiming and coordination skills in a fun and competitive setting. Teams or individuals take turns attempting to throw ping pong balls into the opposing team's beer cups.<br><br><br><strong>Gameplay:</strong><br><br>1. <em>Objective:</em><br><br>The aim is to eliminate all the opposing team's cups by successfully landing a ball in each.<br><br>2. <em>Setup:</em><br><br>Arrange cups in a triangle formation at each end of the table, and fill them with beer. Decide who starts with a friendly 'eye-to-eye' challenge or a coin toss.<br><br>3. <em>Playing:</em><br><br>Players take turns throwing or bouncing the ball towards the opponent's cups. If a ball lands in a cup, the cup is removed, and the defending team must drink the contents.<br><br>4. <em>Winning:</em><br><br>The first team to eliminate all the opponent's cups wins. Optionally, the losing team must consume the remaining beer on the winning side.<br><br><strong>Variations:</strong><br><br>Rules can vary significantly with house rules, including 're-racks,' 'bounces,' and 'redemption' shots.`,
   },
 
@@ -112,7 +112,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
     Blackjack, also known as 21, is a popular card game found in casinos worldwide. The game is played against the dealer, and the objective is to beat the dealer's hand without going over 21.<br><br><br>
     <strong>Gameplay:</strong><br><br>
@@ -138,7 +138,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive or Casual", "Chill", "Playful", "Rule-Abiding", "Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Boxes is a pencil-and-paper game for two or more players. It starts with an empty grid of dots. Players take turns adding a single horizontal or vertical line between two unconnected adjacent dots. The player who completes the fourth side of a 1×1 box earns one point and takes another turn.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -165,7 +165,7 @@ export const gamesData = [
     "difficulty": "Hard",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive", "Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Bridge is a trick-taking card game using a standard 52-card deck. It is played by four players in two competing partnerships, with partners sitting opposite each other around a table. The game consists of two main parts: bidding (or auction) and card play.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -193,7 +193,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Involved",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Casual", "High-Energy", "Playful", "Free-Flowing", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         Charades is a classic party game where players act out a word or phrase without speaking, while their teammates try to guess what it is. It can be played with any number of players divided into two or more teams.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -221,7 +221,7 @@ export const gamesData = [
     "difficulty": "Easy",
     "drinking": "FALSE",
     "activity": "Relaxed",
-    "vibes": ["Competitive", "Chill", "Playful", "Free-Flowing", "Loud"],
+    "vibes": ["Competitive or Casual", "Chill", "Playful", "Free-Flowing or Rule-Abiding", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         Cheat is a game of deception where players aim to be the first to get rid of all their cards. It can be played by a group of 3 or more players with a standard deck of cards.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -270,7 +270,7 @@ export const gamesData = [
     "difficulty": "Medium",
     "drinking": "FALSE",
     "activity": "Competitive",
-    "vibes": ["Strategic", "Rule-Abiding", "Competitive", "Quiet"],
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud"],
     "rules": `<strong>Overview:</strong><br><br>
         Dominoes is a classic, strategic game played with rectangular tiles. Each tile is divided into two square ends, each with a number of pips (or empty).<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -299,7 +299,7 @@ export const gamesData = [
     "difficulty": "Moderate",
     "drinking": "FALSE",
     "activity": "Competitive",
-    "vibes": ["Strategic", "Social", "Competitive"],
+    "vibes": ["Competitive or Casual", "High-Energy or Chill", "Playful or Serious", "Rule-Abiding", "Loud or Quiet"],
     "rules": `<strong>Overview:</strong><br><br>
         Euchre is a popular card game that involves capturing tricks. It is traditionally played with four players in teams of two. The game uses a partial standard deck of 24 cards, ranking from 9 to Ace.<br><br><br>
         <strong>Gameplay:</strong><br><br>
@@ -755,6 +755,33 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
   {
     "GameID": 30,
+    "name": "Telephone",
+    "aka": ["Tele"],
+    "description": "Telephone is a classic group game that highlights how easily information can become distorted through indirect communication. Players form a line or circle, and the first person whispers a message to the next. The message is passed down the line until it reaches the last person, who says it out loud.",
+    "minPlayers": 4,
+    "maxPlayers": 20,
+    "toolsRequired": ["./assets/images/notool.png"],
+    "toolsText": ["No Tools"],
+    "imageURL": "",
+    "timeAvailable": 10, // Time in minutes per game
+    "difficulty": "Easy",
+    "drinking": "FALSE",
+    "activity": "",
+    "vibes": ["Casual", "High-Energy", "Playful", "Free-Flowing", "Loud or Quiet"],
+    "rules": `<strong>Overview:</strong><br><br>
+        Telephone is a game that demonstrates the cumulative effect of information loss in communication. A message is secretly transmitted from person to person until it reaches the last player, who then reveals the often transformed message.<br><br><br>
+        <strong>Gameplay:</strong><br><br>
+        1. <em>Objective:</em><br><br> To accurately pass a message from one player to another until it reaches the last person.<br><br>
+        2. <em>Setup:</em><br><br> Players sit or stand in a line or circle. The first player comes up with a message and whispers it to the person next to them.<br><br>
+        3. <em>Passing the Message:</em><br><br> The message is whispered from player to player. Each participant can only say the message once and cannot ask for it to be repeated.<br><br>
+        4. <em>Revealing the Message:</em><br><br> The last player in the line or circle says the message they heard out loud to the entire group.<br><br>
+        <strong>Strategy:</strong><br><br> While there's little strategy involved, the game is a humorous way to see how messages change. Players should try to articulate clearly, but misunderstandings and alterations are part of the fun.<br><br>
+        <strong>Variations:</strong><br><br> For a challenge, use longer or more complex phrases. Or, play in noisy environments to increase difficulty.`
+  },
+  
+
+  {
+    "GameID": 31,
     "name": "Texas Hold'em",
     "aka": ["Hold'em"],
     "description": "A most popular variant of poker. The game involves dealing two private cards to each player and then revealing five community cards in three stages. Players seek to assemble the best five-card hand using any combination of their hole cards and the community cards.",
@@ -782,7 +809,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 31,
+    "GameID": 32,
     "name": "Tic-Tac-Toe",
     "aka": ["Noughts and Crosses", "Xs and Os"],
     "description": "A classic two-player game played on a 3x3 grid. Players take turns marking either X or O in an attempt to get three of their symbols in a row. Quick, simple, and great for testing strategy and tactics.",
@@ -808,7 +835,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
   },
 
   {
-    "GameID": 32,
+    "GameID": 33,
     "name": "War",
     "aka": ["High Card", "Battle"],
     "description": "A simple card game typically played by two players using a standard deck of playing cards. The objective is to win all the cards by having the highest card in each turn.",
@@ -834,7 +861,7 @@ Hearts is a trick-taking card game played by four players. The game uses a stand
 
 
   {
-    "GameID": 33,
+    "GameID": 34,
     "name": "Yahtzee",
     "aka": [""],
     "description": "A classic dice game that combines luck with strategy. The goal is to rack up points by rolling specific combinations of 5 dice. Each combination must be used once, and strategic choices are made to maximize your score.",

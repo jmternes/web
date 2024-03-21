@@ -2,7 +2,8 @@
 
 import { gamesData } from './data.js';
 
-/* new below */
+/* to do: vibe should return if vibe matches one or the other (includes the word)
+other tools should just be anything that doesnt match one of the tools */
 
 // event listeners for filter containers
 
@@ -80,7 +81,15 @@ document.querySelector('.search-button').addEventListener('click', function() {
     const matchesPlayerCriteria = playersSelection ? (minPlayers <= gameMaxPlayers && maxPlayers >= gameMinPlayers) : true;
     const matchesDifficultyCriteria = difficultySelection ? game.difficulty === difficultySelection : true;
     const matchesTimeCriteria = timeSelection ? (gameTime >= minTime && gameTime <= maxTime) : true;
-    const matchesVibeCriteria = selectedVibes.length === 0 || selectedVibes.some(vibe => game.vibes && game.vibes.includes(vibe));
+    const matchesVibeCriteria = selectedVibes.length === 0 || selectedVibes.some(selectedVibe => {
+      return game.vibes.some(gameVibe => {
+        // Split the game vibe on "or", trim each part, and check if the selected vibe matches any part
+        return gameVibe.split("or").some(part => selectedVibe.trim() === part.trim());
+      });
+    });
+    
+    
+    
 
     return matchesPlayerCriteria && matchesDifficultyCriteria && matchesTimeCriteria && matchesVibeCriteria && matchesToolCriteria;
   });
