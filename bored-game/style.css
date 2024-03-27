@@ -1180,12 +1180,14 @@ button.search-button {
 
 /* Results - Cards */
 
+/* cards-list should be aligned with tools-wrapper */
+
 .cards-list {
     height: 100vh;
     max-width: 80rem;
     /* min-width: 52rem; */
     position: absolute;
-    top: 56rem;
+    top: 45.7rem;
     left: 36rem;
     display: flex;
     justify-content: flex-start;
