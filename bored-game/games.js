@@ -4,6 +4,9 @@ import { gamesData } from './data.js';
 // ----------------------------------------
 
 
+// to do: when sorting by players required, desc needs to show the highest number of players first, currently shows top range of players as required
+// 2-10 players should be further down than 4-6 players when sorting by players required desc
+
 // SEARCH FUNCTION IN DIRECTORY
 
 // Assuming you have an input field for search with an id of 'search-input'
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gamesContainer.classList.add(hiddenClass);
 
       // Filter games based on the search query
-      const filteredGames = gamesData.filter(game => 
+      const filteredGames = gamesData.filter(game =>
         game.name.toLowerCase().startsWith(searchQuery) ||
         (game.aka && game.aka.some(alias => alias.toLowerCase().startsWith(searchQuery)))
       );
@@ -58,36 +61,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create card container
     const card = document.createElement('div');
     card.classList.add('card', 'template');
-  
+
     // Add game name
     const gameName = document.createElement('h5');
     gameName.classList.add('game-name');
     gameName.textContent = game.name;
     card.appendChild(gameName);
-  
+
     // Add game description
     const gameDescription = document.createElement('p');
     gameDescription.classList.add('game-description');
     gameDescription.textContent = game.description;
     card.appendChild(gameDescription);
-  
+
     // Tool images and text
     const toolsImagesContainer = document.createElement('div');
     toolsImagesContainer.classList.add('image-container', 'tools-images');
     const toolsTextContainer = document.createElement('div');
     toolsTextContainer.classList.add('image-title-container', 'tools-text');
-  
+
     game.toolsRequired.forEach((toolImageUrl, index) => {
       const img = document.createElement('img');
       img.src = toolImageUrl;
       img.alt = 'Tool Image';
       toolsImagesContainer.appendChild(img);
-  
+
       const caption = document.createElement('p');
       caption.textContent = game.toolsText[index] || 'Tool';
       toolsTextContainer.appendChild(caption);
     });
-  
+
     // Filter icons
     const filterIcons = document.createElement('div');
     filterIcons.classList.add('card-filter-icons');
@@ -96,39 +99,39 @@ document.addEventListener('DOMContentLoaded', () => {
       <img src="../bored-game/assets/images/time.png" alt="Time">
       <img src="../bored-game/assets/images/challenge.png" alt="Challenge">
     `;
-  
+
     // Filter text dynamically
     const filterText = document.createElement('div');
     filterText.classList.add('card-filter-text');
-  
+
     const playersText = document.createElement('p');
     playersText.textContent = game.minPlayers === game.maxPlayers ?
                               `${game.minPlayers} Players` :
                               `${game.minPlayers}-${game.maxPlayers} Players`;
     filterText.appendChild(playersText);
-  
+
     const timeText = document.createElement('p');
     timeText.innerHTML = `<span class="time-available">${game.timeAvailable}</span> Minutes`;
     filterText.appendChild(timeText);
-  
+
     const difficultyText = document.createElement('p');
     difficultyText.innerHTML = `<span class="difficulty-text">${game.difficulty}</span>`;
     filterText.appendChild(difficultyText);
-  
+
     // Append elements to the card
     card.appendChild(toolsImagesContainer);
     card.appendChild(toolsTextContainer);
     card.appendChild(filterIcons);
     card.appendChild(filterText);
-  
+
     // Add event listener for navigation
     card.addEventListener('click', () => {
       window.location.href = `game.html?gameId=${game.GameID}`;
     });
-  
+
     return card;
   }
-  
+
 
   //  display all games that match
   updateDisplay(gamesData);
