@@ -4,7 +4,7 @@ import { gamesData } from './data.js';
 
 /* to do: error catch for no filter found
 other tools should just be anything that doesnt match one of the tools
-add select options for no preference for difficulty, etc. 
+add select options for no preference for difficulty, etc.
 time option for 60+ mins, not working.*/
 
 // event listeners for filter containers
@@ -59,21 +59,25 @@ document.querySelector('.search-button').addEventListener('click', function() {
     minPlayers = maxPlayers = parseInt(playersSelection, 10);
   }
 
-  // Handle time selection
-  switch (timeSelection) {
-    case "Fewer than 5 Minutes":
-      maxTime = 5;
-      break;
-    case "5-10":
-      minTime = 5;
-      maxTime = 10;
-      break;
-    // Add other cases here
-    case "60+":
-      minTime = 60;
-      break;
-    // Default case not needed since minTime and maxTime are initialized
-  }
+// Handle time selection
+switch (timeSelection) {
+  case "no-preference":
+    // If "no-preference" is selected, bypass time filtering by not changing minTime and maxTime
+    break;
+  case "Fewer than 5 Minutes":
+    maxTime = 5;
+    break;
+  case "5-10":
+    minTime = 5;
+    maxTime = 10;
+    break;
+  // Add other cases here
+  case "60+":
+    minTime = 60;
+    break;
+  // Default case not needed since minTime and maxTime are initialized to cover all possibilities
+}
+
 
   // Filter games based on the selected criteria
   const filteredGames = gamesData.filter(game => {
@@ -83,7 +87,7 @@ document.querySelector('.search-button').addEventListener('click', function() {
 
     const matchesToolCriteria = selectedTools.length === 0 || game.toolsText.some(tool => selectedTools.includes(tool));
     const matchesPlayerCriteria = playersSelection ? (minPlayers <= gameMaxPlayers && maxPlayers >= gameMinPlayers) : true;
-    const matchesDifficultyCriteria = difficultySelection ? game.difficulty === difficultySelection : true;
+    const matchesDifficultyCriteria = !difficultySelection || difficultySelection === "no-preference" ? true : game.difficulty === difficultySelection;
     const matchesTimeCriteria = timeSelection ? (gameTime >= minTime && gameTime <= maxTime) : true;
     const matchesVibeCriteria = selectedVibes.length === 0 || selectedVibes.some(selectedVibe => {
       return game.vibes.some(gameVibe => {
@@ -91,9 +95,9 @@ document.querySelector('.search-button').addEventListener('click', function() {
         return gameVibe.split("or").some(part => selectedVibe.trim() === part.trim());
       });
     });
-    
-    
-    
+
+
+
 
     return matchesPlayerCriteria && matchesDifficultyCriteria && matchesTimeCriteria && matchesVibeCriteria && matchesToolCriteria;
   });
@@ -174,7 +178,7 @@ document.querySelector('.search-button').addEventListener('click', function() {
     });
   }
 
-  
+
 
 
 
