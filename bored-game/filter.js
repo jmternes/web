@@ -44,17 +44,19 @@ document.querySelector('.search-button').addEventListener('click', function() {
   let minTime = 0;
   let maxTime = Infinity;
 
-  // Handle player range selection
-  if (playersSelection) {
-    if (playersSelection.includes('-')) {
-      const range = playersSelection.split('-');
-      minPlayers = parseInt(range[0], 10);
-      maxPlayers = parseInt(range[1], 10);
-    } else if (playersSelection.includes('+')) {
-      minPlayers = parseInt(playersSelection.replace('+', ''), 10);
-    } else {
-      minPlayers = maxPlayers = parseInt(playersSelection, 10);
-    }
+  // Check if "no-reference" or similar value is selected for players
+  if (playersSelection === "no-preference") {
+    // If "no-reference" is selected, do not filter by this criterion
+    minPlayers = 0;
+    maxPlayers = Infinity;
+  } else if (playersSelection.includes('-')) {
+    const range = playersSelection.split('-');
+    minPlayers = parseInt(range[0], 10);
+    maxPlayers = parseInt(range[1], 10);
+  } else if (playersSelection.includes('+')) {
+    minPlayers = parseInt(playersSelection.replace('+', ''), 10);
+  } else {
+    minPlayers = maxPlayers = parseInt(playersSelection, 10);
   }
 
   // Handle time selection
