@@ -1504,6 +1504,28 @@ button.search-button {
 
 /* --------------------------------- */
 
+
+
+/* 404 Page */
+
+h1.error-header {
+  font-size: 4.25rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+}
+
+.error-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+
+}
+
+
 /* ----- Individual Game Page ----- */
 
 /* Hero Section */
