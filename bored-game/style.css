@@ -1509,10 +1509,10 @@ button.search-button {
 /* 404 Page */
 
 h1.error-header {
-  font-size: 4.25rem;
+  font-size: 4rem;
   font-weight: 900;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
 
 }
@@ -1520,8 +1520,8 @@ h1.error-header {
 .error-img {
   display: block;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 
 }
 
