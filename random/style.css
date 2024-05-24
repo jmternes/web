@@ -21,6 +21,12 @@ body {
   min-height: 100vh;
 }
 
+.help {
+  display: flex;
+  flex-direction: column;
+  font-family: graduate ;
+}
+
 h1 {
   text-align: center;
   /* border: 1px solid white; */

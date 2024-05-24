@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <div class="help">
+        <h2>Random Team Generator</h2>
+        <h4>Click the "Generate" button to generate a random team. Click the top right icon to switch between leagues</h4>
+    </div>
+
   <h1 id="team-name" class="nfl-header"></h1>
     <div class="image-wrapper" id="">
         <div id="image-container">
@@ -171,7 +176,7 @@ const nflTeams = [
     teamNameElement.textContent = nflTeams[randomIndex].name;
 
     teamImageElement.src = nflTeams[randomIndex].imageUrl;
-  
+
 });
   </script>
 </body>
